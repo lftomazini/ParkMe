@@ -7,7 +7,7 @@ The idea of our project was based on the presentation [Parking on campus](https:
 
 ## Important links
 ### Individual reports
-- []()
+- [Having a car at Buckenell - bu Luís Felipe](https://medium.com/@lftomazini/having-a-car-at-bucknell-cda27283f89e#.ktd74vqhi)
 - []()
 - []()
 - []()
