@@ -13,4 +13,4 @@ The idea of our project was based on the presentation [Parking on campus](https:
 - [Issues with the Bucknell Parking System - by Alice Shen](https://medium.com/@ms092/issues-with-the-bucknell-parking-system-d9cc90a4c112#.gmhgks4ft)
 
 ### Group report
-- []()
+- [Summarized Contextual Inquiry](https://medium.com/@lftomazini/summarized-contextual-inquiry-3cdb97074762#.wyfq5znn2)
