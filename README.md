@@ -17,3 +17,6 @@ The idea of our project was based on the presentation [Parking on campus](https:
 
 ### Presentation
 - [ParkMe](https://docs.google.com/a/bucknell.edu/presentation/d/1uxBkMXgUkmEBJ0fYvIgu5pYqA34eRcjhOHB9bKC-aCk/edit?usp=sharing)
+
+### Concept Video
+- [ParkMe](https://www.youtube.com/watch?v=tlSBLZjG_BA)
