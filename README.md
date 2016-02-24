@@ -16,4 +16,4 @@ The idea of our project was based on the presentation [Parking on campus](https:
 - [Summarized Contextual Inquiry](https://medium.com/@lftomazini/summarized-contextual-inquiry-3cdb97074762#.wyfq5znn2)
 
 ### Presentation
-- [ParkMe](https://docs.google.com/presentation/d/1uxBkMXgUkmEBJ0fYvIgu5pYqA34eRcjhOHB9bKC-aCk/edit#slide=id.p)
+- [ParkMe](https://docs.google.com/a/bucknell.edu/presentation/d/1uxBkMXgUkmEBJ0fYvIgu5pYqA34eRcjhOHB9bKC-aCk/edit?usp=sharing)
