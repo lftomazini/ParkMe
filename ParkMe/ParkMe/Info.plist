@@ -23,7 +23,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>I want to know where you are</string>
+	<string>ParkMe needs your location to give you accurate data about parking spots near you</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Same reason</string>
 	<key>UILaunchStoryboardName</key>
