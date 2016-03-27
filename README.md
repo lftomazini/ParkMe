@@ -26,3 +26,6 @@ The idea of our project was based on the presentation [Parking on campus](https:
 
 ### Style Guide
 - [ParkMe](https://app.frontify.com/d/z5FawCZgY1AW/park-me-style-guide)
+
+### MedFi Prototype
+- [ParkMe](https://gitlab.bucknell.edu/lffct001/parking/blob/master/evaluation/medfi_prototype/ParkMe.vp)
