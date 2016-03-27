@@ -20,3 +20,9 @@ The idea of our project was based on the presentation [Parking on campus](https:
 
 ### Concept Video
 - [ParkMe](https://www.youtube.com/watch?v=tlSBLZjG_BA)
+
+### Mood Board
+- [ParkMe](https://niice.co/m/488b71981237f1c00e5b3afbe54ac297)
+
+### Style Guide
+- [ParkMe](https://app.frontify.com/d/z5FawCZgY1AW/park-me-style-guide)
