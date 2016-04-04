@@ -19,17 +19,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5U5-hV-H2o">
-                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Cyz-7K-Yaa"/>
                                 </connections>
                             </mapView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="f9B-8l-bju">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="f9B-8l-bju" secondAttribute="trailing" constant="-20" id="HI0-N0-Zbk"/>
+                            <constraint firstItem="f9B-8l-bju" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="KZC-w4-x9x"/>
                             <constraint firstItem="5U5-hV-H2o" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="St4-RK-MiX"/>
                             <constraint firstItem="5U5-hV-H2o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-59" id="Wig-py-LNb"/>
                             <constraint firstAttribute="trailing" secondItem="5U5-hV-H2o" secondAttribute="trailing" id="c6Y-Ot-Rsv"/>
+                            <constraint firstItem="f9B-8l-bju" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="iS8-Nl-m8i"/>
                             <constraint firstItem="5U5-hV-H2o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-10" id="qYn-vX-mKZ"/>
                         </constraints>
                     </view>
