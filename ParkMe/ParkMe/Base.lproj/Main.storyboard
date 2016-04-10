@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,26 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5U5-hV-H2o">
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="f9B-8l-bju">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="google"/>
+                            </searchBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5U5-hV-H2o">
                                 <rect key="frame" x="0.0" y="44" width="600" height="556"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Cyz-7K-Yaa"/>
                                 </connections>
                             </mapView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="f9B-8l-bju">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="f9B-8l-bju" secondAttribute="trailing" constant="-20" id="HI0-N0-Zbk"/>
                             <constraint firstItem="f9B-8l-bju" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="KZC-w4-x9x"/>
                             <constraint firstItem="5U5-hV-H2o" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="St4-RK-MiX"/>
-                            <constraint firstItem="5U5-hV-H2o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-59" id="Wig-py-LNb"/>
+                            <constraint firstItem="5U5-hV-H2o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Wig-py-LNb"/>
                             <constraint firstAttribute="trailing" secondItem="5U5-hV-H2o" secondAttribute="trailing" id="c6Y-Ot-Rsv"/>
                             <constraint firstItem="f9B-8l-bju" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="iS8-Nl-m8i"/>
-                            <constraint firstItem="5U5-hV-H2o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-10" id="qYn-vX-mKZ"/>
+                            <constraint firstItem="5U5-hV-H2o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="44" id="qYn-vX-mKZ"/>
                         </constraints>
                     </view>
                     <connections>

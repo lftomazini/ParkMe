@@ -14,6 +14,13 @@
 		4011745D1C8555D000080D07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4011745B1C8555D000080D07 /* LaunchScreen.storyboard */; };
 		401174681C8555D000080D07 /* ParkMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401174671C8555D000080D07 /* ParkMeTests.swift */; };
 		401174731C8555D000080D07 /* ParkMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401174721C8555D000080D07 /* ParkMeUITests.swift */; };
+		401DE0CF1CBAEDDB001BF35B /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401DE0CE1CBAEDDB001BF35B /* AnnotationView.swift */; };
+		401DE0D11CBAF2A9001BF35B /* ACWS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401DE0D01CBAF2A9001BF35B /* ACWS.plist */; };
+		403D86C51CB9DAD900B9F2B0 /* Lots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D86C41CB9DAD900B9F2B0 /* Lots.swift */; };
+		403D86C71CB9DDB200B9F2B0 /* frontpage.png in Resources */ = {isa = PBXBuildFile; fileRef = 403D86C61CB9DDB200B9F2B0 /* frontpage.png */; };
+		403D86C91CB9E99400B9F2B0 /* BRKI.plist in Resources */ = {isa = PBXBuildFile; fileRef = 403D86C81CB9E99400B9F2B0 /* BRKI.plist */; };
+		40FDE7481CBAC3B400D9060A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FDE7471CBAC3B400D9060A /* MapKit.framework */; };
+		40FDE74C1CBAD04800D9060A /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDE74B1CBAD04800D9060A /* Annotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		4011746E1C8555D000080D07 /* ParkMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		401174721C8555D000080D07 /* ParkMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkMeUITests.swift; sourceTree = "<group>"; };
 		401174741C8555D000080D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		401DE0CE1CBAEDDB001BF35B /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		401DE0D01CBAF2A9001BF35B /* ACWS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ACWS.plist; sourceTree = "<group>"; };
+		403D86C41CB9DAD900B9F2B0 /* Lots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lots.swift; sourceTree = "<group>"; };
+		403D86C61CB9DDB200B9F2B0 /* frontpage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frontpage.png; sourceTree = "<group>"; };
+		403D86C81CB9E99400B9F2B0 /* BRKI.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BRKI.plist; path = ParkMe/BRKI.plist; sourceTree = "<group>"; };
+		40FDE7471CBAC3B400D9060A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		40FDE74B1CBAD04800D9060A /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40FDE7481CBAC3B400D9060A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +92,10 @@
 		401174461C8555D000080D07 = {
 			isa = PBXGroup;
 			children = (
+				401DE0CD1CBAEDA2001BF35B /* Annotations */,
+				40FDE7471CBAC3B400D9060A /* MapKit.framework */,
+				403D86C61CB9DDB200B9F2B0 /* frontpage.png */,
+				403D86C11CB9DA0100B9F2B0 /* Geofencing */,
 				401174511C8555D000080D07 /* ParkMe */,
 				401174661C8555D000080D07 /* ParkMeTests */,
 				401174711C8555D000080D07 /* ParkMeUITests */,
@@ -102,6 +121,7 @@
 				401174561C8555D000080D07 /* Main.storyboard */,
 				4011745B1C8555D000080D07 /* LaunchScreen.storyboard */,
 				4011745E1C8555D000080D07 /* Info.plist */,
+				403D86C41CB9DAD900B9F2B0 /* Lots.swift */,
 				400FA8A01CA3296100605C5C /* Images.xcassets */,
 			);
 			path = ParkMe;
@@ -123,6 +143,24 @@
 				401174741C8555D000080D07 /* Info.plist */,
 			);
 			path = ParkMeUITests;
+			sourceTree = "<group>";
+		};
+		401DE0CD1CBAEDA2001BF35B /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				40FDE74B1CBAD04800D9060A /* Annotation.swift */,
+				401DE0CE1CBAEDDB001BF35B /* AnnotationView.swift */,
+			);
+			name = Annotations;
+			sourceTree = "<group>";
+		};
+		403D86C11CB9DA0100B9F2B0 /* Geofencing */ = {
+			isa = PBXGroup;
+			children = (
+				403D86C81CB9E99400B9F2B0 /* BRKI.plist */,
+				401DE0D01CBAF2A9001BF35B /* ACWS.plist */,
+			);
+			name = Geofencing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +268,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403D86C91CB9E99400B9F2B0 /* BRKI.plist in Resources */,
 				400FA8A11CA3296100605C5C /* Images.xcassets in Resources */,
+				401DE0D11CBAF2A9001BF35B /* ACWS.plist in Resources */,
 				4011745D1C8555D000080D07 /* LaunchScreen.storyboard in Resources */,
+				403D86C71CB9DDB200B9F2B0 /* frontpage.png in Resources */,
 				401174581C8555D000080D07 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				401174551C8555D000080D07 /* ViewController.swift in Sources */,
+				40FDE74C1CBAD04800D9060A /* Annotation.swift in Sources */,
+				401DE0CF1CBAEDDB001BF35B /* AnnotationView.swift in Sources */,
 				401174531C8555D000080D07 /* AppDelegate.swift in Sources */,
+				403D86C51CB9DAD900B9F2B0 /* Lots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
