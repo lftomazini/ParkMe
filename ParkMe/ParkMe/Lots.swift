@@ -39,9 +39,10 @@ class Lots {
     
     
     
-    var name: String?
+    var name: String
+    var density: String
     
-    init(filename: String) {
+    init(filename: String, name: String, density: String) {
         
         let filePath = NSBundle.mainBundle().pathForResource(filename, ofType: "plist")
         let properties = NSDictionary(contentsOfFile: filePath!)
@@ -71,6 +72,10 @@ class Lots {
             let p = CGPointFromString(boundaryPoints[i] as! String)
             boundary += [CLLocationCoordinate2DMake(CLLocationDegrees(p.x), CLLocationDegrees(p.y))]
         }
+        
+        self.name = name;
+        self.density = density;
+        
         
     }
 }
