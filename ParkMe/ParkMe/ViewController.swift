@@ -20,9 +20,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     let BU_Longitude = -76.883322
     
     /* Initializing Parking Lots instances */
-    var BRKILot = Lots(filename: "BRKI", name: "BRKI", density: "HIGH")
-    var ACWSLot = Lots(filename: "ACWS", name:"ACWS", density: "MILD")
-    var SMLot = Lots(filename: "Smith", name:"Smith", density: "LOW")
+    var BRKILot = Lots(filename: "BRKI", name: "BRKI", density: "HIGH", type: lotsDecalTypes.Student)
+    var ACWSLot = Lots(filename: "ACWS", name:"ACWS", density: "MILD", type: lotsDecalTypes.Student)
+    var SMLot = Lots(filename: "Smith", name:"Smith", density: "LOW", type: lotsDecalTypes.Student)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,16 +31,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         self.mapView.delegate = self;
         
         addAnnotations();
-        
-        // user activated automatic authorization info mode
-//        let status = CLLocationManager.authorizationStatus()
-//        if status == .NotDetermined || status == .Denied || status == .AuthorizedWhenInUse {
-//            // present an alert indicating location authorization required
-//            // and offer to take the user to Settings for the app via
-//            // UIApplication -openUrl: and UIApplicationOpenSettingsURLString
-//            locationManager.requestAlwaysAuthorization()
-//            locationManager.requestWhenInUseAuthorization()
-//        }
         
         let initialLocation = CLLocation(latitude: BU_Latitude, longitude: BU_Longitude);
         centerMapOnLocation(initialLocation);
@@ -67,9 +57,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         /* Add pins for parking lots
          */
         
-        mapView.addAnnotation(Annotation(coordinate: CLLocationCoordinate2D(latitude: BRKILot.midCoordinate.latitude, longitude: BRKILot.midCoordinate.longitude), title: BRKILot.name, subtitle: "Density: \(BRKILot.density)")); // BRKI
-        mapView.addAnnotation(Annotation(coordinate: CLLocationCoordinate2D(latitude: ACWSLot.midCoordinate.latitude, longitude: ACWSLot.midCoordinate.longitude), title: ACWSLot.name, subtitle: "Density: \(ACWSLot.density)")); // ACWS
-        mapView.addAnnotation(Annotation(coordinate: CLLocationCoordinate2D(latitude: SMLot.midCoordinate.latitude, longitude: SMLot.midCoordinate.longitude), title: SMLot.name, subtitle: "Density: \(SMLot.density)")); // Smith
+        mapView.addAnnotation(Annotation(lot: BRKILot)); // BRKI
+        mapView.addAnnotation(Annotation(lot: ACWSLot)); // ACWS
+        mapView.addAnnotation(Annotation(lot: SMLot)); // Smith
     }
     
     /* Circle parking lots and make polygons*/
@@ -115,5 +105,6 @@ extension ViewController: MKMapViewDelegate {
         
         return polygonView
     }
+    
     
 }

@@ -9,6 +9,11 @@
 import Foundation
 import MapKit
 
+enum lotsDecalTypes {
+    case Student;
+    case Staff;
+}
+
 class Lots {
     
     var boundary: [CLLocationCoordinate2D]
@@ -41,8 +46,9 @@ class Lots {
     
     var name: String
     var density: String
+    var type: lotsDecalTypes
     
-    init(filename: String, name: String, density: String) {
+    init(filename: String, name: String, density: String, type: lotsDecalTypes) {
         
         let filePath = NSBundle.mainBundle().pathForResource(filename, ofType: "plist")
         let properties = NSDictionary(contentsOfFile: filePath!)
@@ -75,7 +81,7 @@ class Lots {
         
         self.name = name;
         self.density = density;
-        
+        self.type = type;
         
     }
 }
