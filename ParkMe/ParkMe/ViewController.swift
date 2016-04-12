@@ -24,6 +24,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var ACWSLot = Lots(filename: "ACWS", name:"ACWS", density: "MILD", type: lotsDecalTypes.Student)
     var SMLot = Lots(filename: "Smith", name:"Smith", density: "LOW", type: lotsDecalTypes.Student)
     var MCDLot = Lots(filename: "MCD", name:"McDonell", density: "LOW", type: lotsDecalTypes.Student)
+    var SCALot = Lots(filename: "SCA", name: "South Campus Apartments", density: "LOW", type: lotsDecalTypes.Student)
+    var TraxLot = Lots(filename: "Trax", name: "Trax", density: "HIGH", type: lotsDecalTypes.Student)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +75,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         mapView.addAnnotation(Annotation(lot: ACWSLot)); // ACWS
         mapView.addAnnotation(Annotation(lot: SMLot)); // Smith
         mapView.addAnnotation(Annotation(lot: MCDLot)); // McDonell
+        mapView.addAnnotation(Annotation(lot: SCALot)) // South Campus Apartments
+        mapView.addAnnotation(Annotation(lot: TraxLot)) // Trax
     }
     
     /* Circle parking lots and make polygons*/
@@ -87,6 +91,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         addBoundary(ACWSLot);
         addBoundary(SMLot);
         addBoundary(MCDLot);
+        addBoundary(SCALot);
+        addBoundary(TraxLot);
     }
     
     /* Shake to recenter */
@@ -108,23 +114,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 }
 
 extension ViewController: MKMapViewDelegate {
-    
+
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
-        let polygonView = MKPolygonRenderer(overlay: overlay)
-        if (overlay.title! == "HIGH") {
-            polygonView.fillColor = UIColor.redColor().colorWithAlphaComponent(0.4)
-        } else if (overlay.title! == "MILD") {
-            polygonView.fillColor = UIColor.orangeColor().colorWithAlphaComponent(0.4)
-        } else if (overlay.title! == "LOW"){
-            polygonView.fillColor = UIColor.greenColor().colorWithAlphaComponent(0.4)
-        } else {
-            polygonView.fillColor = UIColor.clearColor()
-        }
-        polygonView.strokeColor = UIColor.clearColor()
+            let polygonView = MKPolygonRenderer(overlay: overlay)
+            if (overlay.title! == "HIGH") {
+                polygonView.fillColor = UIColor.redColor().colorWithAlphaComponent(0.4)
+            } else if (overlay.title! == "MILD") {
+                polygonView.fillColor = UIColor.orangeColor().colorWithAlphaComponent(0.4)
+            } else if (overlay.title! == "LOW"){
+                polygonView.fillColor = UIColor.greenColor().colorWithAlphaComponent(0.4)
+            } else {
+                polygonView.fillColor = UIColor.clearColor()
+            }
+            polygonView.strokeColor = UIColor.clearColor()
         
-        polygonView.lineWidth = 2
+            polygonView.lineWidth = 2
         
-        return polygonView
+            return polygonView
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
