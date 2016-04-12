@@ -14,7 +14,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
 
     @IBOutlet weak var mapView: MKMapView!
-    var locationManager: CLLocationManager!
+    let locationManager =  CLLocationManager()
     /* Central coordinate of Bucknell */
     let BU_Latitude = 40.954582
     let BU_Longitude = -76.883322
@@ -23,21 +23,33 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var BRKILot = Lots(filename: "BRKI", name: "BRKI", density: "HIGH", type: lotsDecalTypes.Student)
     var ACWSLot = Lots(filename: "ACWS", name:"ACWS", density: "MILD", type: lotsDecalTypes.Student)
     var SMLot = Lots(filename: "Smith", name:"Smith", density: "LOW", type: lotsDecalTypes.Student)
+    var MCDLot = Lots(filename: "MCD", name:"McDonell", density: "LOW", type: lotsDecalTypes.Student)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.mapView.showsUserLocation = false;
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.delegate = self
+        // user activated automatic authorization info mode
+        let status = CLLocationManager.authorizationStatus()
+        if status == .NotDetermined || status == .Denied || status == .AuthorizedWhenInUse {
+            // present an alert indicating location authorization required
+            // and offer to take the user to Settings for the app via
+            // UIApplication -openUrl: and UIApplicationOpenSettingsURLString
+            self.locationManager.requestAlwaysAuthorization()
+            self.locationManager.requestWhenInUseAuthorization()
+        }
+        self.locationManager.startUpdatingLocation()
+        self.locationManager.startUpdatingHeading()
+        
         self.mapView.delegate = self;
-        
-        addAnnotations();
-        
+
         let initialLocation = CLLocation(latitude: BU_Latitude, longitude: BU_Longitude);
         centerMapOnLocation(initialLocation);
+        
+        populateAnnotations();
 
-        addBoundary(BRKILot);
-        addBoundary(ACWSLot);
-        addBoundary(SMLot);
+        populateBoundaries();
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
@@ -52,7 +64,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         mapView.setRegion(coordinateRegion, animated: true)
     }
     
-    func addAnnotations() {
+    func populateAnnotations() {
         
         /* Add pins for parking lots
          */
@@ -60,6 +72,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         mapView.addAnnotation(Annotation(lot: BRKILot)); // BRKI
         mapView.addAnnotation(Annotation(lot: ACWSLot)); // ACWS
         mapView.addAnnotation(Annotation(lot: SMLot)); // Smith
+        mapView.addAnnotation(Annotation(lot: MCDLot)); // McDonell
     }
     
     /* Circle parking lots and make polygons*/
@@ -67,6 +80,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let polygon = MKPolygon(coordinates: &lot.boundary, count: lot.boundaryPointsCount)
         polygon.title = lot.density
         mapView.addOverlay(polygon)
+    }
+    
+    func populateBoundaries() {
+        addBoundary(BRKILot);
+        addBoundary(ACWSLot);
+        addBoundary(SMLot);
+        addBoundary(MCDLot);
     }
     
     /* Shake to recenter */
@@ -81,8 +101,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     override func prefersStatusBarHidden() -> Bool {
-        return true;
+        return false;
     }
+    
     
 }
 
@@ -106,5 +127,15 @@ extension ViewController: MKMapViewDelegate {
         return polygonView
     }
     
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        locationManager.stopUpdatingLocation()
+        print(error)
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
+    {
+        let currentLocation = locationManager.location!
+        print("\(currentLocation.coordinate.latitude.description) \(currentLocation.coordinate.longitude.description)")
+    }
     
 }

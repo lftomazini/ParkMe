@@ -17,6 +17,8 @@
 		401DE0D11CBAF2A9001BF35B /* ACWS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401DE0D01CBAF2A9001BF35B /* ACWS.plist */; };
 		403D86C51CB9DAD900B9F2B0 /* Lots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D86C41CB9DAD900B9F2B0 /* Lots.swift */; };
 		403D86C91CB9E99400B9F2B0 /* BRKI.plist in Resources */ = {isa = PBXBuildFile; fileRef = 403D86C81CB9E99400B9F2B0 /* BRKI.plist */; };
+		4097E4F71CBB56E900201421 /* MCD.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4097E4F61CBB56E900201421 /* MCD.plist */; };
+		40AAE7A51CBC69DD00C649F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */; };
 		40B91D1B1CBB14A4009EF827 /* Smith.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40B91D1A1CBB14A4009EF827 /* Smith.plist */; };
 		40B91D1D1CBB2EFE009EF827 /* launchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B91D1C1CBB2EFE009EF827 /* launchScreen.png */; };
 		40FDE7481CBAC3B400D9060A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FDE7471CBAC3B400D9060A /* MapKit.framework */; };
@@ -57,6 +59,8 @@
 		401DE0D01CBAF2A9001BF35B /* ACWS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ACWS.plist; sourceTree = "<group>"; };
 		403D86C41CB9DAD900B9F2B0 /* Lots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lots.swift; sourceTree = "<group>"; };
 		403D86C81CB9E99400B9F2B0 /* BRKI.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BRKI.plist; path = ParkMe/BRKI.plist; sourceTree = "<group>"; };
+		4097E4F61CBB56E900201421 /* MCD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MCD.plist; sourceTree = "<group>"; };
+		40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		40B91D1A1CBB14A4009EF827 /* Smith.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Smith.plist; sourceTree = "<group>"; };
 		40B91D1C1CBB2EFE009EF827 /* launchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launchScreen.png; path = ../../../../../Downloads/launchScreen.png; sourceTree = "<group>"; };
 		40FDE7471CBAC3B400D9060A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40AAE7A51CBC69DD00C649F1 /* CoreLocation.framework in Frameworks */,
 				40FDE7481CBAC3B400D9060A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +97,7 @@
 		401174461C8555D000080D07 = {
 			isa = PBXGroup;
 			children = (
+				40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */,
 				401DE0CD1CBAEDA2001BF35B /* Annotations */,
 				40FDE7471CBAC3B400D9060A /* MapKit.framework */,
 				403D86C11CB9DA0100B9F2B0 /* Geofencing */,
@@ -159,6 +165,7 @@
 				403D86C81CB9E99400B9F2B0 /* BRKI.plist */,
 				401DE0D01CBAF2A9001BF35B /* ACWS.plist */,
 				40B91D1A1CBB14A4009EF827 /* Smith.plist */,
+				4097E4F61CBB56E900201421 /* MCD.plist */,
 			);
 			name = Geofencing;
 			sourceTree = "<group>";
@@ -275,6 +282,7 @@
 				4011745D1C8555D000080D07 /* LaunchScreen.storyboard in Resources */,
 				401174581C8555D000080D07 /* Main.storyboard in Resources */,
 				40B91D1D1CBB2EFE009EF827 /* launchScreen.png in Resources */,
+				4097E4F71CBB56E900201421 /* MCD.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
