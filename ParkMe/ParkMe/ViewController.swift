@@ -9,9 +9,9 @@
 import UIKit
 import MapKit
 import CoreLocation
+import Firebase
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
-    
 
     @IBOutlet weak var mapView: MKMapView!
     let locationManager =  CLLocationManager()
@@ -41,18 +41,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             self.locationManager.requestAlwaysAuthorization()
             self.locationManager.requestWhenInUseAuthorization()
         }
-        self.locationManager.startUpdatingLocation()
-        self.locationManager.startUpdatingHeading()
         
         self.mapView.delegate = self;
 
         let initialLocation = CLLocation(latitude: BU_Latitude, longitude: BU_Longitude);
         centerMapOnLocation(initialLocation);
         
+        // Puts all parking lots pins on the map
         populateAnnotations();
-
+        // Circle all parking lots
         populateBoundaries();
         
+        self.locationManager.startUpdatingLocation()
+        self.locationManager.startUpdatingHeading()
+        
+        // Dismiss key board after tapping on the screen to hide the keyboard
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
@@ -66,10 +69,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         mapView.setRegion(coordinateRegion, animated: true)
     }
     
+    
+    /* Add pins for parking lots
+     */
     func populateAnnotations() {
-        
-        /* Add pins for parking lots
-         */
         
         mapView.addAnnotation(Annotation(lot: BRKILot)); // BRKI
         mapView.addAnnotation(Annotation(lot: ACWSLot)); // ACWS
@@ -138,10 +141,15 @@ extension ViewController: MKMapViewDelegate {
         print(error)
     }
     
+    
+    /*
+    Update database upon location update
+    */
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     {
-        let currentLocation = locationManager.location!
-        print("\(currentLocation.coordinate.latitude.description) \(currentLocation.coordinate.longitude.description)")
+        let locationArray = locations as NSArray
+        var lastLocation = locationArray.lastObject as! CLLocation
+        updateUserLoc(lastLocation)
     }
     
 }
