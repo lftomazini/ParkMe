@@ -19,10 +19,10 @@
 		401DE0D11CBAF2A9001BF35B /* ACWS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401DE0D01CBAF2A9001BF35B /* ACWS.plist */; };
 		403D86C51CB9DAD900B9F2B0 /* Lots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D86C41CB9DAD900B9F2B0 /* Lots.swift */; };
 		403D86C91CB9E99400B9F2B0 /* BRKI.plist in Resources */ = {isa = PBXBuildFile; fileRef = 403D86C81CB9E99400B9F2B0 /* BRKI.plist */; };
+		4090DF981CC0680200C5685A /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4090DF971CC0680200C5685A /* launch.png */; };
 		4097E4F71CBB56E900201421 /* MCD.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4097E4F61CBB56E900201421 /* MCD.plist */; };
 		40AAE7A51CBC69DD00C649F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */; };
 		40B91D1B1CBB14A4009EF827 /* Smith.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40B91D1A1CBB14A4009EF827 /* Smith.plist */; };
-		40B91D1D1CBB2EFE009EF827 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B91D1C1CBB2EFE009EF827 /* launch.png */; };
 		40C7FAE21CBDB5F300C4D8E8 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7FAE11CBDB5F300C4D8E8 /* Firebase.framework */; };
 		40C7FAE41CBDB60D00C4D8E8 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7FAE31CBDB60D00C4D8E8 /* libicucore.tbd */; };
 		40C7FAE61CBDB61A00C4D8E8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7FAE51CBDB61A00C4D8E8 /* libc++.tbd */; };
@@ -30,6 +30,8 @@
 		40C7FAEA1CBDB63200C4D8E8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7FAE91CBDB63200C4D8E8 /* Security.framework */; };
 		40C7FAEC1CBDB63B00C4D8E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7FAEB1CBDB63B00C4D8E8 /* SystemConfiguration.framework */; };
 		40C7FAEF1CBDBE3D00C4D8E8 /* database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C7FAEE1CBDBE3D00C4D8E8 /* database.swift */; };
+		40E359681CBE99C90030D6B5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E359671CBE99C90030D6B5 /* CoreMotion.framework */; };
+		40E3596B1CBE9A420030D6B5 /* UserMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3596A1CBE9A420030D6B5 /* UserMotion.swift */; };
 		40FDE7481CBAC3B400D9060A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FDE7471CBAC3B400D9060A /* MapKit.framework */; };
 		40FDE74C1CBAD04800D9060A /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDE74B1CBAD04800D9060A /* Annotation.swift */; };
 /* End PBXBuildFile section */
@@ -70,10 +72,10 @@
 		401DE0D01CBAF2A9001BF35B /* ACWS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ACWS.plist; sourceTree = "<group>"; };
 		403D86C41CB9DAD900B9F2B0 /* Lots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lots.swift; sourceTree = "<group>"; };
 		403D86C81CB9E99400B9F2B0 /* BRKI.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BRKI.plist; path = ParkMe/BRKI.plist; sourceTree = "<group>"; };
+		4090DF971CC0680200C5685A /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		4097E4F61CBB56E900201421 /* MCD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MCD.plist; sourceTree = "<group>"; };
 		40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		40B91D1A1CBB14A4009EF827 /* Smith.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Smith.plist; sourceTree = "<group>"; };
-		40B91D1C1CBB2EFE009EF827 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch.png; path = ../../../../../Downloads/launch.png; sourceTree = "<group>"; };
 		40C7FAE11CBDB5F300C4D8E8 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		40C7FAE31CBDB60D00C4D8E8 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		40C7FAE51CBDB61A00C4D8E8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -81,6 +83,8 @@
 		40C7FAE91CBDB63200C4D8E8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		40C7FAEB1CBDB63B00C4D8E8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		40C7FAEE1CBDBE3D00C4D8E8 /* database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = database.swift; sourceTree = "<group>"; };
+		40E359671CBE99C90030D6B5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		40E3596A1CBE9A420030D6B5 /* UserMotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMotion.swift; sourceTree = "<group>"; };
 		40FDE7471CBAC3B400D9060A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		40FDE74B1CBAD04800D9060A /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 		B819ACD2327953B754FFFC2A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E359681CBE99C90030D6B5 /* CoreMotion.framework in Frameworks */,
 				40C7FAEC1CBDB63B00C4D8E8 /* SystemConfiguration.framework in Frameworks */,
 				40C7FAEA1CBDB63200C4D8E8 /* Security.framework in Frameworks */,
 				40C7FAE81CBDB62500C4D8E8 /* CFNetwork.framework in Frameworks */,
@@ -129,7 +134,7 @@
 				40FDE7471CBAC3B400D9060A /* MapKit.framework */,
 				403D86C11CB9DA0100B9F2B0 /* Geofencing */,
 				401174511C8555D000080D07 /* ParkMe */,
-				40C7FAED1CBDBE1300C4D8E8 /* Database */,
+				40C7FAED1CBDBE1300C4D8E8 /* BackEnd */,
 				401174661C8555D000080D07 /* ParkMeTests */,
 				401174711C8555D000080D07 /* ParkMeUITests */,
 				401174501C8555D000080D07 /* Products */,
@@ -151,7 +156,7 @@
 		401174511C8555D000080D07 /* ParkMe */ = {
 			isa = PBXGroup;
 			children = (
-				40B91D1C1CBB2EFE009EF827 /* launch.png */,
+				4090DF971CC0680200C5685A /* launch.png */,
 				401174521C8555D000080D07 /* AppDelegate.swift */,
 				401174541C8555D000080D07 /* ViewController.swift */,
 				401174561C8555D000080D07 /* Main.storyboard */,
@@ -202,12 +207,13 @@
 			name = Geofencing;
 			sourceTree = "<group>";
 		};
-		40C7FAED1CBDBE1300C4D8E8 /* Database */ = {
+		40C7FAED1CBDBE1300C4D8E8 /* BackEnd */ = {
 			isa = PBXGroup;
 			children = (
 				40C7FAEE1CBDBE3D00C4D8E8 /* database.swift */,
+				40E3596A1CBE9A420030D6B5 /* UserMotion.swift */,
 			);
-			name = Database;
+			name = BackEnd;
 			sourceTree = "<group>";
 		};
 		9E7EB2BD7D547F52EAEB93CF /* Pods */ = {
@@ -222,6 +228,7 @@
 		C23A8DE602FD1A7B09C95FA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				40E359671CBE99C90030D6B5 /* CoreMotion.framework */,
 				40C7FAEB1CBDB63B00C4D8E8 /* SystemConfiguration.framework */,
 				40C7FAE91CBDB63200C4D8E8 /* Security.framework */,
 				40C7FAE71CBDB62500C4D8E8 /* CFNetwork.framework */,
@@ -345,9 +352,9 @@
 				401DE0D11CBAF2A9001BF35B /* ACWS.plist in Resources */,
 				401085AF1CBCAA5F002516A4 /* SCA.plist in Resources */,
 				401085B11CBCAD5D002516A4 /* Trax.plist in Resources */,
+				4090DF981CC0680200C5685A /* launch.png in Resources */,
 				4011745D1C8555D000080D07 /* LaunchScreen.storyboard in Resources */,
 				401174581C8555D000080D07 /* Main.storyboard in Resources */,
-				40B91D1D1CBB2EFE009EF827 /* launch.png in Resources */,
 				4097E4F71CBB56E900201421 /* MCD.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +432,7 @@
 				40FDE74C1CBAD04800D9060A /* Annotation.swift in Sources */,
 				401174531C8555D000080D07 /* AppDelegate.swift in Sources */,
 				40C7FAEF1CBDBE3D00C4D8E8 /* database.swift in Sources */,
+				40E3596B1CBE9A420030D6B5 /* UserMotion.swift in Sources */,
 				403D86C51CB9DAD900B9F2B0 /* Lots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
