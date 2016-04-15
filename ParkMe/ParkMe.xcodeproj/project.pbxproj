@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AACCF951CBFE57700DC76F0 /* staff.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AACCF931CBFE57700DC76F0 /* staff.png */; };
+		2AACCF961CBFE57700DC76F0 /* student.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AACCF941CBFE57700DC76F0 /* student.png */; };
 		400FA8A11CA3296100605C5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400FA8A01CA3296100605C5C /* Images.xcassets */; };
 		401174531C8555D000080D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401174521C8555D000080D07 /* AppDelegate.swift */; };
 		401174551C8555D000080D07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401174541C8555D000080D07 /* ViewController.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AACCF931CBFE57700DC76F0 /* staff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staff.png; sourceTree = "<group>"; };
+		2AACCF941CBFE57700DC76F0 /* student.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = student.png; sourceTree = "<group>"; };
 		400FA8A01CA3296100605C5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4011744F1C8555D000080D07 /* ParkMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		401174521C8555D000080D07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				401174661C8555D000080D07 /* ParkMeTests */,
 				401174711C8555D000080D07 /* ParkMeUITests */,
 				401174501C8555D000080D07 /* Products */,
+				2AACCF931CBFE57700DC76F0 /* staff.png */,
+				2AACCF941CBFE57700DC76F0 /* student.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -230,9 +236,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AACCF951CBFE57700DC76F0 /* staff.png in Resources */,
 				400FA8A11CA3296100605C5C /* Images.xcassets in Resources */,
 				4011745D1C8555D000080D07 /* LaunchScreen.storyboard in Resources */,
 				401174581C8555D000080D07 /* Main.storyboard in Resources */,
+				2AACCF961CBFE57700DC76F0 /* student.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
