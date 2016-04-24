@@ -22,6 +22,7 @@
 		401DE0D11CBAF2A9001BF35B /* ACWS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401DE0D01CBAF2A9001BF35B /* ACWS.plist */; };
 		403D86C51CB9DAD900B9F2B0 /* Lots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D86C41CB9DAD900B9F2B0 /* Lots.swift */; };
 		403D86C91CB9E99400B9F2B0 /* BRKI.plist in Resources */ = {isa = PBXBuildFile; fileRef = 403D86C81CB9E99400B9F2B0 /* BRKI.plist */; };
+		4060390E1CCD69670046F1DA /* Error-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4060390D1CCD69670046F1DA /* Error-100.png */; };
 		4090DF981CC0680200C5685A /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4090DF971CC0680200C5685A /* launch.png */; };
 		4097E4F71CBB56E900201421 /* MCD.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4097E4F61CBB56E900201421 /* MCD.plist */; };
 		40AAE7A51CBC69DD00C649F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */; };
@@ -57,9 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0025DF3D1CCC771100DC2B22 /* Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Empty.png; sourceTree = "<group>"; };
-		0025DF3F1CCC771C00DC2B22 /* Full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Full.png; sourceTree = "<group>"; };
-		0025DF411CCC772300DC2B22 /* Medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Medium.png; sourceTree = "<group>"; };
+		0025DF3D1CCC771100DC2B22 /* Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Empty.png; path = ParkMe/Empty.png; sourceTree = "<group>"; };
+		0025DF3F1CCC771C00DC2B22 /* Full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Full.png; path = ParkMe/Full.png; sourceTree = "<group>"; };
+		0025DF411CCC772300DC2B22 /* Medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Medium.png; path = ParkMe/Medium.png; sourceTree = "<group>"; };
 		400FA8A01CA3296100605C5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		401085AE1CBCAA5F002516A4 /* SCA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SCA.plist; sourceTree = "<group>"; };
 		401085B01CBCAD5D002516A4 /* Trax.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Trax.plist; sourceTree = "<group>"; };
@@ -78,7 +79,8 @@
 		401DE0D01CBAF2A9001BF35B /* ACWS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ACWS.plist; sourceTree = "<group>"; };
 		403D86C41CB9DAD900B9F2B0 /* Lots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lots.swift; sourceTree = "<group>"; };
 		403D86C81CB9E99400B9F2B0 /* BRKI.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BRKI.plist; path = ParkMe/BRKI.plist; sourceTree = "<group>"; };
-		4090DF971CC0680200C5685A /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		4060390D1CCD69670046F1DA /* Error-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Error-100.png"; sourceTree = "<group>"; };
+		4090DF971CC0680200C5685A /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch.png; path = ParkMe/launch.png; sourceTree = "<group>"; };
 		4097E4F61CBB56E900201421 /* MCD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MCD.plist; sourceTree = "<group>"; };
 		40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		40B91D1A1CBB14A4009EF827 /* Smith.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Smith.plist; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		401174461C8555D000080D07 = {
 			isa = PBXGroup;
 			children = (
+				406039081CCD60B30046F1DA /* Pictures */,
 				40C7FAE11CBDB5F300C4D8E8 /* Firebase.framework */,
 				40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */,
 				401DE0CD1CBAEDA2001BF35B /* Annotations */,
@@ -162,15 +165,11 @@
 		401174511C8555D000080D07 /* ParkMe */ = {
 			isa = PBXGroup;
 			children = (
-				0025DF3D1CCC771100DC2B22 /* Empty.png */,
-				4090DF971CC0680200C5685A /* launch.png */,
-				0025DF411CCC772300DC2B22 /* Medium.png */,
 				401174521C8555D000080D07 /* AppDelegate.swift */,
 				401174541C8555D000080D07 /* ViewController.swift */,
 				401174561C8555D000080D07 /* Main.storyboard */,
 				4011745B1C8555D000080D07 /* LaunchScreen.storyboard */,
 				4011745E1C8555D000080D07 /* Info.plist */,
-				0025DF3F1CCC771C00DC2B22 /* Full.png */,
 				403D86C41CB9DAD900B9F2B0 /* Lots.swift */,
 				400FA8A01CA3296100605C5C /* Images.xcassets */,
 			);
@@ -214,6 +213,18 @@
 				401085B01CBCAD5D002516A4 /* Trax.plist */,
 			);
 			name = Geofencing;
+			sourceTree = "<group>";
+		};
+		406039081CCD60B30046F1DA /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				0025DF3D1CCC771100DC2B22 /* Empty.png */,
+				4090DF971CC0680200C5685A /* launch.png */,
+				0025DF411CCC772300DC2B22 /* Medium.png */,
+				4060390D1CCD69670046F1DA /* Error-100.png */,
+				0025DF3F1CCC771C00DC2B22 /* Full.png */,
+			);
+			name = Pictures;
 			sourceTree = "<group>";
 		};
 		40C7FAED1CBDBE1300C4D8E8 /* BackEnd */ = {
@@ -359,6 +370,7 @@
 				400FA8A11CA3296100605C5C /* Images.xcassets in Resources */,
 				0025DF3E1CCC771100DC2B22 /* Empty.png in Resources */,
 				0025DF421CCC772300DC2B22 /* Medium.png in Resources */,
+				4060390E1CCD69670046F1DA /* Error-100.png in Resources */,
 				401DE0D11CBAF2A9001BF35B /* ACWS.plist in Resources */,
 				401085AF1CBCAA5F002516A4 /* SCA.plist in Resources */,
 				0025DF401CCC771C00DC2B22 /* Full.png in Resources */,
