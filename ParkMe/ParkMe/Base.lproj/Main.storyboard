@@ -15,19 +15,34 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5U5-hV-H2o">
-                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <rect key="frame" x="-4" y="44" width="379" height="623"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Cyz-7K-Yaa"/>
                                 </connections>
                             </mapView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="v71-zC-pPb">
-                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <rect key="frame" x="-4" y="64" width="383" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <toolbar clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="spatial" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8aV-hq-YeK">
+                                <rect key="frame" x="0.0" y="627" width="602" height="44"/>
+                                <rect key="contentStretch" x="0.34999999999999998" y="0.0" width="1" height="1"/>
+                                <items>
+                                    <barButtonItem style="plain" id="QdJ-xf-uvW">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="vKZ-Sw-kKN">
+                                            <rect key="frame" x="20" y="11" width="22" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <segue destination="cOc-Wj-l8m" kind="show" id="kaC-GL-X6q"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -49,12 +64,67 @@
             </objects>
             <point key="canvasLocation" x="1081" y="264"/>
         </scene>
+        <!--Info Page-->
+        <scene sceneID="S46-Yu-jGy">
+            <objects>
+                <viewController id="cOc-Wj-l8m" userLabel="Info Page" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cwd-bw-Bow"/>
+                        <viewControllerLayoutGuide type="bottom" id="OXM-of-B8u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WhQ-Yo-dZW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="KhH-hw-sYv">
+                                <rect key="frame" x="20" y="83" width="126" height="160"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Medium.png" translatesAutoresizingMaskIntoConstraints="NO" id="hMO-ce-5CU">
+                                <rect key="frame" x="20" y="277" width="126" height="168"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Full.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yfr-7b-W5d">
+                                <rect key="frame" x="20" y="475" width="126" height="160"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oRN-t7-4PL">
+                                <rect key="frame" x="154" y="80" width="201" height="163"/>
+                                <color key="backgroundColor" white="1" alpha="0.12408577127659574" colorSpace="calibratedWhite"/>
+                                <string key="text">Green means the lot has a low density. Which means there might be a lot of empty spaces avaliable. If you tap on the pin located deirectly on the lot area, you can see the name of the lot and its density.</string>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="miD-ac-JjY">
+                                <rect key="frame" x="154" y="272" width="201" height="177"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12408577129999999" colorSpace="calibratedRGB"/>
+                                <string key="text">Orange means the lot has a medium density. Which means there migh be less than half of the spots avaliable in this lot. If you tap on the pin located deirectly on the lot area, you can see the name of the lot and its density.</string>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y4J-B3-vxm">
+                                <rect key="frame" x="154" y="475" width="201" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="0.12408577129999999" colorSpace="calibratedWhite"/>
+                                <string key="text">Red means the lot has a high density. Which means, the lot os alomost full or is already full. If you tap on the pin located deirectly on the lot area, you can see the name of the lot and its density.</string>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.82172250089999999" green="0.87080995549999995" blue="0.87178910340000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fiR-EI-jJK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048.5" y="1148.5"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="67c-wb-vcu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RdS-ZW-E6G" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wbT-CO-YDd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -69,4 +139,9 @@
             <point key="canvasLocation" x="269" y="264"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Empty.png" width="240" height="322"/>
+        <image name="Full.png" width="250" height="328"/>
+        <image name="Medium.png" width="244" height="346"/>
+    </resources>
 </document>

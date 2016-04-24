@@ -148,7 +148,7 @@ extension ViewController: MKMapViewDelegate {
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     {
         let locationArray = locations as NSArray
-        var lastLocation = locationArray.lastObject as! CLLocation
+        let lastLocation = locationArray.lastObject as! CLLocation
         updateUserLoc(lastLocation)
     }
     
