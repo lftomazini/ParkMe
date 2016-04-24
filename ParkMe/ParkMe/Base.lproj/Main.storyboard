@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -28,13 +29,12 @@
                                 <rect key="frame" x="-4" y="64" width="383" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <toolbar clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="spatial" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8aV-hq-YeK">
-                                <rect key="frame" x="0.0" y="627" width="602" height="44"/>
-                                <rect key="contentStretch" x="0.34999999999999998" y="0.0" width="1" height="1"/>
+                            <toolbar clipsSubviews="YES" contentMode="scaleAspectFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="8aV-hq-YeK">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" id="QdJ-xf-uvW">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="vKZ-Sw-kKN">
-                                            <rect key="frame" x="20" y="11" width="22" height="22"/>
+                                            <rect key="frame" x="337" y="11" width="22" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <connections>
                                                 <segue destination="cOc-Wj-l8m" kind="show" id="kaC-GL-X6q"/>
@@ -48,10 +48,13 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="v71-zC-pPb" secondAttribute="trailing" constant="-20" id="3sb-oA-CW5"/>
                             <constraint firstItem="v71-zC-pPb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="7U8-Ho-Y05"/>
+                            <constraint firstItem="8aV-hq-YeK" firstAttribute="centerX" secondItem="v71-zC-pPb" secondAttribute="centerX" id="9Hb-1T-hAH"/>
+                            <constraint firstItem="8aV-hq-YeK" firstAttribute="trailing" secondItem="5U5-hV-H2o" secondAttribute="trailing" id="AVx-aY-pI8"/>
                             <constraint firstItem="v71-zC-pPb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="QhM-oQ-LQJ"/>
                             <constraint firstItem="5U5-hV-H2o" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="St4-RK-MiX"/>
                             <constraint firstItem="5U5-hV-H2o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Wig-py-LNb"/>
                             <constraint firstAttribute="trailing" secondItem="5U5-hV-H2o" secondAttribute="trailing" id="c6Y-Ot-Rsv"/>
+                            <constraint firstItem="8aV-hq-YeK" firstAttribute="baseline" secondItem="wfy-db-euE" secondAttribute="top" id="hO9-JG-FbF"/>
                             <constraint firstItem="5U5-hV-H2o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="44" id="qYn-vX-mKZ"/>
                         </constraints>
                     </view>
@@ -62,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1081" y="264"/>
+            <point key="canvasLocation" x="1080.5" y="263.5"/>
         </scene>
         <!--Info Page-->
         <scene sceneID="S46-Yu-jGy">
