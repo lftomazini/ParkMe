@@ -166,7 +166,31 @@
                     <view key="view" contentMode="scaleToFill" id="eqY-qb-kfH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XST-99-pFH">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BKi-4I-ZHG">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96Y-x2-EJo">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XST-99-pFH" secondAttribute="trailing" id="Qhr-DR-wUA"/>
+                            <constraint firstItem="pAw-iU-epO" firstAttribute="top" secondItem="XST-99-pFH" secondAttribute="bottom" id="RO2-5O-HSa"/>
+                            <constraint firstItem="XST-99-pFH" firstAttribute="leading" secondItem="eqY-qb-kfH" secondAttribute="leading" id="VcP-c2-PPb"/>
+                            <constraint firstItem="XST-99-pFH" firstAttribute="top" secondItem="y0y-q8-Mij" secondAttribute="bottom" id="W6f-xf-rOE"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Report" id="6Ti-Po-kSb"/>
                 </viewController>
