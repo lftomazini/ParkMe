@@ -19,6 +19,7 @@
 		4011745D1C8555D000080D07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4011745B1C8555D000080D07 /* LaunchScreen.storyboard */; };
 		401174681C8555D000080D07 /* ParkMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401174671C8555D000080D07 /* ParkMeTests.swift */; };
 		401174731C8555D000080D07 /* ParkMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401174721C8555D000080D07 /* ParkMeUITests.swift */; };
+		40162E4A1CCD9CFC002EC230 /* Error-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 40162E491CCD9CFC002EC230 /* Error-48.png */; };
 		401DE0D11CBAF2A9001BF35B /* ACWS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401DE0D01CBAF2A9001BF35B /* ACWS.plist */; };
 		403D86C51CB9DAD900B9F2B0 /* Lots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D86C41CB9DAD900B9F2B0 /* Lots.swift */; };
 		403D86C91CB9E99400B9F2B0 /* BRKI.plist in Resources */ = {isa = PBXBuildFile; fileRef = 403D86C81CB9E99400B9F2B0 /* BRKI.plist */; };
@@ -76,6 +77,7 @@
 		4011746E1C8555D000080D07 /* ParkMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		401174721C8555D000080D07 /* ParkMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkMeUITests.swift; sourceTree = "<group>"; };
 		401174741C8555D000080D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40162E491CCD9CFC002EC230 /* Error-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Error-48.png"; sourceTree = "<group>"; };
 		401DE0D01CBAF2A9001BF35B /* ACWS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ACWS.plist; sourceTree = "<group>"; };
 		403D86C41CB9DAD900B9F2B0 /* Lots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lots.swift; sourceTree = "<group>"; };
 		403D86C81CB9E99400B9F2B0 /* BRKI.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BRKI.plist; path = ParkMe/BRKI.plist; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				0025DF3D1CCC771100DC2B22 /* Empty.png */,
 				4090DF971CC0680200C5685A /* launch.png */,
 				0025DF411CCC772300DC2B22 /* Medium.png */,
+				40162E491CCD9CFC002EC230 /* Error-48.png */,
 				4060390D1CCD69670046F1DA /* Error-100.png */,
 				0025DF3F1CCC771C00DC2B22 /* Full.png */,
 			);
@@ -370,6 +373,7 @@
 				400FA8A11CA3296100605C5C /* Images.xcassets in Resources */,
 				0025DF3E1CCC771100DC2B22 /* Empty.png in Resources */,
 				0025DF421CCC772300DC2B22 /* Medium.png in Resources */,
+				40162E4A1CCD9CFC002EC230 /* Error-48.png in Resources */,
 				4060390E1CCD69670046F1DA /* Error-100.png in Resources */,
 				401DE0D11CBAF2A9001BF35B /* ACWS.plist in Resources */,
 				401085AF1CBCAA5F002516A4 /* SCA.plist in Resources */,

@@ -14,6 +14,9 @@ import Firebase
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
+    
+    @IBOutlet weak var reportButton: UIButton!
+        
     let locationManager =  CLLocationManager()
     /* Central coordinate of Bucknell */
     let BU_Latitude = 40.954582
@@ -41,7 +44,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             self.locationManager.requestAlwaysAuthorization()
             self.locationManager.requestWhenInUseAuthorization()
         }
-        
+
         self.mapView.delegate = self;
 
         let initialLocation = CLLocation(latitude: BU_Latitude, longitude: BU_Longitude);
