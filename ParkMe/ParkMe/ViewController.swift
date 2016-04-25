@@ -29,6 +29,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var MCDLot = Lots(filename: "MCD", name:"McDonell", density: "LOW", type: lotsDecalTypes.Student)
     var SCALot = Lots(filename: "SCA", name: "South Campus Apartments", density: "LOW", type: lotsDecalTypes.Student)
     var TraxLot = Lots(filename: "Trax", name: "Trax", density: "HIGH", type: lotsDecalTypes.Student)
+    var CornerHouseLot = Lots(filename: "CornerHouse", name: "Corner House", density: "HIGH", type: lotsDecalTypes.Student)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,6 +84,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         mapView.addAnnotation(Annotation(lot: MCDLot)); // McDonell
         mapView.addAnnotation(Annotation(lot: SCALot)) // South Campus Apartments
         mapView.addAnnotation(Annotation(lot: TraxLot)) // Trax
+        mapView.addAnnotation(Annotation(lot: CornerHouseLot)) // Corner House
     }
     
     /* Circle parking lots and make polygons*/
@@ -99,6 +101,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         addBoundary(MCDLot);
         addBoundary(SCALot);
         addBoundary(TraxLot);
+        addBoundary(CornerHouseLot)
     }
     
     /* Shake to recenter */
