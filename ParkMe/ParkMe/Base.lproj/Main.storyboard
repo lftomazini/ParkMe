@@ -1,93 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="to1-NR-8xb">
-=======
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="RdS-ZW-E6G">
->>>>>>> AC
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-<<<<<<< HEAD
         <!--MapViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="MapViewController" title="MapViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="ParkMe" customModuleProvider="target" sceneMemberID="viewController">
-=======
-        <!--ParkMe-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController modalPresentationStyle="currentContext" id="BYZ-38-t0r" customClass="ViewController" customModule="ParkMe" customModuleProvider="target" sceneMemberID="viewController">
->>>>>>> AC
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5U5-hV-H2o">
-                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5U5-hV-H2o">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Cyz-7K-Yaa"/>
                                 </connections>
                             </mapView>
-                            <searchBar contentMode="redraw" placeholder="Search for a building" translatesAutoresizingMaskIntoConstraints="NO" id="v71-zC-pPb">
-                                <rect key="frame" x="0.0" y="64" width="414" height="44"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="f9B-8l-bju">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <toolbar clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aV-hq-YeK">
-                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7MQ-Du-TjS"/>
-                                    <barButtonItem style="plain" id="QdJ-xf-uvW">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="vKZ-Sw-kKN">
-                                            <rect key="frame" x="372" y="11" width="22" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <connections>
-                                                <segue destination="cOc-Wj-l8m" kind="push" id="kaC-GL-X6q"/>
-                                            </connections>
-                                        </button>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngL-xD-SgZ">
-                                <rect key="frame" x="20" y="614" width="52" height="55"/>
-                                <state key="normal" image="Error-48.png"/>
-                                <connections>
-                                    <segue destination="bD9-Ch-7vv" kind="push" id="5CA-Sw-n9w"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="v71-zC-pPb" secondAttribute="trailing" constant="-20" id="3sb-oA-CW5"/>
-                            <constraint firstItem="v71-zC-pPb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="7U8-Ho-Y05"/>
-                            <constraint firstItem="8aV-hq-YeK" firstAttribute="centerX" secondItem="v71-zC-pPb" secondAttribute="centerX" id="9Hb-1T-hAH"/>
-                            <constraint firstItem="8aV-hq-YeK" firstAttribute="trailing" secondItem="5U5-hV-H2o" secondAttribute="trailing" id="AVx-aY-pI8"/>
-                            <constraint firstItem="8aV-hq-YeK" firstAttribute="top" secondItem="ngL-xD-SgZ" secondAttribute="bottom" constant="15" id="LWd-2X-f66"/>
-                            <constraint firstItem="v71-zC-pPb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="QhM-oQ-LQJ"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="ngL-xD-SgZ" secondAttribute="leading" id="R1e-Lf-Ycb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f9B-8l-bju" secondAttribute="trailing" constant="-20" id="HI0-N0-Zbk"/>
+                            <constraint firstItem="f9B-8l-bju" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="KZC-w4-x9x"/>
                             <constraint firstItem="5U5-hV-H2o" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="St4-RK-MiX"/>
-                            <constraint firstItem="5U5-hV-H2o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Wig-py-LNb"/>
+                            <constraint firstItem="5U5-hV-H2o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-59" id="Wig-py-LNb"/>
                             <constraint firstAttribute="trailing" secondItem="5U5-hV-H2o" secondAttribute="trailing" id="c6Y-Ot-Rsv"/>
-                            <constraint firstItem="8aV-hq-YeK" firstAttribute="baseline" secondItem="wfy-db-euE" secondAttribute="top" id="hO9-JG-FbF"/>
-                            <constraint firstItem="5U5-hV-H2o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="44" id="qYn-vX-mKZ"/>
+                            <constraint firstItem="f9B-8l-bju" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="iS8-Nl-m8i"/>
+                            <constraint firstItem="5U5-hV-H2o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-10" id="qYn-vX-mKZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="ParkMe" id="n5U-a9-KBa"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="MapView" destination="5U5-hV-H2o" id="AJC-Bg-SMD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="237" y="250"/>
         </scene>
         <!--StudentOrStaffViewController-->
@@ -253,119 +211,10 @@
                                     <constraint firstItem="J1q-wb-vPx" firstAttribute="top" secondItem="bGC-KX-tkD" secondAttribute="bottom" constant="109" id="6ED-DP-8h0"/>
                                     <constraint firstItem="3sp-8e-ltV" firstAttribute="height" secondItem="zbF-zf-8Jg" secondAttribute="height" id="YKJ-bw-2kE"/>
                                 </constraints>
-=======
-            <point key="canvasLocation" x="576" y="249"/>
-        </scene>
-        <!--Info Page-->
-        <scene sceneID="S46-Yu-jGy">
-            <objects>
-                <viewController id="cOc-Wj-l8m" userLabel="Info Page" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Cwd-bw-Bow"/>
-                        <viewControllerLayoutGuide type="bottom" id="OXM-of-B8u"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleAspectFill" id="WhQ-Yo-dZW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="KhH-hw-sYv">
-                                <rect key="frame" x="29" y="112" width="138" height="185"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Medium.png" translatesAutoresizingMaskIntoConstraints="NO" id="hMO-ce-5CU">
-                                <rect key="frame" x="29" y="323" width="138" height="190"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Full.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yfr-7b-W5d">
-                                <rect key="frame" x="29" y="538" width="138" height="172"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oRN-t7-4PL">
-                                <rect key="frame" x="181" y="123" width="201" height="163"/>
-                                <color key="backgroundColor" white="1" alpha="0.12408577127659574" colorSpace="calibratedWhite"/>
-                                <string key="text">Green means the lot has a low density. Which means there might be a lot of empty spaces avaliable. If you tap on the pin located deirectly on the lot area, you can see the name of the lot and its density.</string>
-                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="miD-ac-JjY">
-                                <rect key="frame" x="181" y="329" width="201" height="177"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12408577129999999" colorSpace="calibratedRGB"/>
-                                <string key="text">Orange means the lot has a medium density. Which means there migh be less than half of the spots avaliable in this lot. If you tap on the pin located deirectly on the lot area, you can see the name of the lot and its density.</string>
-                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y4J-B3-vxm">
-                                <rect key="frame" x="181" y="544" width="201" height="160"/>
-                                <color key="backgroundColor" white="1" alpha="0.12408577129999999" colorSpace="calibratedWhite"/>
-                                <string key="text">Red means the lot has a high density. Which means, the lot os alomost full or is already full. If you tap on the pin located deirectly on the lot area, you can see the name of the lot and its density.</string>
-                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.82172250089999999" green="0.87080995549999995" blue="0.87178910340000004" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Info" id="Mqz-hQ-W41"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fiR-EI-jJK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="657" y="1132"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="67c-wb-vcu">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RdS-ZW-E6G" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wbT-CO-YDd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LM6-Iy-Xku"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="p6L-di-8GE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="143.46666666666667" y="249.91999999999999"/>
-        </scene>
-        <!--reportView-->
-        <scene sceneID="Eju-fO-u2a">
-            <objects>
-                <viewController title="reportView" id="bD9-Ch-7vv" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y0y-q8-Mij"/>
-                        <viewControllerLayoutGuide type="bottom" id="pAw-iU-epO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eqY-qb-kfH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XST-99-pFH">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BKi-4I-ZHG">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96Y-x2-EJo">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
->>>>>>> AC
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-<<<<<<< HEAD
                             <constraint firstItem="JzD-2C-d4D" firstAttribute="leading" secondItem="NXc-A9-3SJ" secondAttribute="leadingMargin" id="4SP-WS-g8R"/>
                             <constraint firstItem="E0O-9A-8xV" firstAttribute="top" secondItem="JzD-2C-d4D" secondAttribute="bottom" id="G3l-ab-FxX"/>
                             <constraint firstItem="JzD-2C-d4D" firstAttribute="top" secondItem="0Eu-Bc-ZYu" secondAttribute="bottom" id="V7g-G5-eLO"/>
@@ -385,25 +234,4 @@
     <inferredMetricsTieBreakers>
         <segue reference="y4w-Oh-4xt"/>
     </inferredMetricsTieBreakers>
-=======
-                            <constraint firstAttribute="trailing" secondItem="XST-99-pFH" secondAttribute="trailing" id="Qhr-DR-wUA"/>
-                            <constraint firstItem="pAw-iU-epO" firstAttribute="top" secondItem="XST-99-pFH" secondAttribute="bottom" id="RO2-5O-HSa"/>
-                            <constraint firstItem="XST-99-pFH" firstAttribute="leading" secondItem="eqY-qb-kfH" secondAttribute="leading" id="VcP-c2-PPb"/>
-                            <constraint firstItem="XST-99-pFH" firstAttribute="top" secondItem="y0y-q8-Mij" secondAttribute="bottom" id="W6f-xf-rOE"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Report" id="6Ti-Po-kSb"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="v2V-SK-f4W" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="123" y="1086"/>
-        </scene>
-    </scenes>
-    <resources>
-        <image name="Empty.png" width="240" height="322"/>
-        <image name="Error-48.png" width="48" height="48"/>
-        <image name="Full.png" width="250" height="328"/>
-        <image name="Medium.png" width="244" height="346"/>
-    </resources>
->>>>>>> AC
 </document>

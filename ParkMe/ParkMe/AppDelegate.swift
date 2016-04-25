@@ -7,15 +7,14 @@
 //
 
 import UIKit
-import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+
+
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-<<<<<<< HEAD
 
         let launchedBefore = NSUserDefaults.standardUserDefaults().boolForKey("launchedBefore")
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
@@ -37,23 +36,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
             NSUserDefaults.standardUserDefaults().setBool(true, forKey: "launchedBefore")
         }
-=======
-        // Override point for customization after application launch.
-        sleep(1);
-        let navigationBarAppearace = UINavigationBar.appearance()
-        // Sets navigation bar's color to blue
-        navigationBarAppearace.barTintColor = UIColorFromRGB(0x3AAAFE)
-        // Sets text color within the navigation bar to be white
-        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
-        // Sets status bar text color to be white
-        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
-        // Sets text style in navigation bar
-        let attrs = [
-            NSForegroundColorAttributeName : UIColor.whiteColor(),
-            NSFontAttributeName : UIFont(name: "ChalkboardSE-Bold", size: 22)!
-        ]
-        navigationBarAppearace.titleTextAttributes = attrs
->>>>>>> AC
         
         return true
     }
@@ -79,15 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    
-    func UIColorFromRGB(rgbValue: UInt) -> UIColor {
-        return UIColor(
-            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
-            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
-            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
-            alpha: CGFloat(1.0)
-        )
-    }
+
 
 }
 
