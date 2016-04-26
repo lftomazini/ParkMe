@@ -12,11 +12,11 @@ import CoreLocation
 import Firebase
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
-
+    
     @IBOutlet weak var mapView: MKMapView!
     
     @IBOutlet weak var reportButton: UIButton!
-        
+    
     let locationManager =  CLLocationManager()
     /* Central coordinate of Bucknell */
     let BU_Latitude = 40.954582
@@ -45,9 +45,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             self.locationManager.requestAlwaysAuthorization()
             self.locationManager.requestWhenInUseAuthorization()
         }
-
+        
         self.mapView.delegate = self;
-
+        
         let initialLocation = CLLocation(latitude: BU_Latitude, longitude: BU_Longitude);
         centerMapOnLocation(initialLocation);
         
@@ -123,23 +123,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 }
 
 extension ViewController: MKMapViewDelegate {
-
+    
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
-            let polygonView = MKPolygonRenderer(overlay: overlay)
-            if (overlay.title! == "HIGH") {
-                polygonView.fillColor = UIColor.redColor().colorWithAlphaComponent(0.4)
-            } else if (overlay.title! == "MILD") {
-                polygonView.fillColor = UIColor.orangeColor().colorWithAlphaComponent(0.4)
-            } else if (overlay.title! == "LOW"){
-                polygonView.fillColor = UIColor.greenColor().colorWithAlphaComponent(0.4)
-            } else {
-                polygonView.fillColor = UIColor.clearColor()
-            }
-            polygonView.strokeColor = UIColor.clearColor()
+        let polygonView = MKPolygonRenderer(overlay: overlay)
+        if (overlay.title! == "HIGH") {
+            polygonView.fillColor = UIColor.redColor().colorWithAlphaComponent(0.4)
+        } else if (overlay.title! == "MILD") {
+            polygonView.fillColor = UIColor.orangeColor().colorWithAlphaComponent(0.4)
+        } else if (overlay.title! == "LOW"){
+            polygonView.fillColor = UIColor.greenColor().colorWithAlphaComponent(0.4)
+        } else {
+            polygonView.fillColor = UIColor.clearColor()
+        }
+        polygonView.strokeColor = UIColor.clearColor()
         
-            polygonView.lineWidth = 2
+        polygonView.lineWidth = 2
         
-            return polygonView
+        return polygonView
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
@@ -147,10 +147,36 @@ extension ViewController: MKMapViewDelegate {
         print(error)
     }
     
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        let reuseId = "parkingLots"
+        
+        if let annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId) {
+            annotationView.annotation = annotation
+            return annotationView
+        } else {
+            let annotationView = MKPinAnnotationView(annotation:annotation, reuseIdentifier:reuseId)
+            annotationView.enabled = true
+            annotationView.canShowCallout = true
+            
+            let reportBtnImg = UIImage(named: "Error-48") as UIImage?
+            let reportBtn = UIButton(type: UIButtonType.Custom) as UIButton
+            reportBtn.frame = CGRectMake(0, 0, 32, 32)
+            reportBtn.setImage(reportBtnImg, forState: .Normal)
+            annotationView.rightCalloutAccessoryView = reportBtn
+            return annotationView
+        }
+    }
+    
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        if control == view.rightCalloutAccessoryView {
+            performSegueWithIdentifier("reportView", sender: self)
+        }
+    }
+    
     
     /*
-    Update database upon location update
-    */
+     Update database upon location update
+     */
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     {
         let locationArray = locations as NSArray

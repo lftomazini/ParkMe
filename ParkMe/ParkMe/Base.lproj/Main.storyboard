@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5U5-hV-H2o">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5U5-hV-H2o">
                                 <rect key="frame" x="0.0" y="44" width="414" height="692"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Cyz-7K-Yaa"/>
@@ -44,13 +44,6 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngL-xD-SgZ">
-                                <rect key="frame" x="20" y="614" width="52" height="55"/>
-                                <state key="normal" image="Error-48.png"/>
-                                <connections>
-                                    <segue destination="bD9-Ch-7vv" kind="push" id="5CA-Sw-n9w"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -58,9 +51,7 @@
                             <constraint firstItem="v71-zC-pPb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="7U8-Ho-Y05"/>
                             <constraint firstItem="8aV-hq-YeK" firstAttribute="centerX" secondItem="v71-zC-pPb" secondAttribute="centerX" id="9Hb-1T-hAH"/>
                             <constraint firstItem="8aV-hq-YeK" firstAttribute="trailing" secondItem="5U5-hV-H2o" secondAttribute="trailing" id="AVx-aY-pI8"/>
-                            <constraint firstItem="8aV-hq-YeK" firstAttribute="top" secondItem="ngL-xD-SgZ" secondAttribute="bottom" constant="15" id="LWd-2X-f66"/>
                             <constraint firstItem="v71-zC-pPb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="QhM-oQ-LQJ"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="ngL-xD-SgZ" secondAttribute="leading" id="R1e-Lf-Ycb"/>
                             <constraint firstItem="5U5-hV-H2o" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="St4-RK-MiX"/>
                             <constraint firstItem="5U5-hV-H2o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Wig-py-LNb"/>
                             <constraint firstAttribute="trailing" secondItem="5U5-hV-H2o" secondAttribute="trailing" id="c6Y-Ot-Rsv"/>
@@ -72,6 +63,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="MapView" destination="5U5-hV-H2o" id="AJC-Bg-SMD"/>
+                        <segue destination="NZ6-MM-RxW" kind="push" identifier="reportView" id="qMp-Fd-BSI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -155,53 +147,28 @@
             </objects>
             <point key="canvasLocation" x="143.46666666666667" y="249.91999999999999"/>
         </scene>
-        <!--reportView-->
-        <scene sceneID="Eju-fO-u2a">
+        <!--Report-->
+        <scene sceneID="4Dh-ZV-i1F">
             <objects>
-                <viewController title="reportView" id="bD9-Ch-7vv" sceneMemberID="viewController">
+                <viewController id="NZ6-MM-RxW" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y0y-q8-Mij"/>
-                        <viewControllerLayoutGuide type="bottom" id="pAw-iU-epO"/>
+                        <viewControllerLayoutGuide type="top" id="JMV-OZ-XCA"/>
+                        <viewControllerLayoutGuide type="bottom" id="GGS-L0-s2h"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eqY-qb-kfH">
+                    <view key="view" contentMode="scaleToFill" id="qW8-gA-uDA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XST-99-pFH">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BKi-4I-ZHG">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96Y-x2-EJo">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="XST-99-pFH" secondAttribute="trailing" id="Qhr-DR-wUA"/>
-                            <constraint firstItem="pAw-iU-epO" firstAttribute="top" secondItem="XST-99-pFH" secondAttribute="bottom" id="RO2-5O-HSa"/>
-                            <constraint firstItem="XST-99-pFH" firstAttribute="leading" secondItem="eqY-qb-kfH" secondAttribute="leading" id="VcP-c2-PPb"/>
-                            <constraint firstItem="XST-99-pFH" firstAttribute="top" secondItem="y0y-q8-Mij" secondAttribute="bottom" id="W6f-xf-rOE"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Report" id="6Ti-Po-kSb"/>
+                    <navigationItem key="navigationItem" title="Report" id="7SD-ap-UH7"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="v2V-SK-f4W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vw1-VF-W9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="123" y="1086"/>
+            <point key="canvasLocation" x="78" y="1148"/>
         </scene>
     </scenes>
     <resources>
         <image name="Empty.png" width="240" height="322"/>
-        <image name="Error-48.png" width="48" height="48"/>
         <image name="Full.png" width="250" height="328"/>
         <image name="Medium.png" width="244" height="346"/>
     </resources>
