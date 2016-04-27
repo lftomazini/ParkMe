@@ -169,7 +169,7 @@ extension ViewController: MKMapViewDelegate {
     
     func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if control == view.rightCalloutAccessoryView {
-            performSegueWithIdentifier("reportView", sender: self)
+            performSegueWithIdentifier("reportView", sender: view)
         }
     }
     
@@ -182,6 +182,13 @@ extension ViewController: MKMapViewDelegate {
         let locationArray = locations as NSArray
         let lastLocation = locationArray.lastObject as! CLLocation
         updateUserLoc(lastLocation)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "reportView") {
+            let destViewController = segue.destinationViewController as! reportViewController
+            destViewController.annotation = ((sender as! MKAnnotationView).annotation) as? Annotation
+        }
     }
     
 }
