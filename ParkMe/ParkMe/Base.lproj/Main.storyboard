@@ -146,46 +146,22 @@
                         <viewControllerLayoutGuide type="top" id="Cwd-bw-Bow"/>
                         <viewControllerLayoutGuide type="bottom" id="OXM-of-B8u"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleAspectFill" id="WhQ-Yo-dZW">
+                    <view key="view" contentMode="scaleAspectFit" id="WhQ-Yo-dZW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="KhH-hw-sYv">
-                                <rect key="frame" x="29" y="112" width="138" height="185"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Info1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kt6-eE-w8T">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Medium.png" translatesAutoresizingMaskIntoConstraints="NO" id="hMO-ce-5CU">
-                                <rect key="frame" x="29" y="323" width="138" height="190"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Full.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yfr-7b-W5d">
-                                <rect key="frame" x="29" y="538" width="138" height="172"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oRN-t7-4PL">
-                                <rect key="frame" x="181" y="123" width="201" height="163"/>
-                                <color key="backgroundColor" white="1" alpha="0.12408577127659574" colorSpace="calibratedWhite"/>
-                                <string key="text">Green means the lot has a low density. Which means there might be a lot of empty spaces avaliable. If you tap on the pin located deirectly on the lot area, you can see the name of the lot and its density.</string>
-                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="miD-ac-JjY">
-                                <rect key="frame" x="181" y="329" width="201" height="177"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12408577129999999" colorSpace="calibratedRGB"/>
-                                <string key="text">Orange means the lot has a medium density. Which means there migh be less than half of the spots avaliable in this lot. If you tap on the pin located deirectly on the lot area, you can see the name of the lot and its density.</string>
-                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y4J-B3-vxm">
-                                <rect key="frame" x="181" y="544" width="201" height="160"/>
-                                <color key="backgroundColor" white="1" alpha="0.12408577129999999" colorSpace="calibratedWhite"/>
-                                <string key="text">Red means the lot has a high density. Which means, the lot os alomost full or is already full. If you tap on the pin located deirectly on the lot area, you can see the name of the lot and its density.</string>
-                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.82172250089999999" green="0.87080995549999995" blue="0.87178910340000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Kt6-eE-w8T" secondAttribute="trailing" id="02M-SN-6W8"/>
+                            <constraint firstItem="Kt6-eE-w8T" firstAttribute="leading" secondItem="WhQ-Yo-dZW" secondAttribute="leading" id="gGB-vw-QqN"/>
+                            <constraint firstItem="Kt6-eE-w8T" firstAttribute="bottom" secondItem="OXM-of-B8u" secondAttribute="top" id="j6s-7u-uNz"/>
+                            <constraint firstItem="Kt6-eE-w8T" firstAttribute="top" secondItem="Cwd-bw-Bow" secondAttribute="bottom" id="mgW-mn-xeq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Info" id="Mqz-hQ-W41"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -217,9 +193,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Empty.png" width="240" height="322"/>
-        <image name="Full.png" width="250" height="328"/>
-        <image name="Medium.png" width="244" height="346"/>
+        <image name="Info1.png" width="832" height="1348"/>
         <image name="bucknell.PNG" width="500" height="323"/>
     </resources>
 </document>
