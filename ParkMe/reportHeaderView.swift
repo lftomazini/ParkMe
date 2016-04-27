@@ -9,7 +9,8 @@
 import UIKit
 
 class reportHeaderView: UIView {    
-
+    
     @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var lotNameLabel: UILabel!
     
 }

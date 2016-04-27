@@ -23,13 +23,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     let BU_Longitude = -76.883322
     
     /* Initializing Parking Lots instances */
-    var BRKILot = Lots(filename: "BRKI", name: "BRKI", density: "HIGH", type: lotsDecalTypes.Student)
-    var ACWSLot = Lots(filename: "ACWS", name:"ACWS", density: "MILD", type: lotsDecalTypes.Student)
-    var SMLot = Lots(filename: "Smith", name:"Smith", density: "LOW", type: lotsDecalTypes.Student)
-    var MCDLot = Lots(filename: "MCD", name:"McDonell", density: "LOW", type: lotsDecalTypes.Student)
-    var SCALot = Lots(filename: "SCA", name: "South Campus Apartments", density: "LOW", type: lotsDecalTypes.Student)
-    var TraxLot = Lots(filename: "Trax", name: "Trax", density: "HIGH", type: lotsDecalTypes.Student)
-    var CornerHouseLot = Lots(filename: "CornerHouse", name: "Corner House", density: "HIGH", type: lotsDecalTypes.Student)
+    var BRKILot = Lots(filename: "BRKI", name: "BRKI", density: "HIGH", type: lotsDecalTypes.Student, imageName: "Breakiron.png")
+    var ACWSLot = Lots(filename: "ACWS", name:"ACWS", density: "MILD", type: lotsDecalTypes.Student, imageName: "AcademicWest.png")
+    var SMLot = Lots(filename: "Smith", name:"Smith", density: "LOW", type: lotsDecalTypes.Student, imageName: "Smith.png")
+    var MCDLot = Lots(filename: "MCD", name:"McDonell", density: "LOW", type: lotsDecalTypes.Student, imageName: "McDonnell.png")
+    var SCALot = Lots(filename: "SCA", name: "South Campus Apartments", density: "LOW", type: lotsDecalTypes.Student, imageName: "South Campus Apartment.png")
+    var TraxLot = Lots(filename: "Trax", name: "Trax", density: "HIGH", type: lotsDecalTypes.Student, imageName: "Trax.png")
+    var CornerHouseLot = Lots(filename: "CornerHouse", name: "Corner House", density: "HIGH", type: lotsDecalTypes.Student, imageName: "cornerhouse.png")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -169,7 +169,7 @@ extension ViewController: MKMapViewDelegate {
     
     func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if control == view.rightCalloutAccessoryView {
-            performSegueWithIdentifier("reportView", sender: self)
+            performSegueWithIdentifier("reportView", sender: view)
         }
     }
     
@@ -182,6 +182,13 @@ extension ViewController: MKMapViewDelegate {
         let locationArray = locations as NSArray
         let lastLocation = locationArray.lastObject as! CLLocation
         updateUserLoc(lastLocation)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "reportView") {
+            let destViewController = segue.destinationViewController as! reportViewController
+            destViewController.annotation = ((sender as! MKAnnotationView).annotation) as? Annotation
+        }
     }
     
 }
