@@ -92,16 +92,25 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bucknell.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="CBJ-uE-9SG">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3n-tX-D5k">
+                                            <rect key="frame" x="183.5" y="84.5" width="48.5" height="31.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
+                                        <constraint firstItem="q3n-tX-D5k" firstAttribute="centerY" secondItem="3GO-M4-0r9" secondAttribute="centerY" id="169-zL-CNO"/>
                                         <constraint firstAttribute="bottom" secondItem="CBJ-uE-9SG" secondAttribute="bottom" id="44Z-ZJ-x3c"/>
                                         <constraint firstItem="CBJ-uE-9SG" firstAttribute="top" secondItem="3GO-M4-0r9" secondAttribute="top" id="Dxb-8I-rSr"/>
                                         <constraint firstItem="CBJ-uE-9SG" firstAttribute="leading" secondItem="3GO-M4-0r9" secondAttribute="leading" id="TTC-wO-IxA"/>
                                         <constraint firstAttribute="trailing" secondItem="CBJ-uE-9SG" secondAttribute="trailing" id="VIz-qW-ZuC"/>
+                                        <constraint firstItem="q3n-tX-D5k" firstAttribute="centerX" secondItem="3GO-M4-0r9" secondAttribute="centerX" id="xYR-cY-coP"/>
                                     </constraints>
                                     <connections>
                                         <outlet property="backgroundImageView" destination="CBJ-uE-9SG" id="vvt-Tc-KFk"/>
+                                        <outlet property="lotNameLabel" destination="q3n-tX-D5k" id="fSU-my-fZP"/>
                                     </connections>
                                 </view>
                                 <prototypes>
@@ -152,7 +161,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="KhH-hw-sYv">
                                 <rect key="frame" x="29" y="112" width="138" height="185"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Medium.png" translatesAutoresizingMaskIntoConstraints="NO" id="hMO-ce-5CU">
                                 <rect key="frame" x="29" y="323" width="138" height="190"/>

@@ -10,9 +10,9 @@ import UIKit
 
 class reportViewController: UIViewController {
     
-    
-    
     @IBOutlet weak var tableView: UITableView!
+    
+    var annotation: Annotation!
     
     private let tableHeaderCutAway: CGFloat = 50.0
     
@@ -36,9 +36,12 @@ class reportViewController: UIViewController {
         headerMaskLayer = CAShapeLayer()
         headerMaskLayer.fillColor = UIColor.blackColor().CGColor
         headerView.layer.mask = headerMaskLayer
+        
+        updateUI()
 
         // Do any additional setup after loading the view.
         updateHeaderView()
+        
     }
     
     override func viewWillLayoutSubviews() {
@@ -68,6 +71,12 @@ class reportViewController: UIViewController {
         path.addLineToPoint(CGPoint(x: headerRect.width, y: headerRect.height))
         path.addLineToPoint(CGPoint(x: 0, y: headerRect.height - tableHeaderCutAway))
         headerMaskLayer?.path = path.CGPath
+        
+    }
+    
+    func updateUI() {
+        
+        headerView.lotNameLabel.text = annotation.title!
         
     }
 
