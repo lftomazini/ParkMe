@@ -22,5 +22,5 @@ class Annotation: NSObject, MKAnnotation {
         self.subtitle = "Density: \(lot.density)"
         self.imageName = lot.imageName
     }
-    
+        
 }

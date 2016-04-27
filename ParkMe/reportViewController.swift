@@ -69,7 +69,7 @@ class reportViewController: UIViewController {
         path.moveToPoint(CGPoint(x: 0, y: 0))
         path.addLineToPoint(CGPoint(x: headerRect.width, y: 0))
         path.addLineToPoint(CGPoint(x: headerRect.width, y: headerRect.height))
-        path.addLineToPoint(CGPoint(x: 0, y: headerRect.height - tableHeaderCutAway))
+        path.addLineToPoint(CGPoint(x: 0, y: headerRect.height))
         headerMaskLayer?.path = path.CGPath
         
     }
