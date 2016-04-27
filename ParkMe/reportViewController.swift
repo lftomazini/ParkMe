@@ -77,6 +77,7 @@ class reportViewController: UIViewController {
     func updateUI() {
         
         headerView.lotNameLabel.text = annotation.title!
+        headerView.backgroundImageView.image = UIImage(named: annotation.imageName!)
         
     }
 
