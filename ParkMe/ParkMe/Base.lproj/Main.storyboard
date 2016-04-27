@@ -63,12 +63,80 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="MapView" destination="5U5-hV-H2o" id="AJC-Bg-SMD"/>
-                        <segue destination="NZ6-MM-RxW" kind="push" identifier="reportView" id="qMp-Fd-BSI"/>
+                        <segue destination="Csa-hl-Fxf" kind="push" identifier="reportView" id="mjc-BO-Rco"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="576" y="249"/>
+        </scene>
+        <!--Report-->
+        <scene sceneID="IHh-Sc-gix">
+            <objects>
+                <viewController id="Csa-hl-Fxf" customClass="reportViewController" customModule="ParkMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3jA-QQ-6pR"/>
+                        <viewControllerLayoutGuide type="bottom" id="N4e-bW-dWa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6V9-Eg-qTY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZAU-10-Sew">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="3GO-M4-0r9" customClass="reportHeaderView" customModule="ParkMe" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="64" width="414" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bucknell.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="CBJ-uE-9SG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="CBJ-uE-9SG" secondAttribute="bottom" id="44Z-ZJ-x3c"/>
+                                        <constraint firstItem="CBJ-uE-9SG" firstAttribute="top" secondItem="3GO-M4-0r9" secondAttribute="top" id="Dxb-8I-rSr"/>
+                                        <constraint firstItem="CBJ-uE-9SG" firstAttribute="leading" secondItem="3GO-M4-0r9" secondAttribute="leading" id="TTC-wO-IxA"/>
+                                        <constraint firstAttribute="trailing" secondItem="CBJ-uE-9SG" secondAttribute="trailing" id="VIz-qW-ZuC"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="backgroundImageView" destination="CBJ-uE-9SG" id="vvt-Tc-KFk"/>
+                                    </connections>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Option Cell" id="3f3-VN-OFX">
+                                        <rect key="frame" x="0.0" y="292" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3f3-VN-OFX" id="Enc-zD-16F">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Csa-hl-Fxf" id="7xH-hd-EzW"/>
+                                    <outlet property="delegate" destination="Csa-hl-Fxf" id="a8e-OG-ER1"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZAU-10-Sew" secondAttribute="trailing" id="9px-Lo-eJj"/>
+                            <constraint firstItem="ZAU-10-Sew" firstAttribute="leading" secondItem="6V9-Eg-qTY" secondAttribute="leading" id="SMg-Vb-hfq"/>
+                            <constraint firstItem="N4e-bW-dWa" firstAttribute="top" secondItem="ZAU-10-Sew" secondAttribute="bottom" id="gt1-s5-wpe"/>
+                            <constraint firstItem="ZAU-10-Sew" firstAttribute="top" secondItem="3jA-QQ-6pR" secondAttribute="bottom" id="xIx-6a-bCj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Report" id="NgM-Kx-Eo6"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="ZAU-10-Sew" id="UIh-io-grd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HpB-EW-G64" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="1150"/>
         </scene>
         <!--Info Page-->
         <scene sceneID="S46-Yu-jGy">
@@ -147,29 +215,11 @@
             </objects>
             <point key="canvasLocation" x="143.46666666666667" y="249.91999999999999"/>
         </scene>
-        <!--Report-->
-        <scene sceneID="4Dh-ZV-i1F">
-            <objects>
-                <viewController id="NZ6-MM-RxW" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JMV-OZ-XCA"/>
-                        <viewControllerLayoutGuide type="bottom" id="GGS-L0-s2h"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="qW8-gA-uDA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Report" id="7SD-ap-UH7"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vw1-VF-W9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="78" y="1148"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Empty.png" width="240" height="322"/>
         <image name="Full.png" width="250" height="328"/>
         <image name="Medium.png" width="244" height="346"/>
+        <image name="bucknell.PNG" width="500" height="323"/>
     </resources>
 </document>
