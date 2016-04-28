@@ -135,7 +135,7 @@ extension reportViewController: UITableViewDataSource
             
         }
         alertView.showCloseButton = false
-        alertView.showWarning("Waring", subTitle: "Are you sure you want to report this lot is full?")
+        alertView.showWarning("Warning", subTitle: "Are you sure you want to report this lot is full?")
         
     }
     
