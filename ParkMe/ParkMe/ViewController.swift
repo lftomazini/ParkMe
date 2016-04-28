@@ -17,6 +17,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var reportButton: UIButton!
     
+    var lots = [Lots]()
+    var filteredLots = [Lots]()
+    
+    let searchController = UISearchController(searchResultsController: nil)
     let locationManager =  CLLocationManager()
     /* Central coordinate of Bucknell */
     let BU_Latitude = 40.954582
@@ -34,6 +38,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Setup the Search Controller
+//        searchController.searchResultsUpdater = self
+//        searchController.searchBar.delegate = self
+//        definesPresentationContext = true
+//        searchController.dimsBackgroundDuringPresentation = false
+        
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.delegate = self
         // user activated automatic authorization info mode
@@ -44,6 +54,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             // UIApplication -openUrl: and UIApplicationOpenSettingsURLString
             self.locationManager.requestAlwaysAuthorization()
             self.locationManager.requestWhenInUseAuthorization()
+            
+            lots = [BRKILot,ACWSLot, SMLot,MCDLot,SCALot,TraxLot,CornerHouseLot]
         }
         
         self.mapView.delegate = self;
@@ -63,6 +75,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
+    }
+    
+    func filterContentForSearchText(searchText: String, scope: String = "All") {
+        filteredLots = lots.filter { candy in
+            return candy.name.lowercaseString.containsString(searchText.lowercaseString)
+        }
+        
+//        tableView.reloadData()
     }
     
     let regionRadius: CLLocationDistance = 650
@@ -120,6 +140,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     
+}
+
+extension ViewController: UISearchResultsUpdating {
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
 }
 
 extension ViewController: MKMapViewDelegate {
