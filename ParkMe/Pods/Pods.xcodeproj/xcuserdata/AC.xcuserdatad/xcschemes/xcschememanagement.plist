@@ -8,61 +8,61 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>Pods-ParkMe.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>Pods-ParkMeTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>Pods-ParkMeUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
+		</dict>
+		<key>SCLAlertView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>232B9B14B064F33A7073944D23E56AED</key>
+		<key>72C9FDE6477D99CA8965B83FF08411C7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6BDF42B97FA88C01FCD2E40871978654</key>
+		<key>83CA9E43372212E8CF2DF1C37BD56915</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>944C8B87C189B249C2D2C321D51D74BD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A2F6E21B670DC565238510DE02DEA9F1</key>
+		<key>98F52450232A14B4C941DEB4B5E6DA44</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>B7AC9326D819482593FE118E915409D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE5098CEAC7F9CC721BF2D8E39530BD9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8E01B6D17E94C3C4090D73FABD48A45</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -22,7 +22,6 @@
 		40162E4A1CCD9CFC002EC230 /* Error-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 40162E491CCD9CFC002EC230 /* Error-48.png */; };
 		401C69E41CD038730038E7ED /* reportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401C69E31CD038730038E7ED /* reportViewController.swift */; };
 		401C69E61CD04AED0038E7ED /* reportHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401C69E51CD04AED0038E7ED /* reportHeaderView.swift */; };
-		401C69E81CD054540038E7ED /* bucknell.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 401C69E71CD054540038E7ED /* bucknell.PNG */; };
 		401DE0D11CBAF2A9001BF35B /* ACWS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401DE0D01CBAF2A9001BF35B /* ACWS.plist */; };
 		40371AF51CD0F4A4000737CC /* AcademicWest.png in Resources */ = {isa = PBXBuildFile; fileRef = 40371AEE1CD0F4A4000737CC /* AcademicWest.png */; };
 		40371AF61CD0F4A4000737CC /* Breakiron.png in Resources */ = {isa = PBXBuildFile; fileRef = 40371AEF1CD0F4A4000737CC /* Breakiron.png */; };
@@ -38,6 +37,9 @@
 		4060390E1CCD69670046F1DA /* Error-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4060390D1CCD69670046F1DA /* Error-100.png */; };
 		4090DF981CC0680200C5685A /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4090DF971CC0680200C5685A /* launch.png */; };
 		4097E4F71CBB56E900201421 /* MCD.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4097E4F61CBB56E900201421 /* MCD.plist */; };
+		40A000CE1CD1D24E00A2156C /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A000C41CD1D24E00A2156C /* SCLAlertView.swift */; };
+		40A000CF1CD1D24E00A2156C /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A000C51CD1D24E00A2156C /* SCLExtensions.swift */; };
+		40A000D31CD1D40D00A2156C /* SCLAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4034FADB1CD1D078002F6005 /* SCLAlertView.framework */; };
 		40AAE7A51CBC69DD00C649F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */; };
 		40B91D1B1CBB14A4009EF827 /* Smith.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40B91D1A1CBB14A4009EF827 /* Smith.plist */; };
 		40C7FAE21CBDB5F300C4D8E8 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7FAE11CBDB5F300C4D8E8 /* Firebase.framework */; };
@@ -92,8 +94,8 @@
 		40162E491CCD9CFC002EC230 /* Error-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Error-48.png"; sourceTree = "<group>"; };
 		401C69E31CD038730038E7ED /* reportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reportViewController.swift; sourceTree = "<group>"; };
 		401C69E51CD04AED0038E7ED /* reportHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reportHeaderView.swift; sourceTree = "<group>"; };
-		401C69E71CD054540038E7ED /* bucknell.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bucknell.PNG; sourceTree = "<group>"; };
 		401DE0D01CBAF2A9001BF35B /* ACWS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ACWS.plist; sourceTree = "<group>"; };
+		4034FADB1CD1D078002F6005 /* SCLAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCLAlertView.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ParkMe-ftavuvwfbvznszbsprcrdjqmmpqo/Build/Products/Debug-iphonesimulator/SCLAlertView.framework"; sourceTree = "<group>"; };
 		40371AEE1CD0F4A4000737CC /* AcademicWest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AcademicWest.png; sourceTree = "<group>"; };
 		40371AEF1CD0F4A4000737CC /* Breakiron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Breakiron.png; sourceTree = "<group>"; };
 		40371AF01CD0F4A4000737CC /* cornerhouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cornerhouse.png; sourceTree = "<group>"; };
@@ -109,6 +111,8 @@
 		4060390D1CCD69670046F1DA /* Error-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Error-100.png"; sourceTree = "<group>"; };
 		4090DF971CC0680200C5685A /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch.png; path = ParkMe/launch.png; sourceTree = "<group>"; };
 		4097E4F61CBB56E900201421 /* MCD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MCD.plist; sourceTree = "<group>"; };
+		40A000C41CD1D24E00A2156C /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = Pods/SCLAlertView/SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
+		40A000C51CD1D24E00A2156C /* SCLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = Pods/SCLAlertView/SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
 		40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		40B91D1A1CBB14A4009EF827 /* Smith.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Smith.plist; sourceTree = "<group>"; };
 		40C7FAE11CBDB5F300C4D8E8 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A000D31CD1D40D00A2156C /* SCLAlertView.framework in Frameworks */,
 				40E359681CBE99C90030D6B5 /* CoreMotion.framework in Frameworks */,
 				40C7FAEC1CBDB63B00C4D8E8 /* SystemConfiguration.framework in Frameworks */,
 				40C7FAEA1CBDB63200C4D8E8 /* Security.framework in Frameworks */,
@@ -237,6 +242,8 @@
 			children = (
 				401C69E31CD038730038E7ED /* reportViewController.swift */,
 				401C69E51CD04AED0038E7ED /* reportHeaderView.swift */,
+				40A000C41CD1D24E00A2156C /* SCLAlertView.swift */,
+				40A000C51CD1D24E00A2156C /* SCLExtensions.swift */,
 			);
 			name = "report screen";
 			sourceTree = "<group>";
@@ -278,7 +285,6 @@
 				0025DF411CCC772300DC2B22 /* Medium.png */,
 				40162E491CCD9CFC002EC230 /* Error-48.png */,
 				4060390D1CCD69670046F1DA /* Error-100.png */,
-				401C69E71CD054540038E7ED /* bucknell.PNG */,
 				0025DF3F1CCC771C00DC2B22 /* Full.png */,
 			);
 			name = Pictures;
@@ -305,6 +311,7 @@
 		C23A8DE602FD1A7B09C95FA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4034FADB1CD1D078002F6005 /* SCLAlertView.framework */,
 				40E359671CBE99C90030D6B5 /* CoreMotion.framework */,
 				40C7FAEB1CBDB63B00C4D8E8 /* SystemConfiguration.framework */,
 				40C7FAE91CBDB63200C4D8E8 /* Security.framework */,
@@ -458,7 +465,6 @@
 				40162E4A1CCD9CFC002EC230 /* Error-48.png in Resources */,
 				4060390E1CCD69670046F1DA /* Error-100.png in Resources */,
 				401DE0D11CBAF2A9001BF35B /* ACWS.plist in Resources */,
-				401C69E81CD054540038E7ED /* bucknell.PNG in Resources */,
 				404C1CE41CCE5429008FAA29 /* CornerHouse.plist in Resources */,
 				401085AF1CBCAA5F002516A4 /* SCA.plist in Resources */,
 				40371AF51CD0F4A4000737CC /* AcademicWest.png in Resources */,
@@ -551,8 +557,10 @@
 			files = (
 				401174551C8555D000080D07 /* ViewController.swift in Sources */,
 				401C69E61CD04AED0038E7ED /* reportHeaderView.swift in Sources */,
+				40A000CF1CD1D24E00A2156C /* SCLExtensions.swift in Sources */,
 				40FDE74C1CBAD04800D9060A /* Annotation.swift in Sources */,
 				401174531C8555D000080D07 /* AppDelegate.swift in Sources */,
+				40A000CE1CD1D24E00A2156C /* SCLAlertView.swift in Sources */,
 				40C7FAEF1CBDBE3D00C4D8E8 /* database.swift in Sources */,
 				40E3596B1CBE9A420030D6B5 /* UserMotion.swift in Sources */,
 				401C69E41CD038730038E7ED /* reportViewController.swift in Sources */,
