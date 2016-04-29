@@ -47,8 +47,9 @@ class Lots {
     var name: String
     var density: String
     var type: lotsDecalTypes
+    var imageName: String
     
-    init(filename: String, name: String, density: String, type: lotsDecalTypes) {
+    init(filename: String, name: String, density: String, type: lotsDecalTypes, imageName: String) {
         
         let filePath = NSBundle.mainBundle().pathForResource(filename, ofType: "plist")
         let properties = NSDictionary(contentsOfFile: filePath!)
@@ -79,9 +80,10 @@ class Lots {
             boundary += [CLLocationCoordinate2DMake(CLLocationDegrees(p.x), CLLocationDegrees(p.y))]
         }
         
-        self.name = name;
-        self.density = density;
-        self.type = type;
+        self.name = name
+        self.density = density
+        self.type = type
+        self.imageName = imageName
         
     }
 }

@@ -22,14 +22,23 @@
 		40162E4A1CCD9CFC002EC230 /* Error-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 40162E491CCD9CFC002EC230 /* Error-48.png */; };
 		401C69E41CD038730038E7ED /* reportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401C69E31CD038730038E7ED /* reportViewController.swift */; };
 		401C69E61CD04AED0038E7ED /* reportHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401C69E51CD04AED0038E7ED /* reportHeaderView.swift */; };
-		401C69E81CD054540038E7ED /* bucknell.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 401C69E71CD054540038E7ED /* bucknell.PNG */; };
 		401DE0D11CBAF2A9001BF35B /* ACWS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401DE0D01CBAF2A9001BF35B /* ACWS.plist */; };
+		40371AF51CD0F4A4000737CC /* AcademicWest.png in Resources */ = {isa = PBXBuildFile; fileRef = 40371AEE1CD0F4A4000737CC /* AcademicWest.png */; };
+		40371AF61CD0F4A4000737CC /* Breakiron.png in Resources */ = {isa = PBXBuildFile; fileRef = 40371AEF1CD0F4A4000737CC /* Breakiron.png */; };
+		40371AF71CD0F4A4000737CC /* cornerhouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 40371AF01CD0F4A4000737CC /* cornerhouse.png */; };
+		40371AF81CD0F4A4000737CC /* McDonnell.png in Resources */ = {isa = PBXBuildFile; fileRef = 40371AF11CD0F4A4000737CC /* McDonnell.png */; };
+		40371AF91CD0F4A4000737CC /* Smith.png in Resources */ = {isa = PBXBuildFile; fileRef = 40371AF21CD0F4A4000737CC /* Smith.png */; };
+		40371AFA1CD0F4A4000737CC /* South Campus Apartment.png in Resources */ = {isa = PBXBuildFile; fileRef = 40371AF31CD0F4A4000737CC /* South Campus Apartment.png */; };
+		40371AFB1CD0F4A4000737CC /* Trax.png in Resources */ = {isa = PBXBuildFile; fileRef = 40371AF41CD0F4A4000737CC /* Trax.png */; };
+		40371B021CD0F89F000737CC /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40371B011CD0F89F000737CC /* NotificationCenter.framework */; };
 		403D86C51CB9DAD900B9F2B0 /* Lots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D86C41CB9DAD900B9F2B0 /* Lots.swift */; };
 		403D86C91CB9E99400B9F2B0 /* BRKI.plist in Resources */ = {isa = PBXBuildFile; fileRef = 403D86C81CB9E99400B9F2B0 /* BRKI.plist */; };
 		404C1CE41CCE5429008FAA29 /* CornerHouse.plist in Resources */ = {isa = PBXBuildFile; fileRef = 404C1CE31CCE5429008FAA29 /* CornerHouse.plist */; };
 		4060390E1CCD69670046F1DA /* Error-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4060390D1CCD69670046F1DA /* Error-100.png */; };
-		4090DF981CC0680200C5685A /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4090DF971CC0680200C5685A /* launch.png */; };
+		407E05D61CD2D517004F7AAA /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4061FC6C1CD2B056008BC781 /* Material.framework */; };
+		4090DF981CC0680200C5685A /* launchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4090DF971CC0680200C5685A /* launchScreen.png */; };
 		4097E4F71CBB56E900201421 /* MCD.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4097E4F61CBB56E900201421 /* MCD.plist */; };
+		40A000D31CD1D40D00A2156C /* SCLAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4034FADB1CD1D078002F6005 /* SCLAlertView.framework */; };
 		40AAE7A51CBC69DD00C649F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */; };
 		40B91D1B1CBB14A4009EF827 /* Smith.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40B91D1A1CBB14A4009EF827 /* Smith.plist */; };
 		40C7FAE21CBDB5F300C4D8E8 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7FAE11CBDB5F300C4D8E8 /* Firebase.framework */; };
@@ -84,13 +93,23 @@
 		40162E491CCD9CFC002EC230 /* Error-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Error-48.png"; sourceTree = "<group>"; };
 		401C69E31CD038730038E7ED /* reportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reportViewController.swift; sourceTree = "<group>"; };
 		401C69E51CD04AED0038E7ED /* reportHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reportHeaderView.swift; sourceTree = "<group>"; };
-		401C69E71CD054540038E7ED /* bucknell.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bucknell.PNG; sourceTree = "<group>"; };
 		401DE0D01CBAF2A9001BF35B /* ACWS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ACWS.plist; sourceTree = "<group>"; };
+		4034FADB1CD1D078002F6005 /* SCLAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCLAlertView.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ParkMe-ftavuvwfbvznszbsprcrdjqmmpqo/Build/Products/Debug-iphonesimulator/SCLAlertView.framework"; sourceTree = "<group>"; };
+		40371AEE1CD0F4A4000737CC /* AcademicWest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AcademicWest.png; sourceTree = "<group>"; };
+		40371AEF1CD0F4A4000737CC /* Breakiron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Breakiron.png; sourceTree = "<group>"; };
+		40371AF01CD0F4A4000737CC /* cornerhouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cornerhouse.png; sourceTree = "<group>"; };
+		40371AF11CD0F4A4000737CC /* McDonnell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = McDonnell.png; sourceTree = "<group>"; };
+		40371AF21CD0F4A4000737CC /* Smith.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Smith.png; sourceTree = "<group>"; };
+		40371AF31CD0F4A4000737CC /* South Campus Apartment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "South Campus Apartment.png"; sourceTree = "<group>"; };
+		40371AF41CD0F4A4000737CC /* Trax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trax.png; sourceTree = "<group>"; };
+		40371B001CD0F89F000737CC /* parkWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = parkWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		40371B011CD0F89F000737CC /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		403D86C41CB9DAD900B9F2B0 /* Lots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lots.swift; sourceTree = "<group>"; };
 		403D86C81CB9E99400B9F2B0 /* BRKI.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BRKI.plist; path = ParkMe/BRKI.plist; sourceTree = "<group>"; };
 		404C1CE31CCE5429008FAA29 /* CornerHouse.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CornerHouse.plist; sourceTree = "<group>"; };
 		4060390D1CCD69670046F1DA /* Error-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Error-100.png"; sourceTree = "<group>"; };
-		4090DF971CC0680200C5685A /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch.png; path = ParkMe/launch.png; sourceTree = "<group>"; };
+		4061FC6C1CD2B056008BC781 /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ParkMe-ftavuvwfbvznszbsprcrdjqmmpqo/Build/Products/Debug-iphonesimulator/Material.framework"; sourceTree = "<group>"; };
+		4090DF971CC0680200C5685A /* launchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launchScreen.png; path = ParkMe/launchScreen.png; sourceTree = "<group>"; };
 		4097E4F61CBB56E900201421 /* MCD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MCD.plist; sourceTree = "<group>"; };
 		40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		40B91D1A1CBB14A4009EF827 /* Smith.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Smith.plist; sourceTree = "<group>"; };
@@ -114,6 +133,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407E05D61CD2D517004F7AAA /* Material.framework in Frameworks */,
+				40A000D31CD1D40D00A2156C /* SCLAlertView.framework in Frameworks */,
 				40E359681CBE99C90030D6B5 /* CoreMotion.framework in Frameworks */,
 				40C7FAEC1CBDB63B00C4D8E8 /* SystemConfiguration.framework in Frameworks */,
 				40C7FAEA1CBDB63200C4D8E8 /* Security.framework in Frameworks */,
@@ -137,6 +158,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40371AFD1CD0F89F000737CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40371B021CD0F89F000737CC /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +198,7 @@
 				4011744F1C8555D000080D07 /* ParkMe.app */,
 				401174631C8555D000080D07 /* ParkMeTests.xctest */,
 				4011746E1C8555D000080D07 /* ParkMeUITests.xctest */,
+				40371B001CD0F89F000737CC /* parkWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,6 +239,8 @@
 		401C69E21CD037EC0038E7ED /* report screen */ = {
 			isa = PBXGroup;
 			children = (
+				4034FADB1CD1D078002F6005 /* SCLAlertView.framework */,
+				4061FC6C1CD2B056008BC781 /* Material.framework */,
 				401C69E31CD038730038E7ED /* reportViewController.swift */,
 				401C69E51CD04AED0038E7ED /* reportHeaderView.swift */,
 			);
@@ -240,12 +272,18 @@
 		406039081CCD60B30046F1DA /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				40371AEE1CD0F4A4000737CC /* AcademicWest.png */,
+				40371AEF1CD0F4A4000737CC /* Breakiron.png */,
+				40371AF01CD0F4A4000737CC /* cornerhouse.png */,
+				40371AF11CD0F4A4000737CC /* McDonnell.png */,
+				40371AF21CD0F4A4000737CC /* Smith.png */,
+				40371AF31CD0F4A4000737CC /* South Campus Apartment.png */,
+				40371AF41CD0F4A4000737CC /* Trax.png */,
 				0025DF3D1CCC771100DC2B22 /* Empty.png */,
-				4090DF971CC0680200C5685A /* launch.png */,
+				4090DF971CC0680200C5685A /* launchScreen.png */,
 				0025DF411CCC772300DC2B22 /* Medium.png */,
 				40162E491CCD9CFC002EC230 /* Error-48.png */,
 				4060390D1CCD69670046F1DA /* Error-100.png */,
-				401C69E71CD054540038E7ED /* bucknell.PNG */,
 				0025DF3F1CCC771C00DC2B22 /* Full.png */,
 			);
 			name = Pictures;
@@ -278,6 +316,7 @@
 				40C7FAE71CBDB62500C4D8E8 /* CFNetwork.framework */,
 				40C7FAE51CBDB61A00C4D8E8 /* libc++.tbd */,
 				40C7FAE31CBDB60D00C4D8E8 /* libicucore.tbd */,
+				40371B011CD0F89F000737CC /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -341,13 +380,30 @@
 			productReference = 4011746E1C8555D000080D07 /* ParkMeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		40371AFF1CD0F89F000737CC /* parkWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40371B0D1CD0F89F000737CC /* Build configuration list for PBXNativeTarget "parkWidget" */;
+			buildPhases = (
+				40371AFC1CD0F89F000737CC /* Sources */,
+				40371AFD1CD0F89F000737CC /* Frameworks */,
+				40371AFE1CD0F89F000737CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = parkWidget;
+			productName = parkWidget;
+			productReference = 40371B001CD0F89F000737CC /* parkWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		401174471C8555D000080D07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = AC;
 				TargetAttributes = {
@@ -362,6 +418,10 @@
 					4011746D1C8555D000080D07 = {
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = 4011744E1C8555D000080D07;
+					};
+					40371AFF1CD0F89F000737CC = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = J43SGLE8R7;
 					};
 				};
 			};
@@ -381,6 +441,7 @@
 				4011744E1C8555D000080D07 /* ParkMe */,
 				401174621C8555D000080D07 /* ParkMeTests */,
 				4011746D1C8555D000080D07 /* ParkMeUITests */,
+				40371AFF1CD0F89F000737CC /* parkWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -390,20 +451,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40371AFA1CD0F4A4000737CC /* South Campus Apartment.png in Resources */,
 				40B91D1B1CBB14A4009EF827 /* Smith.plist in Resources */,
+				40371AF91CD0F4A4000737CC /* Smith.png in Resources */,
 				403D86C91CB9E99400B9F2B0 /* BRKI.plist in Resources */,
 				400FA8A11CA3296100605C5C /* Images.xcassets in Resources */,
+				40371AF71CD0F4A4000737CC /* cornerhouse.png in Resources */,
+				40371AF61CD0F4A4000737CC /* Breakiron.png in Resources */,
 				0025DF3E1CCC771100DC2B22 /* Empty.png in Resources */,
 				0025DF421CCC772300DC2B22 /* Medium.png in Resources */,
 				40162E4A1CCD9CFC002EC230 /* Error-48.png in Resources */,
 				4060390E1CCD69670046F1DA /* Error-100.png in Resources */,
 				401DE0D11CBAF2A9001BF35B /* ACWS.plist in Resources */,
-				401C69E81CD054540038E7ED /* bucknell.PNG in Resources */,
 				404C1CE41CCE5429008FAA29 /* CornerHouse.plist in Resources */,
 				401085AF1CBCAA5F002516A4 /* SCA.plist in Resources */,
+				40371AF51CD0F4A4000737CC /* AcademicWest.png in Resources */,
 				0025DF401CCC771C00DC2B22 /* Full.png in Resources */,
+				40371AF81CD0F4A4000737CC /* McDonnell.png in Resources */,
+				40371AFB1CD0F4A4000737CC /* Trax.png in Resources */,
 				401085B11CBCAD5D002516A4 /* Trax.plist in Resources */,
-				4090DF981CC0680200C5685A /* launch.png in Resources */,
+				4090DF981CC0680200C5685A /* launchScreen.png in Resources */,
 				4011745D1C8555D000080D07 /* LaunchScreen.storyboard in Resources */,
 				401174581C8555D000080D07 /* Main.storyboard in Resources */,
 				4097E4F71CBB56E900201421 /* MCD.plist in Resources */,
@@ -418,6 +485,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4011746C1C8555D000080D07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40371AFE1CD0F89F000737CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -506,6 +580,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40371AFC1CD0F89F000737CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -577,7 +658,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -616,7 +697,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -716,6 +797,40 @@
 			};
 			name = Release;
 		};
+		40371B0E1CD0F89F000737CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/ParkMe/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liyadong588.parkWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		40371B0F1CD0F89F000737CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/ParkMe/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liyadong588.parkWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -751,6 +866,15 @@
 			buildConfigurations = (
 				4011747E1C8555D000080D07 /* Debug */,
 				4011747F1C8555D000080D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40371B0D1CD0F89F000737CC /* Build configuration list for PBXNativeTarget "parkWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40371B0E1CD0F89F000737CC /* Debug */,
+				40371B0F1CD0F89F000737CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
