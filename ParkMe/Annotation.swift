@@ -14,13 +14,11 @@ class Annotation: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
     var title: String?
     var subtitle: String?
-    var imageName: String?
     
     init(lot: Lots) {
         self.coordinate = lot.midCoordinate
         self.title = lot.name
         self.subtitle = "Density: \(lot.density)"
-        self.imageName = lot.imageName
     }
-        
+    
 }

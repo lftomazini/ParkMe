@@ -27,7 +27,7 @@
                             </mapView>
                             <searchBar contentMode="redraw" placeholder="Search for a building" translatesAutoresizingMaskIntoConstraints="NO" id="v71-zC-pPb">
                                 <rect key="frame" x="0.0" y="64" width="414" height="44"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <toolbar clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aV-hq-YeK">
                                 <rect key="frame" x="0.0" y="692" width="414" height="44"/>
@@ -89,12 +89,6 @@
                                     <rect key="frame" x="0.0" y="64" width="414" height="200"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-<<<<<<< HEAD
-=======
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CBJ-uE-9SG">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
-                                        </imageView>
->>>>>>> AC
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3n-tX-D5k">
                                             <rect key="frame" x="183.5" y="84.5" width="48.5" height="31.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -120,31 +114,13 @@
                                     </connections>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="Option Cell" id="3f3-VN-OFX" customClass="CustomTableViewCell" customModule="ParkMe" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Option Cell" id="3f3-VN-OFX">
                                         <rect key="frame" x="0.0" y="292" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3f3-VN-OFX" id="Enc-zD-16F">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiU-ud-IGv">
-                                                    <rect key="frame" x="8" y="8" width="398" height="27.5"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="KiU-ud-IGv" secondAttribute="trailing" id="7eC-v2-hPg"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="KiU-ud-IGv" secondAttribute="bottom" id="Jqs-Xz-aFr"/>
-                                                <constraint firstItem="KiU-ud-IGv" firstAttribute="leading" secondItem="Enc-zD-16F" secondAttribute="leadingMargin" id="Muu-Aq-sNf"/>
-                                                <constraint firstItem="KiU-ud-IGv" firstAttribute="top" secondItem="Enc-zD-16F" secondAttribute="topMargin" id="dPT-Ve-tAB"/>
-                                            </constraints>
                                         </tableViewCellContentView>
-                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <outlet property="textView" destination="KiU-ud-IGv" id="IUF-jL-czS"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -195,21 +171,21 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRN-t7-4PL">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oRN-t7-4PL">
                                 <rect key="frame" x="181" y="123" width="201" height="163"/>
                                 <color key="backgroundColor" white="1" alpha="0.12408577127659574" colorSpace="calibratedWhite"/>
                                 <string key="text">Green means the lot has a low density. Which means there might be a lot of empty spaces avaliable. If you tap on the pin located deirectly on the lot area, you can see the name of the lot and its density.</string>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miD-ac-JjY">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="miD-ac-JjY">
                                 <rect key="frame" x="181" y="329" width="201" height="177"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12408577129999999" colorSpace="calibratedRGB"/>
                                 <string key="text">Orange means the lot has a medium density. Which means there migh be less than half of the spots avaliable in this lot. If you tap on the pin located deirectly on the lot area, you can see the name of the lot and its density.</string>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4J-B3-vxm">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y4J-B3-vxm">
                                 <rect key="frame" x="181" y="544" width="201" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="0.12408577129999999" colorSpace="calibratedWhite"/>
                                 <string key="text">Red means the lot has a high density. Which means, the lot os alomost full or is already full. If you tap on the pin located deirectly on the lot area, you can see the name of the lot and its density.</string>
@@ -253,5 +229,6 @@
         <image name="Empty.png" width="240" height="322"/>
         <image name="Full.png" width="250" height="328"/>
         <image name="Medium.png" width="244" height="346"/>
+        <image name="bucknell.PNG" width="500" height="323"/>
     </resources>
 </document>

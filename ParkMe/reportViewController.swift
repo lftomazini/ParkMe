@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Material
-import SCLAlertView
 
 class reportViewController: UIViewController {
     
@@ -27,10 +25,6 @@ class reportViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.separatorStyle = UITableViewCellSeparatorStyle.None
-        tableView.estimatedRowHeight = 89
-        tableView.rowHeight = UITableViewAutomaticDimension
         
         headerView = tableView.tableHeaderView as! reportHeaderView
         tableView.tableHeaderView = nil
@@ -75,7 +69,7 @@ class reportViewController: UIViewController {
         path.moveToPoint(CGPoint(x: 0, y: 0))
         path.addLineToPoint(CGPoint(x: headerRect.width, y: 0))
         path.addLineToPoint(CGPoint(x: headerRect.width, y: headerRect.height))
-        path.addLineToPoint(CGPoint(x: 0, y: headerRect.height))
+        path.addLineToPoint(CGPoint(x: 0, y: headerRect.height - tableHeaderCutAway))
         headerMaskLayer?.path = path.CGPath
         
     }
@@ -83,110 +77,24 @@ class reportViewController: UIViewController {
     func updateUI() {
         
         headerView.lotNameLabel.text = annotation.title!
-        headerView.backgroundImageView.image = UIImage(named: annotation.imageName!)
         
     }
 
 }
 
-class CustomTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var textView: UITextView!
-    
-}
-
 extension reportViewController: UITableViewDataSource
 {
-    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-
-        let cell = tableView.dequeueReusableCellWithIdentifier("Option Cell", forIndexPath: indexPath) as! CustomTableViewCell
-        
-        if (indexPath.row == 1) {
-            
-            switch annotation.title! {
-            case "Smith":
-                cell.textView.text = "Available spaces: 140 \nDecals: Student Decals Only \nClosest buildings: Taylor Hall"
-            default:
-                cell.textView.text = ""
-            }
-        }
-        
-        if (indexPath.row == 3) {
-            let reportFullBtn = FabButton(frame: CGRectMake(40, 60, 300, 40))
-            reportFullBtn.backgroundColor = UIColorFromRGB(0x3AAAFE)
-            let cellHeight: CGFloat = 44.0
-            reportFullBtn.center = CGPoint(x: view.bounds.width / 2.0, y: cellHeight / 2.0)
-            reportFullBtn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-            reportFullBtn.addTarget(self, action: #selector(reportViewController.reportFull(_:)), forControlEvents: UIControlEvents.TouchUpInside)
-            reportFullBtn.setTitle("Report this lot is full", forState: UIControlState.Normal)
-            reportFullBtn.titleLabel?.font = UIFont(name: "ArialMT", size: 20)!
-            
-            cell.addSubview(reportFullBtn)
-        }
-        
-        if (indexPath.row == 5) {
-            let reportIssueBtn = FabButton(frame: CGRectMake(40, 60, 300, 40))
-            reportIssueBtn.backgroundColor = UIColorFromRGB(0x3AAAFE)
-            let cellHeight: CGFloat = 44.0
-            reportIssueBtn.center = CGPoint(x: view.bounds.width / 2.0, y: cellHeight / 2.0)
-            reportIssueBtn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-            reportIssueBtn.addTarget(self, action: #selector(reportViewController.reportIssue(_:)), forControlEvents: UIControlEvents.TouchUpInside)
-            reportIssueBtn.setTitle("Report an issue", forState: UIControlState.Normal)
-            reportIssueBtn.titleLabel?.font = UIFont(name: "ArialMT", size: 20)!
-            
-            cell.addSubview(reportIssueBtn)
-        }
+        let cell = tableView.dequeueReusableCellWithIdentifier("Option Cell", forIndexPath: indexPath) as UITableViewCell
         return cell
-    }
-    
-    @IBAction func reportFull(sender: AnyObject) {
-        
-        let alertView = SCLAlertView()
-        alertView.addButton("Yes") {
-            SCLAlertView().showSuccess("Thank you", subTitle: "Your report has been recorded!")
-        }
-        alertView.addButton("No") {
-            print("This user is dumb lol!")
-        }
-        alertView.showCloseButton = false
-        alertView.showWarning("Warning", subTitle: "Are you sure you want to report this lot is full?")
-        
-    }
-    
-    @IBAction func reportIssue(sender: AnyObject) {
-        
-        let alertView = SCLAlertView()
-        let issue = alertView.addTextField("Please enter your issue")
-        
-        alertView.addButton("Submit") {
-            if ( issue.text != "" ) {
-                SCLAlertView().showSuccess("Thank you", subTitle: "Your issue has been sent to us and we will work on it.")
-            } else {
-                SCLAlertView().showError("Error", subTitle: "No issue entered!")
-            }
-        }
-        alertView.addButton("Close") {print("This user is dumb lol!")}
-        alertView.showCloseButton = false
-        alertView.showEdit("Report an issue", subTitle: "Please tell us what your issue is")
-        
-    }
-    
-    func UIColorFromRGB(rgbValue: UInt) -> UIColor {
-        return UIColor(
-            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
-            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
-            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
-            alpha: CGFloat(1.0)
-        )
     }
 }
 

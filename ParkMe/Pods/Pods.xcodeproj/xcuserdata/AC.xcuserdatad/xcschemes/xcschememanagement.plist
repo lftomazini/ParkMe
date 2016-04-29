@@ -9,21 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Material-io.cosmicmind.material.fonts.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Material-io.cosmicmind.material.icons.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Material.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-ParkMe.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,50 +29,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SCLAlertView.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1D8EE70E66BA0138151113668C16E9C2</key>
+		<key>232B9B14B064F33A7073944D23E56AED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>67C6E5813DB818409E3E2249992039D7</key>
+		<key>6BDF42B97FA88C01FCD2E40871978654</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6D7356540F755B63E89A9107CD4A8B30</key>
+		<key>944C8B87C189B249C2D2C321D51D74BD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>70B0D7CE6C17AFE35EE22062220C5798</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>85CDB899143013D74628361C6C837823</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9559AB3C8A226BE862457C7CF253F494</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A6359E0CDE7EBDCB1C628C5DE44EC552</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AE801E9EB0982EDF887EAF35CB453108</key>
+		<key>A2F6E21B670DC565238510DE02DEA9F1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
