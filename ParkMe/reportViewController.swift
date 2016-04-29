@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Material
+import SCLAlertView
 
 class reportViewController: UIViewController {
     
@@ -25,6 +27,10 @@ class reportViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        tableView.estimatedRowHeight = 89
+        tableView.rowHeight = UITableViewAutomaticDimension
         
         headerView = tableView.tableHeaderView as! reportHeaderView
         tableView.tableHeaderView = nil
@@ -83,42 +89,59 @@ class reportViewController: UIViewController {
 
 }
 
+class CustomTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var textView: UITextView!
+    
+}
+
 extension reportViewController: UITableViewDataSource
 {
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 6
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCellWithIdentifier("Option Cell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Option Cell", forIndexPath: indexPath) as! CustomTableViewCell
         
-        if (indexPath.row == 2 ) {
-            let reportFullBtn : UIButton = UIButton(type: UIButtonType.Custom) as UIButton
-            reportFullBtn.frame = CGRectMake(40, 60, 250, 30)
+        if (indexPath.row == 1) {
+            
+            switch annotation.title! {
+            case "Smith":
+                cell.textView.text = "Available spaces: 140 \nDecals: Student Decals Only \nClosest buildings: Taylor Hall"
+            default:
+                cell.textView.text = ""
+            }
+        }
+        
+        if (indexPath.row == 3) {
+            let reportFullBtn = FabButton(frame: CGRectMake(40, 60, 300, 40))
+            reportFullBtn.backgroundColor = UIColorFromRGB(0x3AAAFE)
             let cellHeight: CGFloat = 44.0
             reportFullBtn.center = CGPoint(x: view.bounds.width / 2.0, y: cellHeight / 2.0)
-            reportFullBtn.setTitleColor(UIColorFromRGB(0x0D94FC), forState: UIControlState.Normal)
+            reportFullBtn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
             reportFullBtn.addTarget(self, action: #selector(reportViewController.reportFull(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             reportFullBtn.setTitle("Report this lot is full", forState: UIControlState.Normal)
-            reportFullBtn.titleLabel?.font = UIFont(name: "ArialMT", size: 16)!
+            reportFullBtn.titleLabel?.font = UIFont(name: "ArialMT", size: 20)!
             
             cell.addSubview(reportFullBtn)
         }
         
-        if (indexPath.row == 3) {
-            let reportIssueBtn : UIButton = UIButton(type: UIButtonType.Custom) as UIButton
-            reportIssueBtn.frame = CGRectMake(40, 60, 250, 30)
+        if (indexPath.row == 5) {
+            let reportIssueBtn = FabButton(frame: CGRectMake(40, 60, 300, 40))
+            reportIssueBtn.backgroundColor = UIColorFromRGB(0x3AAAFE)
             let cellHeight: CGFloat = 44.0
             reportIssueBtn.center = CGPoint(x: view.bounds.width / 2.0, y: cellHeight / 2.0)
-            reportIssueBtn.setTitleColor(UIColorFromRGB(0x0D94FC), forState: UIControlState.Normal)
+            reportIssueBtn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
             reportIssueBtn.addTarget(self, action: #selector(reportViewController.reportIssue(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             reportIssueBtn.setTitle("Report an issue", forState: UIControlState.Normal)
-            reportIssueBtn.titleLabel?.font = UIFont(name: "ArialMT", size: 16)!
+            reportIssueBtn.titleLabel?.font = UIFont(name: "ArialMT", size: 20)!
             
             cell.addSubview(reportIssueBtn)
         }
@@ -132,7 +155,7 @@ extension reportViewController: UITableViewDataSource
             SCLAlertView().showSuccess("Thank you", subTitle: "Your report has been recorded!")
         }
         alertView.addButton("No") {
-            
+            print("This user is dumb lol!")
         }
         alertView.showCloseButton = false
         alertView.showWarning("Warning", subTitle: "Are you sure you want to report this lot is full?")
@@ -151,6 +174,8 @@ extension reportViewController: UITableViewDataSource
                 SCLAlertView().showError("Error", subTitle: "No issue entered!")
             }
         }
+        alertView.addButton("Close") {print("This user is dumb lol!")}
+        alertView.showCloseButton = false
         alertView.showEdit("Report an issue", subTitle: "Please tell us what your issue is")
         
     }

@@ -85,9 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/Firebase.framework"
+  install_framework "Pods/Material.framework"
   install_framework "Pods/SCLAlertView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/Firebase.framework"
+  install_framework "Pods/Material.framework"
   install_framework "Pods/SCLAlertView.framework"
 fi
