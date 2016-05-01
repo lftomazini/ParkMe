@@ -10,34 +10,39 @@ import UIKit
 import MapKit
 import CoreLocation
 import Firebase
-import BWWalkthrough
 
-class ViewController: UIViewController, CLLocationManagerDelegate, BWWalkthroughViewControllerDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
     @IBOutlet weak var reportButton: UIButton!
     
-    var needWalkthrough:Bool = true
+    var lots = [Lots]()
+    var filteredLots = [Lots]()
     
-    var walkthrough:BWWalkthroughViewController!
-    
+    let searchController = UISearchController(searchResultsController: nil)
     let locationManager =  CLLocationManager()
     /* Central coordinate of Bucknell */
     let BU_Latitude = 40.954582
     let BU_Longitude = -76.883322
     
     /* Initializing Parking Lots instances */
-    var BRKILot = Lots(filename: "BRKI", name: "BRKI", density: "HIGH", type: lotsDecalTypes.Student, imageName: "Breakiron.png")
-    var ACWSLot = Lots(filename: "ACWS", name:"ACWS", density: "MILD", type: lotsDecalTypes.Student, imageName: "AcademicWest.png")
-    var SMLot = Lots(filename: "Smith", name:"Smith", density: "LOW", type: lotsDecalTypes.Student, imageName: "Smith.png")
-    var MCDLot = Lots(filename: "MCD", name:"McDonell", density: "LOW", type: lotsDecalTypes.Student, imageName: "McDonnell.png")
-    var SCALot = Lots(filename: "SCA", name: "South Campus Apartments", density: "LOW", type: lotsDecalTypes.Student, imageName: "South Campus Apartment.png")
-    var TraxLot = Lots(filename: "Trax", name: "Trax", density: "HIGH", type: lotsDecalTypes.Student, imageName: "Trax.png")
-    var CornerHouseLot = Lots(filename: "CornerHouse", name: "Corner House", density: "HIGH", type: lotsDecalTypes.Student, imageName: "cornerhouse.png")
+    var BRKILot = Lots(filename: "BRKI", name: "BRKI", density: "HIGH", type: lotsDecalTypes.Student)
+    var ACWSLot = Lots(filename: "ACWS", name:"ACWS", density: "MILD", type: lotsDecalTypes.Student)
+    var SMLot = Lots(filename: "Smith", name:"Smith", density: "LOW", type: lotsDecalTypes.Student)
+    var MCDLot = Lots(filename: "MCD", name:"McDonell", density: "LOW", type: lotsDecalTypes.Student)
+    var SCALot = Lots(filename: "SCA", name: "South Campus Apartments", density: "LOW", type: lotsDecalTypes.Student)
+    var TraxLot = Lots(filename: "Trax", name: "Trax", density: "HIGH", type: lotsDecalTypes.Student)
+    var CornerHouseLot = Lots(filename: "CornerHouse", name: "Corner House", density: "HIGH", type: lotsDecalTypes.Student)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Setup the Search Controller
+//        searchController.searchResultsUpdater = self
+//        searchController.searchBar.delegate = self
+//        definesPresentationContext = true
+//        searchController.dimsBackgroundDuringPresentation = false
         
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.delegate = self
@@ -49,6 +54,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, BWWalkthrough
             // UIApplication -openUrl: and UIApplicationOpenSettingsURLString
             self.locationManager.requestAlwaysAuthorization()
             self.locationManager.requestWhenInUseAuthorization()
+            
+            lots = [BRKILot,ACWSLot, SMLot,MCDLot,SCALot,TraxLot,CornerHouseLot]
         }
         
         self.mapView.delegate = self;
@@ -70,12 +77,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, BWWalkthrough
         
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        if needWalkthrough {
-            self.presentWalkthrough()
+    func filterContentForSearchText(searchText: String, scope: String = "All") {
+        filteredLots = lots.filter { candy in
+            return candy.name.lowercaseString.containsString(searchText.lowercaseString)
         }
-        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+//        tableView.reloadData()
     }
     
     let regionRadius: CLLocationDistance = 650
@@ -129,34 +136,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate, BWWalkthrough
     }
     
     override func prefersStatusBarHidden() -> Bool {
-        return false
+        return false;
     }
     
     
-    func presentWalkthrough() {
-        
-        UIApplication.sharedApplication().statusBarHidden = true
-        UIApplication.sharedApplication().statusBarStyle = .Default
-        
-        let stb = UIStoryboard(name: "Main", bundle: nil)
+}
 
-        walkthrough = stb.instantiateViewControllerWithIdentifier("walkthrough") as! BWWalkthroughViewController
-        let page_one = stb.instantiateViewControllerWithIdentifier("page_1")
-        let page_two = stb.instantiateViewControllerWithIdentifier("page_2")
-        
-        // Attach the pages to the master
-        walkthrough.delegate = self
-        walkthrough.addViewController(page_one)
-        walkthrough.addViewController(page_two)
-        
-        self.presentViewController(walkthrough, animated: true) {
-            ()->() in
-            self.needWalkthrough = false
-            UIApplication.sharedApplication().statusBarHidden = false
-
-        }
+extension ViewController: UISearchResultsUpdating {
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
     }
-    
 }
 
 extension ViewController: MKMapViewDelegate {
@@ -228,22 +217,4 @@ extension ViewController: MKMapViewDelegate {
         }
     }
     
-}
-
-extension ViewController {
-    
-    func walkthroughCloseButtonPressed() {
-        
-        self.dismissViewControllerAnimated(true, completion: nil)
-        
-    }
-    
-    func walkthroughPageDidChange(pageNumber: Int) {
-        if (self.walkthrough.numberOfPages - 1) == pageNumber{
-            self.walkthrough.closeButton?.hidden = false
-        }else{
-            self.walkthrough.closeButton?.hidden = true
-        }
-
-    }
 }
