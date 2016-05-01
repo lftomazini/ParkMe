@@ -28,7 +28,6 @@
 		403D86C91CB9E99400B9F2B0 /* BRKI.plist in Resources */ = {isa = PBXBuildFile; fileRef = 403D86C81CB9E99400B9F2B0 /* BRKI.plist */; };
 		404C1CE41CCE5429008FAA29 /* CornerHouse.plist in Resources */ = {isa = PBXBuildFile; fileRef = 404C1CE31CCE5429008FAA29 /* CornerHouse.plist */; };
 		4060390E1CCD69670046F1DA /* Error-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4060390D1CCD69670046F1DA /* Error-100.png */; };
-		4090DF981CC0680200C5685A /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4090DF971CC0680200C5685A /* launch.png */; };
 		4097E4F71CBB56E900201421 /* MCD.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4097E4F61CBB56E900201421 /* MCD.plist */; };
 		40AAE7A51CBC69DD00C649F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */; };
 		40B91D1B1CBB14A4009EF827 /* Smith.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40B91D1A1CBB14A4009EF827 /* Smith.plist */; };
@@ -90,7 +89,6 @@
 		403D86C81CB9E99400B9F2B0 /* BRKI.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BRKI.plist; path = ParkMe/BRKI.plist; sourceTree = "<group>"; };
 		404C1CE31CCE5429008FAA29 /* CornerHouse.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CornerHouse.plist; sourceTree = "<group>"; };
 		4060390D1CCD69670046F1DA /* Error-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Error-100.png"; sourceTree = "<group>"; };
-		4090DF971CC0680200C5685A /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch.png; path = ParkMe/launch.png; sourceTree = "<group>"; };
 		4097E4F61CBB56E900201421 /* MCD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MCD.plist; sourceTree = "<group>"; };
 		40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		40B91D1A1CBB14A4009EF827 /* Smith.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Smith.plist; sourceTree = "<group>"; };
@@ -241,7 +239,6 @@
 			isa = PBXGroup;
 			children = (
 				0025DF3D1CCC771100DC2B22 /* Empty.png */,
-				4090DF971CC0680200C5685A /* launch.png */,
 				0025DF411CCC772300DC2B22 /* Medium.png */,
 				40162E491CCD9CFC002EC230 /* Error-48.png */,
 				4060390D1CCD69670046F1DA /* Error-100.png */,
@@ -403,7 +400,6 @@
 				401085AF1CBCAA5F002516A4 /* SCA.plist in Resources */,
 				0025DF401CCC771C00DC2B22 /* Full.png in Resources */,
 				401085B11CBCAD5D002516A4 /* Trax.plist in Resources */,
-				4090DF981CC0680200C5685A /* launch.png in Resources */,
 				4011745D1C8555D000080D07 /* LaunchScreen.storyboard in Resources */,
 				401174581C8555D000080D07 /* Main.storyboard in Resources */,
 				4097E4F71CBB56E900201421 /* MCD.plist in Resources */,
