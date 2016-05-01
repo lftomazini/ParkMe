@@ -10,6 +10,7 @@
 		0025DF3E1CCC771100DC2B22 /* Empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 0025DF3D1CCC771100DC2B22 /* Empty.png */; };
 		0025DF401CCC771C00DC2B22 /* Full.png in Resources */ = {isa = PBXBuildFile; fileRef = 0025DF3F1CCC771C00DC2B22 /* Full.png */; };
 		0025DF421CCC772300DC2B22 /* Medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 0025DF411CCC772300DC2B22 /* Medium.png */; };
+		2ACA766B1CD6C1C600ACAAD3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA766A1CD6C1C600ACAAD3 /* TableViewController.swift */; };
 		400FA8A11CA3296100605C5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400FA8A01CA3296100605C5C /* Images.xcassets */; };
 		401085AF1CBCAA5F002516A4 /* SCA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401085AE1CBCAA5F002516A4 /* SCA.plist */; };
 		401085B11CBCAD5D002516A4 /* Trax.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401085B01CBCAD5D002516A4 /* Trax.plist */; };
@@ -78,6 +79,7 @@
 		0025DF3D1CCC771100DC2B22 /* Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Empty.png; path = ParkMe/Empty.png; sourceTree = "<group>"; };
 		0025DF3F1CCC771C00DC2B22 /* Full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Full.png; path = ParkMe/Full.png; sourceTree = "<group>"; };
 		0025DF411CCC772300DC2B22 /* Medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Medium.png; path = ParkMe/Medium.png; sourceTree = "<group>"; };
+		2ACA766A1CD6C1C600ACAAD3 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		400FA8A01CA3296100605C5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		401085AE1CBCAA5F002516A4 /* SCA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SCA.plist; sourceTree = "<group>"; };
 		401085B01CBCAD5D002516A4 /* Trax.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Trax.plist; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				403D86C41CB9DAD900B9F2B0 /* Lots.swift */,
 				400FA8A01CA3296100605C5C /* Images.xcassets */,
 				409DB6AD1CD685CB008DD65B /* customButton.swift */,
+				2ACA766A1CD6C1C600ACAAD3 /* TableViewController.swift */,
 			);
 			name = "ParkMe main screen";
 			path = ParkMe;
@@ -419,7 +422,7 @@
 				TargetAttributes = {
 					4011744E1C8555D000080D07 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = J43SGLE8R7;
+						DevelopmentTeam = FE3HYUJ5E7;
 					};
 					401174621C8555D000080D07 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -569,6 +572,7 @@
 				40FDE74C1CBAD04800D9060A /* Annotation.swift in Sources */,
 				409DB6AE1CD685CB008DD65B /* customButton.swift in Sources */,
 				401174531C8555D000080D07 /* AppDelegate.swift in Sources */,
+				2ACA766B1CD6C1C600ACAAD3 /* TableViewController.swift in Sources */,
 				40C7FAEF1CBDBE3D00C4D8E8 /* database.swift in Sources */,
 				40E3596B1CBE9A420030D6B5 /* UserMotion.swift in Sources */,
 				401C69E41CD038730038E7ED /* reportViewController.swift in Sources */,
@@ -732,7 +736,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = liyadong588;
+				PRODUCT_BUNDLE_IDENTIFIER = lftomazini;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -754,7 +758,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = liyadong588;
+				PRODUCT_BUNDLE_IDENTIFIER = lftomazini;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
