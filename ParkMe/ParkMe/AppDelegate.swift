@@ -30,7 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSFontAttributeName : UIFont(name: "ChalkboardSE-Bold", size: 22)!
         ]
         navigationBarAppearace.titleTextAttributes = attrs
-        
         return true
     }
 

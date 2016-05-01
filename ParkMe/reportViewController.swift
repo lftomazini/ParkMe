@@ -112,16 +112,27 @@ extension reportViewController: UITableViewDataSource
         
         if (indexPath.row == 1) {
             
+            cell.textView.allowsEditingTextAttributes = true
+            
             switch annotation.title! {
             case "Smith":
-                cell.textView.text = "Available spaces: 140 \nDecals: Student Decals Only \nClosest buildings: Taylor Hall"
+                let attributedStr = NSMutableAttributedString(string: "Decals: 🔵\n")
+                let attrs = [
+                    NSForegroundColorAttributeName : UIColor.blackColor(),
+                    NSFontAttributeName : UIFont(name: "ChalkboardSE-Bold", size: 22)!
+                ]
+                attributedStr.addAttributes(attrs, range: NSRange())
+                cell.textView.attributedText = attributedStr
             default:
                 cell.textView.text = ""
             }
+            
+            cell.textView.font = UIFont(name: "ArialMT", size: 17)!
+            cell.textView.textAlignment = .Center
         }
         
         if (indexPath.row == 3) {
-            let reportFullBtn = FabButton(frame: CGRectMake(40, 60, 300, 40))
+            let reportFullBtn = FlatButton(frame: CGRectMake(40, 60, 300, 40))
             reportFullBtn.backgroundColor = UIColorFromRGB(0x3AAAFE)
             let cellHeight: CGFloat = 44.0
             reportFullBtn.center = CGPoint(x: view.bounds.width / 2.0, y: cellHeight / 2.0)
@@ -134,14 +145,14 @@ extension reportViewController: UITableViewDataSource
         }
         
         if (indexPath.row == 5) {
-            let reportIssueBtn = FabButton(frame: CGRectMake(40, 60, 300, 40))
-            reportIssueBtn.backgroundColor = UIColorFromRGB(0x3AAAFE)
+            let reportIssueBtn = FlatButton(frame: CGRectMake(40, 60, 200, 40))
+            reportIssueBtn.backgroundColor = UIColorFromRGB(0xFF486C)
             let cellHeight: CGFloat = 44.0
             reportIssueBtn.center = CGPoint(x: view.bounds.width / 2.0, y: cellHeight / 2.0)
             reportIssueBtn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
             reportIssueBtn.addTarget(self, action: #selector(reportViewController.reportIssue(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             reportIssueBtn.setTitle("Report an issue", forState: UIControlState.Normal)
-            reportIssueBtn.titleLabel?.font = UIFont(name: "ArialMT", size: 20)!
+            reportIssueBtn.titleLabel?.font = UIFont(name: "ArialMT", size: 18)!
             
             cell.addSubview(reportIssueBtn)
         }

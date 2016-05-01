@@ -23,6 +23,7 @@
 		401C69E41CD038730038E7ED /* reportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401C69E31CD038730038E7ED /* reportViewController.swift */; };
 		401C69E61CD04AED0038E7ED /* reportHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401C69E51CD04AED0038E7ED /* reportHeaderView.swift */; };
 		401DE0D11CBAF2A9001BF35B /* ACWS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401DE0D01CBAF2A9001BF35B /* ACWS.plist */; };
+		402BFA171CD5575600C0634E /* customPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BFA161CD5575600C0634E /* customPageViewController.swift */; };
 		40371AF51CD0F4A4000737CC /* AcademicWest.png in Resources */ = {isa = PBXBuildFile; fileRef = 40371AEE1CD0F4A4000737CC /* AcademicWest.png */; };
 		40371AF61CD0F4A4000737CC /* Breakiron.png in Resources */ = {isa = PBXBuildFile; fileRef = 40371AEF1CD0F4A4000737CC /* Breakiron.png */; };
 		40371AF71CD0F4A4000737CC /* cornerhouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 40371AF01CD0F4A4000737CC /* cornerhouse.png */; };
@@ -36,7 +37,7 @@
 		404C1CE41CCE5429008FAA29 /* CornerHouse.plist in Resources */ = {isa = PBXBuildFile; fileRef = 404C1CE31CCE5429008FAA29 /* CornerHouse.plist */; };
 		4060390E1CCD69670046F1DA /* Error-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4060390D1CCD69670046F1DA /* Error-100.png */; };
 		407E05D61CD2D517004F7AAA /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4061FC6C1CD2B056008BC781 /* Material.framework */; };
-		4090DF981CC0680200C5685A /* launchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4090DF971CC0680200C5685A /* launchScreen.png */; };
+		4090DF981CC0680200C5685A /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4090DF971CC0680200C5685A /* launch.png */; };
 		4097E4F71CBB56E900201421 /* MCD.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4097E4F61CBB56E900201421 /* MCD.plist */; };
 		40A000D31CD1D40D00A2156C /* SCLAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4034FADB1CD1D078002F6005 /* SCLAlertView.framework */; };
 		40AAE7A51CBC69DD00C649F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */; };
@@ -50,6 +51,7 @@
 		40C7FAEF1CBDBE3D00C4D8E8 /* database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C7FAEE1CBDBE3D00C4D8E8 /* database.swift */; };
 		40E359681CBE99C90030D6B5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E359671CBE99C90030D6B5 /* CoreMotion.framework */; };
 		40E3596B1CBE9A420030D6B5 /* UserMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3596A1CBE9A420030D6B5 /* UserMotion.swift */; };
+		40EF544C1CD3B4C20017B7D6 /* BWWalkthrough.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EF544B1CD3B4C20017B7D6 /* BWWalkthrough.framework */; };
 		40FDE7481CBAC3B400D9060A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FDE7471CBAC3B400D9060A /* MapKit.framework */; };
 		40FDE74C1CBAD04800D9060A /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDE74B1CBAD04800D9060A /* Annotation.swift */; };
 /* End PBXBuildFile section */
@@ -94,6 +96,7 @@
 		401C69E31CD038730038E7ED /* reportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reportViewController.swift; sourceTree = "<group>"; };
 		401C69E51CD04AED0038E7ED /* reportHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reportHeaderView.swift; sourceTree = "<group>"; };
 		401DE0D01CBAF2A9001BF35B /* ACWS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ACWS.plist; sourceTree = "<group>"; };
+		402BFA161CD5575600C0634E /* customPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = customPageViewController.swift; path = ../customPageViewController.swift; sourceTree = "<group>"; };
 		4034FADB1CD1D078002F6005 /* SCLAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCLAlertView.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ParkMe-ftavuvwfbvznszbsprcrdjqmmpqo/Build/Products/Debug-iphonesimulator/SCLAlertView.framework"; sourceTree = "<group>"; };
 		40371AEE1CD0F4A4000737CC /* AcademicWest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AcademicWest.png; sourceTree = "<group>"; };
 		40371AEF1CD0F4A4000737CC /* Breakiron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Breakiron.png; sourceTree = "<group>"; };
@@ -109,7 +112,7 @@
 		404C1CE31CCE5429008FAA29 /* CornerHouse.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CornerHouse.plist; sourceTree = "<group>"; };
 		4060390D1CCD69670046F1DA /* Error-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Error-100.png"; sourceTree = "<group>"; };
 		4061FC6C1CD2B056008BC781 /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ParkMe-ftavuvwfbvznszbsprcrdjqmmpqo/Build/Products/Debug-iphonesimulator/Material.framework"; sourceTree = "<group>"; };
-		4090DF971CC0680200C5685A /* launchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launchScreen.png; path = ParkMe/launchScreen.png; sourceTree = "<group>"; };
+		4090DF971CC0680200C5685A /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch.png; path = ParkMe/launch.png; sourceTree = "<group>"; };
 		4097E4F61CBB56E900201421 /* MCD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MCD.plist; sourceTree = "<group>"; };
 		40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		40B91D1A1CBB14A4009EF827 /* Smith.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Smith.plist; sourceTree = "<group>"; };
@@ -122,6 +125,7 @@
 		40C7FAEE1CBDBE3D00C4D8E8 /* database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = database.swift; sourceTree = "<group>"; };
 		40E359671CBE99C90030D6B5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		40E3596A1CBE9A420030D6B5 /* UserMotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMotion.swift; sourceTree = "<group>"; };
+		40EF544B1CD3B4C20017B7D6 /* BWWalkthrough.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWWalkthrough.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/ParkMe-ftavuvwfbvznszbsprcrdjqmmpqo/Build/Products/Debug-iphonesimulator/BWWalkthrough.framework"; sourceTree = "<group>"; };
 		40FDE7471CBAC3B400D9060A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		40FDE74B1CBAD04800D9060A /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 		B819ACD2327953B754FFFC2A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40EF544C1CD3B4C20017B7D6 /* BWWalkthrough.framework in Frameworks */,
 				407E05D61CD2D517004F7AAA /* Material.framework in Frameworks */,
 				40A000D31CD1D40D00A2156C /* SCLAlertView.framework in Frameworks */,
 				40E359681CBE99C90030D6B5 /* CoreMotion.framework in Frameworks */,
@@ -206,8 +211,10 @@
 		401174511C8555D000080D07 /* ParkMe main screen */ = {
 			isa = PBXGroup;
 			children = (
+				40EF544B1CD3B4C20017B7D6 /* BWWalkthrough.framework */,
 				401174521C8555D000080D07 /* AppDelegate.swift */,
 				401174541C8555D000080D07 /* ViewController.swift */,
+				402BFA161CD5575600C0634E /* customPageViewController.swift */,
 				401174561C8555D000080D07 /* Main.storyboard */,
 				4011745B1C8555D000080D07 /* LaunchScreen.storyboard */,
 				4011745E1C8555D000080D07 /* Info.plist */,
@@ -280,7 +287,7 @@
 				40371AF31CD0F4A4000737CC /* South Campus Apartment.png */,
 				40371AF41CD0F4A4000737CC /* Trax.png */,
 				0025DF3D1CCC771100DC2B22 /* Empty.png */,
-				4090DF971CC0680200C5685A /* launchScreen.png */,
+				4090DF971CC0680200C5685A /* launch.png */,
 				0025DF411CCC772300DC2B22 /* Medium.png */,
 				40162E491CCD9CFC002EC230 /* Error-48.png */,
 				4060390D1CCD69670046F1DA /* Error-100.png */,
@@ -470,7 +477,7 @@
 				40371AF81CD0F4A4000737CC /* McDonnell.png in Resources */,
 				40371AFB1CD0F4A4000737CC /* Trax.png in Resources */,
 				401085B11CBCAD5D002516A4 /* Trax.plist in Resources */,
-				4090DF981CC0680200C5685A /* launchScreen.png in Resources */,
+				4090DF981CC0680200C5685A /* launch.png in Resources */,
 				4011745D1C8555D000080D07 /* LaunchScreen.storyboard in Resources */,
 				401174581C8555D000080D07 /* Main.storyboard in Resources */,
 				4097E4F71CBB56E900201421 /* MCD.plist in Resources */,
@@ -553,6 +560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				402BFA171CD5575600C0634E /* customPageViewController.swift in Sources */,
 				401174551C8555D000080D07 /* ViewController.swift in Sources */,
 				401C69E61CD04AED0038E7ED /* reportHeaderView.swift in Sources */,
 				40FDE74C1CBAD04800D9060A /* Annotation.swift in Sources */,

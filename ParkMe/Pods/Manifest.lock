@@ -1,14 +1,17 @@
 PODS:
+  - BWWalkthrough (1.1.0)
   - Firebase (2.5.1)
   - Material (1.39.17)
   - SCLAlertView (0.5.4)
 
 DEPENDENCIES:
+  - BWWalkthrough
   - Firebase (>= 2.5.1)
   - Material (~> 1.0)
   - SCLAlertView
 
 SPEC CHECKSUMS:
+  BWWalkthrough: 0c27ad2773a25c8f4fb9004bc7d6685deb35fecc
   Firebase: 3565ea88b830f28f2c77ecc524622bc71a20d085
   Material: eccc5afdac89e10aa7a635ad34d6c3564387bfd3
   SCLAlertView: 081f824b17b7cf41057159535591f4d6fc8acde3

@@ -14,11 +14,12 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" clipsSubviews="YES" contentMode="center" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="pvv-f4-pDk">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startPage" translatesAutoresizingMaskIntoConstraints="NO" id="pvv-f4-pDk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="tintColor" red="0.86274509803921573" green="1" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -29,7 +30,6 @@
                             <constraint firstItem="pvv-f4-pDk" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="hOa-pN-x0i"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -37,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchScreen.png" width="673" height="1196"/>
+        <image name="startPage" width="336" height="598"/>
     </resources>
 </document>
