@@ -85,13 +85,46 @@
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="3gG-gT-6Ot">
                                 <rect key="frame" x="141" y="531" width="39" height="37"/>
                             </pageControl>
-                            <button hidden="YES" opaque="NO" contentMode="redraw" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzV-b0-Pma" userLabel="Close Button">
-                                <rect key="frame" x="259" y="35" width="24" height="26"/>
+                            <button hidden="YES" autoresizesSubviews="NO" opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzV-b0-Pma" userLabel="Close Button" customClass="FlatButton" customModule="Material">
+                                <rect key="frame" x="60" y="456" width="200" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="DMg-ue-dQ3"/>
-                                    <constraint firstAttribute="width" constant="24" id="wx2-gF-WLb"/>
+                                    <constraint firstAttribute="width" constant="200" id="2f5-Uk-DiO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="qD1-bA-Rlv"/>
                                 </constraints>
-                                <state key="normal" image="Close"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="3" minY="5" maxX="3" maxY="5"/>
+                                <state key="normal" title="START PARKING">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pulseColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                        <real key="value" value="200"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="close:" destination="F3s-Ux-CCD" eventType="touchUpInside" id="XJq-xQ-T4m"/>
                                 </connections>
@@ -99,10 +132,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CzV-b0-Pma" firstAttribute="top" secondItem="aV5-SM-VsB" secondAttribute="bottom" constant="15" id="L6G-If-tMM"/>
+                            <constraint firstItem="3gG-gT-6Ot" firstAttribute="top" secondItem="CzV-b0-Pma" secondAttribute="bottom" constant="40" id="TS9-KY-omU"/>
+                            <constraint firstItem="CzV-b0-Pma" firstAttribute="centerX" secondItem="UHl-Tr-3XS" secondAttribute="centerX" id="Xgi-zy-ths"/>
                             <constraint firstItem="3gG-gT-6Ot" firstAttribute="bottom" secondItem="OWC-YY-VPW" secondAttribute="top" id="ayg-GP-gFF"/>
                             <constraint firstItem="3gG-gT-6Ot" firstAttribute="centerX" secondItem="UHl-Tr-3XS" secondAttribute="centerX" id="eog-vz-Hoq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CzV-b0-Pma" secondAttribute="trailing" constant="21" id="k0P-aW-yMy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kES-0D-0g5"/>
@@ -407,7 +440,6 @@
     <resources>
         <image name="BG_1" width="1750" height="1350"/>
         <image name="BG_2" width="1750" height="1350"/>
-        <image name="Close" width="47" height="54"/>
         <image name="Empty.png" width="240" height="322"/>
         <image name="Full.png" width="250" height="328"/>
         <image name="Medium.png" width="244" height="346"/>
