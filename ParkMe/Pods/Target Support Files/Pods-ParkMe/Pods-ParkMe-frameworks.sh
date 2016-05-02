@@ -86,12 +86,14 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-ParkMe/BWWalkthrough.framework"
   install_framework "Pods-ParkMe/Firebase.framework"
+  install_framework "Pods-ParkMe/Gecco.framework"
   install_framework "Pods-ParkMe/Material.framework"
   install_framework "Pods-ParkMe/SCLAlertView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-ParkMe/BWWalkthrough.framework"
   install_framework "Pods-ParkMe/Firebase.framework"
+  install_framework "Pods-ParkMe/Gecco.framework"
   install_framework "Pods-ParkMe/Material.framework"
   install_framework "Pods-ParkMe/SCLAlertView.framework"
 fi

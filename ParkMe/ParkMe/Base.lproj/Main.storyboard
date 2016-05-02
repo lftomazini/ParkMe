@@ -33,6 +33,16 @@
                             <toolbar clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aV-hq-YeK">
                                 <rect key="frame" x="0.0" y="692" width="414" height="44"/>
                                 <items>
+                                    <barButtonItem style="plain" id="x3s-fP-zPA">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DQX-tf-WoJ">
+                                            <rect key="frame" x="20" y="9" width="24" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="help"/>
+                                            <connections>
+                                                <segue destination="9Hd-vl-2sG" kind="modal" identifier="tutorial" modalPresentationStyle="fullScreen" id="nH5-RQ-Pd2"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="7MQ-Du-TjS"/>
                                     <barButtonItem style="plain" id="QdJ-xf-uvW">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="vKZ-Sw-kKN">
@@ -153,7 +163,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="712" y="327"/>
+            <point key="canvasLocation" x="651" y="215"/>
         </scene>
         <!--Walkthrough View Controller-->
         <scene sceneID="6bz-DQ-qZM">
@@ -348,6 +358,105 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lLg-vO-GeL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-216" y="1783"/>
+        </scene>
+        <!--tutorial screen-->
+        <scene sceneID="Kkz-Ra-8hu">
+            <objects>
+                <viewController title="tutorial screen" id="9Hd-vl-2sG" customClass="tutorialScreenViewController" customModule="ParkMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="36s-YK-2r4"/>
+                        <viewControllerLayoutGuide type="bottom" id="cfc-GU-fWX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oHS-UN-hcv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial" translatesAutoresizingMaskIntoConstraints="NO" id="XGk-AK-f7D">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="XGk-AK-f7D" firstAttribute="top" secondItem="36s-YK-2r4" secondAttribute="bottom" id="T71-hN-wZ1"/>
+                            <constraint firstItem="cfc-GU-fWX" firstAttribute="top" secondItem="XGk-AK-f7D" secondAttribute="bottom" id="et4-Kk-v52"/>
+                            <constraint firstItem="XGk-AK-f7D" firstAttribute="leading" secondItem="oHS-UN-hcv" secondAttribute="leading" id="gdU-zW-jh0"/>
+                            <constraint firstAttribute="trailing" secondItem="XGk-AK-f7D" secondAttribute="trailing" id="lJ4-yi-XfB"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="OA0-fi-1cK" appends="YES" id="ERa-61-v5E"/>
+                        </connections>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TY8-vo-8Qm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="OA0-fi-1cK">
+                    <connections>
+                        <action selector="handleGesture:" destination="9Hd-vl-2sG" id="TAP-GT-PLs"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="490" y="1992"/>
+        </scene>
+        <!--Annotation View Controller-->
+        <scene sceneID="tTy-gW-Wgm">
+            <objects>
+                <viewController storyboardIdentifier="gecco" id="ekJ-Ys-Wag" customClass="AnnotationViewController" customModule="ParkMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTr-ZM-TJd"/>
+                        <viewControllerLayoutGuide type="bottom" id="wYi-e4-ftQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4eC-Eh-ifT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search for a building" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpd-me-hGl" userLabel="Search for a building">
+                                <rect key="frame" x="78" y="90" width="163.5" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report a parking lot is full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCF-88-NWT" userLabel="Report a parking lot is full">
+                                <rect key="frame" x="60" y="345" width="200.5" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out more information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gz1-vn-b4b" userLabel="Check out more information">
+                                <rect key="frame" x="89" y="495.5" width="215" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drag down to close this page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jC0-F8-vjx" userLabel="Drag down to close this page">
+                                <rect key="frame" x="47" y="208" width="227.5" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jpd-me-hGl" firstAttribute="top" secondItem="4eC-Eh-ifT" secondAttribute="topMargin" constant="90" id="15m-tt-z5n"/>
+                            <constraint firstItem="jC0-F8-vjx" firstAttribute="centerX" secondItem="4eC-Eh-ifT" secondAttribute="centerX" id="Veo-Sl-ceh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gz1-vn-b4b" secondAttribute="trailing" id="cA4-UO-ag5"/>
+                            <constraint firstItem="jC0-F8-vjx" firstAttribute="top" secondItem="aTr-ZM-TJd" secondAttribute="bottom" constant="188" id="fgB-UD-WZH"/>
+                            <constraint firstItem="dCF-88-NWT" firstAttribute="centerX" secondItem="4eC-Eh-ifT" secondAttribute="centerX" id="i0i-In-hwQ"/>
+                            <constraint firstItem="wYi-e4-ftQ" firstAttribute="top" secondItem="Gz1-vn-b4b" secondAttribute="bottom" constant="50" id="i46-2h-b3N"/>
+                            <constraint firstItem="wYi-e4-ftQ" firstAttribute="top" secondItem="dCF-88-NWT" secondAttribute="bottom" constant="200" id="lOj-qf-Hfu"/>
+                            <constraint firstItem="Jpd-me-hGl" firstAttribute="centerX" secondItem="4eC-Eh-ifT" secondAttribute="centerX" id="nLf-DB-4XF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="annotationViews" destination="Jpd-me-hGl" collectionClass="NSMutableArray" id="0bU-Le-6V9"/>
+                        <outletCollection property="annotationViews" destination="dCF-88-NWT" collectionClass="NSMutableArray" id="DxS-jV-z0k"/>
+                        <outletCollection property="annotationViews" destination="Gz1-vn-b4b" collectionClass="NSMutableArray" id="Oc7-2d-Hl4"/>
+                        <outletCollection property="annotationViews" destination="jC0-F8-vjx" collectionClass="NSMutableArray" id="ORj-MT-HRs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="csr-7U-Cmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449" y="2848"/>
         </scene>
         <!--Report-->
         <scene sceneID="IHh-Sc-gix">
@@ -545,6 +654,8 @@
         <image name="Orange.png" width="298" height="298"/>
         <image name="Red.png" width="298" height="298"/>
         <image name="h_icon" width="250" height="250"/>
+        <image name="help" width="50" height="50"/>
         <image name="p_icon" width="50" height="50"/>
+        <image name="tutorial" width="372" height="648"/>
     </resources>
 </document>
