@@ -497,7 +497,7 @@
 				TargetAttributes = {
 					4011744E1C8555D000080D07 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = J43SGLE8R7;
+						DevelopmentTeam = FE3HYUJ5E7;
 					};
 					401174621C8555D000080D07 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -513,7 +513,7 @@
 					};
 					4056B1DC1CD6EEEC00C2F630 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = J43SGLE8R7;
+						DevelopmentTeam = FE3HYUJ5E7;
 					};
 				};
 			};
@@ -961,6 +961,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lftomazini.todayWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -975,6 +976,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lftomazini.todayWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

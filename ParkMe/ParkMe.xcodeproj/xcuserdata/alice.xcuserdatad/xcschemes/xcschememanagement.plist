@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>parkWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>todayWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +33,16 @@
 			<true/>
 		</dict>
 		<key>4011746D1C8555D000080D07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40371AFF1CD0F89F000737CC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4056B1DC1CD6EEEC00C2F630</key>
 		<dict>
 			<key>primary</key>
 			<true/>
