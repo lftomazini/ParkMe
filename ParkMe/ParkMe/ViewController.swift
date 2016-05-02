@@ -68,6 +68,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, BWWalkthrough
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
+        // creates 3d-touch shortcut for go to lot
+        let smith = UIApplicationShortcutItem(type: "goToLotSmith", localizedTitle: "Smith", localizedSubtitle: "", icon: UIApplicationShortcutIcon(type: .Search), userInfo: nil)
+        
+        // adds shortcuts to homescreen
+        UIApplication.sharedApplication().shortcutItems = [smith]
+
+        
     }
     
     override func viewDidAppear(animated: Bool) {
