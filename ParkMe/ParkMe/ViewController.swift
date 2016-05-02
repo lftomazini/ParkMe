@@ -11,7 +11,7 @@ import MapKit
 import CoreLocation
 import Firebase
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, UIPageViewControllerDataSource{
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -21,6 +21,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     /* Central coordinate of Bucknell */
     let BU_Latitude = 40.954582
     let BU_Longitude = -76.883322
+    var pageViewController: UIPageViewController
+    var pageImages: NSArray!
+    
     
     /* Initializing Parking Lots instances */
     var BRKILot = Lots(filename: "BRKI", name: "BRKI", density: "HIGH", type: lotsDecalTypes.Student, imageName: "Breakiron.png")
@@ -62,6 +65,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Dismiss key board after tapping on the screen to hide the keyboard
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        
+        self.pageImages = NSArray(object: "info1","info2")
+        
         
     }
     
@@ -119,6 +125,55 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         return false;
     }
     
+    func viewControllerAtIndex(index: Int) -> ContentViewController{
+        
+        if ((self.pageImages.count == 0) || (index > self.pageImages.count)){
+            return ContentViewController()
+        }
+        
+        let vc: ContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("") as! ContentViewController
+        
+        vc.imageFile = self.pageImages[index] as! String
+        vc.pageIndex = index
+        return vc
+    }
+    
+    // MARK: - PageViewController Data Source 
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+        let vc = viewController as! ContentViewController
+        var index = vc.pageIndex as Int
+        
+        if(index == 0 || index == NSNotFound){
+            return nil
+        }
+        index -= 1
+        let toReturn = self.viewControllerAtIndex(index)
+        return toReturn
+    }
+    
+    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+        let vc = viewController as! ContentViewController
+        var index = vc.pageIndex as Int
+        
+        if(index == NSNotFound){
+            return nil
+        }
+        index += 1
+        if (index == self.pageImages.count) {
+            return nil
+        }
+        return self.viewControllerAtIndex(index)
+        
+    }
+    
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return self.pageImages.count
+    }
+    
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return 0
+    }
+
     
 }
 
