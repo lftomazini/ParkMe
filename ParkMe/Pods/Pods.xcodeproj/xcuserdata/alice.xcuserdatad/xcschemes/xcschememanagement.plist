@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>Gecco.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
 		<key>Material-io.cosmicmind.material.fonts.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -97,6 +102,21 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>7BF2421D2034D43173D9F463B3D4E2A1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7CE42C9EB61A2B50C49E54E89DDEC399</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8407C6D956F9D8357C9739CDE0E9172F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>85CDB899143013D74628361C6C837823</key>
 		<dict>
 			<key>primary</key>
@@ -152,7 +172,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>E1BC1A1ADC11A3355F91ED8DD3D2F2A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F36A55B8B5484F5A5D874A6F2B2B5376</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA8878248422855EE0136DE3E0E2D26F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC107F139EFD01BEA13CA1D75185FC06</key>
 		<dict>
 			<key>primary</key>
 			<true/>

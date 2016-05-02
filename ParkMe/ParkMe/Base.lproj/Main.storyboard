@@ -600,19 +600,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Info2.png" translatesAutoresizingMaskIntoConstraints="NO" id="hkj-lE-S0Q">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info2.png" translatesAutoresizingMaskIntoConstraints="NO" id="238-hU-pmT">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="hkj-lE-S0Q" secondAttribute="height" multiplier="69:112" id="x1A-iX-f4d"/>
-                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hkj-lE-S0Q" firstAttribute="bottom" secondItem="btf-Vi-LxC" secondAttribute="bottomMargin" id="0Y6-xC-mtd"/>
-                            <constraint firstItem="hkj-lE-S0Q" firstAttribute="leading" secondItem="btf-Vi-LxC" secondAttribute="leadingMargin" constant="-20" id="TmY-Ub-Fbt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hkj-lE-S0Q" secondAttribute="trailing" constant="-20" id="qab-9K-P7E"/>
-                            <constraint firstItem="hkj-lE-S0Q" firstAttribute="top" secondItem="btf-Vi-LxC" secondAttribute="topMargin" constant="64" id="yOA-pV-UuQ"/>
+                            <constraint firstItem="238-hU-pmT" firstAttribute="top" secondItem="L4l-HT-eo7" secondAttribute="bottom" id="7To-Wh-6MA"/>
+                            <constraint firstAttribute="trailing" secondItem="238-hU-pmT" secondAttribute="trailing" id="9y4-HP-O0s"/>
+                            <constraint firstItem="238-hU-pmT" firstAttribute="leading" secondItem="btf-Vi-LxC" secondAttribute="leading" id="VEJ-Oy-b2c"/>
+                            <constraint firstItem="238-hU-pmT" firstAttribute="bottom" secondItem="nPr-o0-Jfg" secondAttribute="top" id="ffi-TM-9w3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="O5l-BH-fPQ"/>
@@ -620,7 +617,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bsg-OG-xK2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1292" y="1214"/>
+            <point key="canvasLocation" x="1389" y="1214"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="67c-wb-vcu">
@@ -650,11 +647,11 @@
         <image name="BG_2" width="640" height="426"/>
         <image name="Green.png" width="298" height="298"/>
         <image name="Info1.png" width="931" height="1511"/>
-        <image name="Info2.png" width="929" height="1510"/>
         <image name="Orange.png" width="298" height="298"/>
         <image name="Red.png" width="298" height="298"/>
         <image name="h_icon" width="250" height="250"/>
         <image name="help" width="50" height="50"/>
+        <image name="info2.png" width="929" height="1510"/>
         <image name="p_icon" width="50" height="50"/>
         <image name="tutorial" width="372" height="648"/>
     </resources>
