@@ -22,6 +22,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, BWWalkthrough
     
     var walkthrough:BWWalkthroughViewController!
     
+    let interactor = Interactor()
+    
     let locationManager =  CLLocationManager()
     /* Central coordinate of Bucknell */
     let BU_Latitude = 40.954582
@@ -237,8 +239,14 @@ extension ViewController: MKMapViewDelegate {
         if (segue.identifier == "reportView") {
             let destViewController = segue.destinationViewController as! reportViewController
             destViewController.annotation = ((sender as! MKAnnotationView).annotation) as? Annotation
+        } else if (segue.identifier == "tutorial") {
+            let tutorialView = segue.destinationViewController as! tutorialScreenViewController
+            tutorialView.transitioningDelegate = self
+            tutorialView.interactor = interactor
         }
     }
+    
+    
     
     func UIColorFromRGB(rgbValue: UInt) -> UIColor {
         return UIColor(
@@ -247,6 +255,18 @@ extension ViewController: MKMapViewDelegate {
             blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
             alpha: CGFloat(1.0)
         )
+    }
+    
+}
+
+extension ViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return dismissAnimator()
+    }
+    
+    func interactionControllerForDismissal(animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return interactor.hasStarted ? interactor : nil
     }
     
 }

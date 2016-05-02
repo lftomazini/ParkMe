@@ -47,6 +47,11 @@
 		40AAE7A51CBC69DD00C649F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */; };
 		40B91D1B1CBB14A4009EF827 /* Smith.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40B91D1A1CBB14A4009EF827 /* Smith.plist */; };
 		40BE97211CD704B700F0DFA6 /* Gateway.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40BE97201CD704B700F0DFA6 /* Gateway.plist */; };
+		40BE97251CD70AD900F0DFA6 /* Gecco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BE97241CD70AD900F0DFA6 /* Gecco.framework */; };
+		40BE97281CD70E7900F0DFA6 /* tutorialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE97271CD70E7900F0DFA6 /* tutorialScreenViewController.swift */; };
+		40BE972A1CD718E800F0DFA6 /* dismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE97291CD718E800F0DFA6 /* dismissAnimator.swift */; };
+		40BE972C1CD71B1C00F0DFA6 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE972B1CD71B1C00F0DFA6 /* Interactor.swift */; };
+		40BE972E1CD71FC600F0DFA6 /* AnnotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE972D1CD71FC600F0DFA6 /* AnnotationViewController.swift */; };
 		40C7FAE21CBDB5F300C4D8E8 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7FAE11CBDB5F300C4D8E8 /* Firebase.framework */; };
 		40C7FAE41CBDB60D00C4D8E8 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7FAE31CBDB60D00C4D8E8 /* libicucore.tbd */; };
 		40C7FAE61CBDB61A00C4D8E8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7FAE51CBDB61A00C4D8E8 /* libc++.tbd */; };
@@ -151,6 +156,11 @@
 		40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		40B91D1A1CBB14A4009EF827 /* Smith.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Smith.plist; sourceTree = "<group>"; };
 		40BE97201CD704B700F0DFA6 /* Gateway.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Gateway.plist; sourceTree = "<group>"; };
+		40BE97241CD70AD900F0DFA6 /* Gecco.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gecco.framework; path = "../../../Library/Developer/Xcode/DerivedData/ParkMe-cgqddpkcshbfdfauqrpsmnhwhxua/Build/Products/Debug-iphonesimulator/Gecco.framework"; sourceTree = "<group>"; };
+		40BE97271CD70E7900F0DFA6 /* tutorialScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutorialScreenViewController.swift; sourceTree = "<group>"; };
+		40BE97291CD718E800F0DFA6 /* dismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dismissAnimator.swift; sourceTree = "<group>"; };
+		40BE972B1CD71B1C00F0DFA6 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		40BE972D1CD71FC600F0DFA6 /* AnnotationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationViewController.swift; sourceTree = "<group>"; };
 		40C7FAE11CBDB5F300C4D8E8 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		40C7FAE31CBDB60D00C4D8E8 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		40C7FAE51CBDB61A00C4D8E8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -176,6 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BE97251CD70AD900F0DFA6 /* Gecco.framework in Frameworks */,
 				40CCC90C1CD6BB8900DB2591 /* BWWalkthrough.framework in Frameworks */,
 				40CCC90D1CD6BB8900DB2591 /* Material.framework in Frameworks */,
 				40CCC90E1CD6BB8900DB2591 /* SCLAlertView.framework in Frameworks */,
@@ -228,6 +239,7 @@
 		401174461C8555D000080D07 = {
 			isa = PBXGroup;
 			children = (
+				40BE97241CD70AD900F0DFA6 /* Gecco.framework */,
 				40CCC90B1CD6BB8900DB2591 /* SCLAlertView.framework */,
 				40CCC90A1CD6BB8900DB2591 /* Material.framework */,
 				406039081CCD60B30046F1DA /* Pictures */,
@@ -239,6 +251,7 @@
 				403D86C11CB9DA0100B9F2B0 /* Geofencing */,
 				401174511C8555D000080D07 /* ParkMe main screen */,
 				401C69E21CD037EC0038E7ED /* report screen */,
+				40BE97261CD70E0600F0DFA6 /* tutorial screen */,
 				40C7FAED1CBDBE1300C4D8E8 /* BackEnd */,
 				401174661C8555D000080D07 /* ParkMeTests */,
 				401174711C8555D000080D07 /* ParkMeUITests */,
@@ -358,6 +371,17 @@
 				0025DF3F1CCC771C00DC2B22 /* Full.png */,
 			);
 			name = Pictures;
+			sourceTree = "<group>";
+		};
+		40BE97261CD70E0600F0DFA6 /* tutorial screen */ = {
+			isa = PBXGroup;
+			children = (
+				40BE97271CD70E7900F0DFA6 /* tutorialScreenViewController.swift */,
+				40BE97291CD718E800F0DFA6 /* dismissAnimator.swift */,
+				40BE972B1CD71B1C00F0DFA6 /* Interactor.swift */,
+				40BE972D1CD71FC600F0DFA6 /* AnnotationViewController.swift */,
+			);
+			name = "tutorial screen";
 			sourceTree = "<group>";
 		};
 		40C7FAED1CBDBE1300C4D8E8 /* BackEnd */ = {
@@ -500,7 +524,7 @@
 				TargetAttributes = {
 					4011744E1C8555D000080D07 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = FE3HYUJ5E7;
+						DevelopmentTeam = J43SGLE8R7;
 					};
 					401174621C8555D000080D07 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -660,9 +684,13 @@
 			files = (
 				402BFA171CD5575600C0634E /* customPageViewController.swift in Sources */,
 				401174551C8555D000080D07 /* ViewController.swift in Sources */,
+				40BE97281CD70E7900F0DFA6 /* tutorialScreenViewController.swift in Sources */,
+				40BE972E1CD71FC600F0DFA6 /* AnnotationViewController.swift in Sources */,
 				40FB63231CD6DA0700112B55 /* DOFavoriteButton.swift in Sources */,
 				401C69E61CD04AED0038E7ED /* reportHeaderView.swift in Sources */,
+				40BE972A1CD718E800F0DFA6 /* dismissAnimator.swift in Sources */,
 				40FDE74C1CBAD04800D9060A /* Annotation.swift in Sources */,
+				40BE972C1CD71B1C00F0DFA6 /* Interactor.swift in Sources */,
 				409DB6AE1CD685CB008DD65B /* customButton.swift in Sources */,
 				401174531C8555D000080D07 /* AppDelegate.swift in Sources */,
 				2ACA766B1CD6C1C600ACAAD3 /* TableViewController.swift in Sources */,

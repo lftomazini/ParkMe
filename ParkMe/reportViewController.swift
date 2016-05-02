@@ -109,28 +109,7 @@ extension reportViewController: UITableViewDataSource
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCellWithIdentifier("Option Cell", forIndexPath: indexPath) as! CustomTableViewCell
-        
-//        if (indexPath.row == 1) {
-//            
-//            cell.textView.allowsEditingTextAttributes = true
-//            
-//            switch annotation.title! {
-//            case "Smith":
-//                let attributedStr = NSMutableAttributedString(string: "Decals: 🔵\n")
-//                let attrs = [
-//                    NSForegroundColorAttributeName : UIColor.blackColor(),
-//                    NSFontAttributeName : UIFont(name: "ChalkboardSE-Bold", size: 22)!
-//                ]
-//                attributedStr.addAttributes(attrs, range: NSRange())
-//                cell.textView.attributedText = attributedStr
-//            default:
-//                cell.textView.text = ""
-//            }
-//            
-//            cell.textView.font = UIFont(name: "ArialMT", size: 17)!
-//            cell.textView.textAlignment = .Center
-//        }
-        
+                
         if (indexPath.row == 3) {
             let reportFullBtn = FlatButton(frame: CGRectMake(40, 60, 300, 40))
             reportFullBtn.backgroundColor = UIColorFromRGB(0x3AAAFE)
