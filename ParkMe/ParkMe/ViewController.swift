@@ -34,10 +34,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPageViewCon
     var BRKILot = Lots(filename: "BRKI", name: "BRKI", density: "HIGH", type: lotsDecalTypes.Student, imageName: "Breakiron.png")
     var ACWSLot = Lots(filename: "ACWS", name:"ACWS", density: "MILD", type: lotsDecalTypes.Student, imageName: "AcademicWest.png")
     var SMLot = Lots(filename: "Smith", name:"Smith", density: "LOW", type: lotsDecalTypes.Student, imageName: "Smith.png")
-    var MCDLot = Lots(filename: "MCD", name:"McDonell", density: "LOW", type: lotsDecalTypes.Student, imageName: "McDonnell.png")
+    var MCDLot = Lots(filename: "MCD", name:"McDonnell", density: "LOW", type: lotsDecalTypes.Student, imageName: "McDonnell.png")
     var SCALot = Lots(filename: "SCA", name: "South Campus Apartments", density: "LOW", type: lotsDecalTypes.Student, imageName: "South Campus Apartment.png")
     var TraxLot = Lots(filename: "Trax", name: "Trax", density: "HIGH", type: lotsDecalTypes.Student, imageName: "Trax.png")
     var CornerHouseLot = Lots(filename: "CornerHouse", name: "Corner House", density: "HIGH", type: lotsDecalTypes.Student, imageName: "cornerhouse.png")
+    var gatewaysLot = Lots(filename: "Gateway", name: "Gateways", density: "LOW", type: lotsDecalTypes.Student, imageName: "Gateways")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,13 +99,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPageViewCon
      */
     func populateAnnotations() {
         
-        mapView.addAnnotation(Annotation(lot: BRKILot)); // BRKI
-        mapView.addAnnotation(Annotation(lot: ACWSLot)); // ACWS
-        mapView.addAnnotation(Annotation(lot: SMLot)); // Smith
-        mapView.addAnnotation(Annotation(lot: MCDLot)); // McDonell
+        mapView.addAnnotation(Annotation(lot: BRKILot)) // BRKI
+        mapView.addAnnotation(Annotation(lot: ACWSLot)) // ACWS
+        mapView.addAnnotation(Annotation(lot: SMLot)) // Smith
+        mapView.addAnnotation(Annotation(lot: MCDLot)) // McDonell
         mapView.addAnnotation(Annotation(lot: SCALot)) // South Campus Apartments
         mapView.addAnnotation(Annotation(lot: TraxLot)) // Trax
         mapView.addAnnotation(Annotation(lot: CornerHouseLot)) // Corner House
+        mapView.addAnnotation(Annotation(lot: gatewaysLot)) // Gateways
+        
     }
     
     /* Circle parking lots and make polygons*/
@@ -115,13 +118,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPageViewCon
     }
     
     func populateBoundaries() {
-        addBoundary(BRKILot);
-        addBoundary(ACWSLot);
-        addBoundary(SMLot);
-        addBoundary(MCDLot);
-        addBoundary(SCALot);
-        addBoundary(TraxLot);
+        addBoundary(BRKILot)
+        addBoundary(ACWSLot)
+        addBoundary(SMLot)
+        addBoundary(MCDLot)
+        addBoundary(SCALot)
+        addBoundary(TraxLot)
         addBoundary(CornerHouseLot)
+        addBoundary(gatewaysLot)
     }
     
     /* Shake to recenter */
@@ -250,6 +254,7 @@ extension ViewController: MKMapViewDelegate {
             let annotationView = MKPinAnnotationView(annotation:annotation, reuseIdentifier:reuseId)
             annotationView.enabled = true
             annotationView.canShowCallout = true
+            annotationView.pinTintColor = UIColorFromRGB(0x3AAAFE)
             
             let reportBtnImg = UIImage(named: "Error-48") as UIImage?
             let reportBtn = UIButton(type: UIButtonType.Custom) as UIButton
@@ -282,6 +287,15 @@ extension ViewController: MKMapViewDelegate {
             let destViewController = segue.destinationViewController as! reportViewController
             destViewController.annotation = ((sender as! MKAnnotationView).annotation) as? Annotation
         }
+    }
+    
+    func UIColorFromRGB(rgbValue: UInt) -> UIColor {
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
     }
     
 }

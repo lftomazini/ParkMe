@@ -53,6 +53,7 @@
 		409DB6AE1CD685CB008DD65B /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409DB6AD1CD685CB008DD65B /* customButton.swift */; };
 		40AAE7A51CBC69DD00C649F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */; };
 		40B91D1B1CBB14A4009EF827 /* Smith.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40B91D1A1CBB14A4009EF827 /* Smith.plist */; };
+		40BE97211CD704B700F0DFA6 /* Gateway.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40BE97201CD704B700F0DFA6 /* Gateway.plist */; };
 		40C7FAE21CBDB5F300C4D8E8 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7FAE11CBDB5F300C4D8E8 /* Firebase.framework */; };
 		40C7FAE41CBDB60D00C4D8E8 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7FAE31CBDB60D00C4D8E8 /* libicucore.tbd */; };
 		40C7FAE61CBDB61A00C4D8E8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7FAE51CBDB61A00C4D8E8 /* libc++.tbd */; };
@@ -163,6 +164,7 @@
 		409DB6AD1CD685CB008DD65B /* customButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
 		40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		40B91D1A1CBB14A4009EF827 /* Smith.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Smith.plist; sourceTree = "<group>"; };
+		40BE97201CD704B700F0DFA6 /* Gateway.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Gateway.plist; sourceTree = "<group>"; };
 		40C7FAE11CBDB5F300C4D8E8 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		40C7FAE31CBDB60D00C4D8E8 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		40C7FAE51CBDB61A00C4D8E8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -343,6 +345,7 @@
 				401085AE1CBCAA5F002516A4 /* SCA.plist */,
 				401085B01CBCAD5D002516A4 /* Trax.plist */,
 				404C1CE31CCE5429008FAA29 /* CornerHouse.plist */,
+				40BE97201CD704B700F0DFA6 /* Gateway.plist */,
 			);
 			name = Geofencing;
 			sourceTree = "<group>";
@@ -517,7 +520,7 @@
 				TargetAttributes = {
 					4011744E1C8555D000080D07 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = J43SGLE8R7;
+						DevelopmentTeam = FE3HYUJ5E7;
 					};
 					401174621C8555D000080D07 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -533,7 +536,7 @@
 					};
 					4056B1DC1CD6EEEC00C2F630 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = J43SGLE8R7;
+						DevelopmentTeam = FE3HYUJ5E7;
 					};
 				};
 			};
@@ -565,6 +568,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40371AFA1CD0F4A4000737CC /* South Campus Apartment.png in Resources */,
+				40BE97211CD704B700F0DFA6 /* Gateway.plist in Resources */,
 				40B91D1B1CBB14A4009EF827 /* Smith.plist in Resources */,
 				40371AF91CD0F4A4000737CC /* Smith.png in Resources */,
 				403D86C91CB9E99400B9F2B0 /* BRKI.plist in Resources */,
@@ -866,11 +870,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
 				INFOPLIST_FILE = ParkMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -890,11 +889,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
 				INFOPLIST_FILE = ParkMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -998,6 +992,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lftomazini.todayWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1012,6 +1007,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lftomazini.todayWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

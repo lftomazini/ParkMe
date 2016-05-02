@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BWWalkthrough-BWWalkthrough.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>BWWalkthrough.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>Firebase.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -113,6 +123,11 @@
 			<true/>
 		</dict>
 		<key>B7AC9326D819482593FE118E915409D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B96AA6C647EF5CBFB222808ECF0626C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
