@@ -10,6 +10,9 @@
 		0025DF3E1CCC771100DC2B22 /* Empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 0025DF3D1CCC771100DC2B22 /* Empty.png */; };
 		0025DF401CCC771C00DC2B22 /* Full.png in Resources */ = {isa = PBXBuildFile; fileRef = 0025DF3F1CCC771C00DC2B22 /* Full.png */; };
 		0025DF421CCC772300DC2B22 /* Medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 0025DF411CCC772300DC2B22 /* Medium.png */; };
+		007BFA0E1CD724C800CCF326 /* BWWalkthrough.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007BFA0B1CD724C800CCF326 /* BWWalkthrough.framework */; };
+		007BFA0F1CD724C800CCF326 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007BFA0C1CD724C800CCF326 /* Material.framework */; };
+		007BFA101CD724C800CCF326 /* SCLAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007BFA0D1CD724C800CCF326 /* SCLAlertView.framework */; };
 		2ACA766B1CD6C1C600ACAAD3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA766A1CD6C1C600ACAAD3 /* TableViewController.swift */; };
 		400FA8A11CA3296100605C5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400FA8A01CA3296100605C5C /* Images.xcassets */; };
 		401085AF1CBCAA5F002516A4 /* SCA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401085AE1CBCAA5F002516A4 /* SCA.plist */; };
@@ -53,9 +56,6 @@
 		40C7FAEA1CBDB63200C4D8E8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7FAE91CBDB63200C4D8E8 /* Security.framework */; };
 		40C7FAEC1CBDB63B00C4D8E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7FAEB1CBDB63B00C4D8E8 /* SystemConfiguration.framework */; };
 		40C7FAEF1CBDBE3D00C4D8E8 /* database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C7FAEE1CBDBE3D00C4D8E8 /* database.swift */; };
-		40CCC90C1CD6BB8900DB2591 /* BWWalkthrough.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CCC9091CD6BB8900DB2591 /* BWWalkthrough.framework */; };
-		40CCC90D1CD6BB8900DB2591 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CCC90A1CD6BB8900DB2591 /* Material.framework */; };
-		40CCC90E1CD6BB8900DB2591 /* SCLAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CCC90B1CD6BB8900DB2591 /* SCLAlertView.framework */; };
 		40E359681CBE99C90030D6B5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E359671CBE99C90030D6B5 /* CoreMotion.framework */; };
 		40E3596B1CBE9A420030D6B5 /* UserMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3596A1CBE9A420030D6B5 /* UserMotion.swift */; };
 		40FB63231CD6DA0700112B55 /* DOFavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB631E1CD6DA0700112B55 /* DOFavoriteButton.swift */; };
@@ -106,6 +106,9 @@
 		0025DF3D1CCC771100DC2B22 /* Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Empty.png; path = ParkMe/Empty.png; sourceTree = "<group>"; };
 		0025DF3F1CCC771C00DC2B22 /* Full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Full.png; path = ParkMe/Full.png; sourceTree = "<group>"; };
 		0025DF411CCC772300DC2B22 /* Medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Medium.png; path = ParkMe/Medium.png; sourceTree = "<group>"; };
+		007BFA0B1CD724C800CCF326 /* BWWalkthrough.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWWalkthrough.framework; path = "Pods/../build/Debug-iphoneos/BWWalkthrough.framework"; sourceTree = "<group>"; };
+		007BFA0C1CD724C800CCF326 /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = "Pods/../build/Debug-iphoneos/Material.framework"; sourceTree = "<group>"; };
+		007BFA0D1CD724C800CCF326 /* SCLAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCLAlertView.framework; path = "Pods/../build/Debug-iphoneos/SCLAlertView.framework"; sourceTree = "<group>"; };
 		2ACA766A1CD6C1C600ACAAD3 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		400FA8A01CA3296100605C5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		401085AE1CBCAA5F002516A4 /* SCA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SCA.plist; sourceTree = "<group>"; };
@@ -156,9 +159,6 @@
 		40C7FAE91CBDB63200C4D8E8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		40C7FAEB1CBDB63B00C4D8E8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		40C7FAEE1CBDBE3D00C4D8E8 /* database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = database.swift; sourceTree = "<group>"; };
-		40CCC9091CD6BB8900DB2591 /* BWWalkthrough.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWWalkthrough.framework; path = "../../../Library/Developer/Xcode/DerivedData/ParkMe-cgqddpkcshbfdfauqrpsmnhwhxua/Build/Products/Debug-iphoneos/BWWalkthrough.framework"; sourceTree = "<group>"; };
-		40CCC90A1CD6BB8900DB2591 /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = "../../../Library/Developer/Xcode/DerivedData/ParkMe-cgqddpkcshbfdfauqrpsmnhwhxua/Build/Products/Debug-iphoneos/Material.framework"; sourceTree = "<group>"; };
-		40CCC90B1CD6BB8900DB2591 /* SCLAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCLAlertView.framework; path = "../../../Library/Developer/Xcode/DerivedData/ParkMe-cgqddpkcshbfdfauqrpsmnhwhxua/Build/Products/Debug-iphoneos/SCLAlertView.framework"; sourceTree = "<group>"; };
 		40E359671CBE99C90030D6B5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		40E3596A1CBE9A420030D6B5 /* UserMotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMotion.swift; sourceTree = "<group>"; };
 		40FB631E1CD6DA0700112B55 /* DOFavoriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOFavoriteButton.swift; sourceTree = "<group>"; };
@@ -174,9 +174,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40CCC90C1CD6BB8900DB2591 /* BWWalkthrough.framework in Frameworks */,
-				40CCC90D1CD6BB8900DB2591 /* Material.framework in Frameworks */,
-				40CCC90E1CD6BB8900DB2591 /* SCLAlertView.framework in Frameworks */,
+				007BFA0E1CD724C800CCF326 /* BWWalkthrough.framework in Frameworks */,
+				007BFA0F1CD724C800CCF326 /* Material.framework in Frameworks */,
+				007BFA101CD724C800CCF326 /* SCLAlertView.framework in Frameworks */,
 				40E359681CBE99C90030D6B5 /* CoreMotion.framework in Frameworks */,
 				40C7FAEC1CBDB63B00C4D8E8 /* SystemConfiguration.framework in Frameworks */,
 				40C7FAEA1CBDB63200C4D8E8 /* Security.framework in Frameworks */,
@@ -226,10 +226,7 @@
 		401174461C8555D000080D07 = {
 			isa = PBXGroup;
 			children = (
-				40CCC90B1CD6BB8900DB2591 /* SCLAlertView.framework */,
-				40CCC90A1CD6BB8900DB2591 /* Material.framework */,
 				406039081CCD60B30046F1DA /* Pictures */,
-				40CCC9091CD6BB8900DB2591 /* BWWalkthrough.framework */,
 				40C7FAE11CBDB5F300C4D8E8 /* Firebase.framework */,
 				40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */,
 				401DE0CD1CBAEDA2001BF35B /* Annotations */,
@@ -378,6 +375,9 @@
 		C23A8DE602FD1A7B09C95FA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				007BFA0B1CD724C800CCF326 /* BWWalkthrough.framework */,
+				007BFA0C1CD724C800CCF326 /* Material.framework */,
+				007BFA0D1CD724C800CCF326 /* SCLAlertView.framework */,
 				40E359671CBE99C90030D6B5 /* CoreMotion.framework */,
 				40C7FAEB1CBDB63B00C4D8E8 /* SystemConfiguration.framework */,
 				40C7FAE91CBDB63200C4D8E8 /* Security.framework */,
