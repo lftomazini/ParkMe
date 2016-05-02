@@ -53,7 +53,7 @@
                                     <constraint firstAttribute="width" constant="50" id="DaA-FG-LMu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nearly Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEs-K4-B1W">
@@ -64,7 +64,7 @@
                                     <constraint firstAttribute="height" constant="27" id="wus-Ma-fHI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Green.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gdl-9Y-bpM">
@@ -96,7 +96,7 @@
                                     <constraint firstAttribute="width" constant="42" id="RhP-Fy-spE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -420,7 +420,6 @@
         <!--Info Page-->
         <scene sceneID="S46-Yu-jGy">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fiR-EI-jJK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="cOc-Wj-l8m" userLabel="Info Page" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cwd-bw-Bow"/>
@@ -430,36 +429,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Info1.png" translatesAutoresizingMaskIntoConstraints="NO" id="dB8-j8-bZ9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Info1.png" translatesAutoresizingMaskIntoConstraints="NO" id="dB8-j8-bZ9">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                             </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="TM3-ks-iuV">
-                                <rect key="frame" x="188" y="691" width="39" height="37"/>
+                                <rect key="frame" x="0.0" y="0.0" width="39" height="37"/>
                             </pageControl>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.82172250089999999" green="0.87080995549999995" blue="0.87178910340000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OXM-of-B8u" firstAttribute="top" secondItem="dB8-j8-bZ9" secondAttribute="bottom" id="48x-hJ-7tn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dB8-j8-bZ9" secondAttribute="trailing" constant="-20" id="NJd-u6-952"/>
+                            <constraint firstItem="dB8-j8-bZ9" firstAttribute="top" secondItem="Cwd-bw-Bow" secondAttribute="bottom" id="i3S-mp-zDb"/>
+                            <constraint firstItem="dB8-j8-bZ9" firstAttribute="leading" secondItem="WhQ-Yo-dZW" secondAttribute="leadingMargin" constant="-20" id="zQo-6q-xvd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Info" id="Mqz-hQ-W41"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fiR-EI-jJK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="683" y="1180"/>
+            <point key="canvasLocation" x="731" y="1259"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="a1d-3g-Rbq">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="1cL-aQ-gjf" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="1cL-aQ-gjf" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2JK-7n-weq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1177" y="1104"/>
+            <point key="canvasLocation" x="1837" y="1552"/>
         </scene>
         <!--Content View Controller-->
         <scene sceneID="tQ7-ou-OCp">
             <objects>
-                <viewController id="q0i-Gn-ctQ" customClass="ContentViewController" customModule="ParkMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContentViewController" id="q0i-Gn-ctQ" customClass="ContentViewController" customModule="ParkMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Nm-qf-Bem"/>
                         <viewControllerLayoutGuide type="bottom" id="uHy-Eo-vdQ"/>
@@ -469,7 +475,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Gg-qH-JlT">
-                                <rect key="frame" x="0.0" y="98" width="414" height="638"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -481,7 +487,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hmg-Vl-gGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1735" y="1104"/>
+            <point key="canvasLocation" x="1204" y="1259"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="67c-wb-vcu">
@@ -522,13 +528,15 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8n-Lw-aHI">
                                 <rect key="frame" x="20" y="456" width="374" height="250"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <mutableString key="text">The pin on the screen indicates that there is a parking lot at this spot. The color around the pin shows the density of the current parking lot. Green means there are a lot of empty spaces in the parking lot; Orange means the parking lot is nearly full but still have some available spaces; Red means that the parking lot is full, there is not empty space in the parking lotIf you click on the pins, you can see some detailed information about this parking lot including the name and density of the parking lot just in case. The little triangle button on the left is a report button. If you want more information on this button, swipe to the left to see more.</mutableString>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">The pin on the screen indicates that there is a parking lot at this spot. The color around the pin shows the density of the current parking lot. Green means there are a lot of empty spaces in the parking lot; Orange means the parking lot is nearly full but still have some available spaces; Red means that the parking lot is full, there is not empty space in the parking lot
+
+If you click on the pins, you can see some detailed information about this parking lot including the name and density of the parking lot just in case. The little triangle button on the left is a report button. If you want more information on this button, swipe to the left to see more.</string>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.82172250089999999" green="0.87080995549999995" blue="0.87178910340000004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Info" id="8dl-8t-ICg"/>
@@ -540,10 +548,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BG_1" width="1750" height="1350"/>
+        <image name="BG_2" width="1750" height="1350"/>
         <image name="Green.png" width="298" height="298"/>
         <image name="Info.png" width="750" height="1028"/>
         <image name="Info1.png" width="931" height="1511"/>
         <image name="Orange.png" width="298" height="298"/>
         <image name="Red.png" width="298" height="298"/>
+        <image name="h_icon" width="250" height="250"/>
+        <image name="p_icon" width="50" height="50"/>
     </resources>
 </document>

@@ -71,7 +71,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPageViewCon
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
-        self.pageImages = NSArray(object: "info1","info2")
+        self.pageImages = NSArray(objects: "info1","info2")
+        self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
+        self.pageViewController.dataSource = self
+        let startVC = self.viewControllerAtIndex(0) as ContentViewController
+        let viewControllers = NSArray(object: startVC)
+        self.pageViewController.setViewControllers(viewControllers as? [UIViewController], direction: .Forward, animated: true, completion:nil)
+        self.pageViewController.view.frame = CGRectMake(0, 30, self.view.frame.width, self.view.frame.size.height)
+        self.addChildViewController(self.pageViewController)
+        self.view.addSubview(self.pageViewController.view)
+        self.pageViewController.didMoveToParentViewController(self)
         
         
     }
@@ -136,7 +145,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPageViewCon
             return ContentViewController()
         }
         
-        let vc: ContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("") as! ContentViewController
+        let vc: ContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ContentViewController") as! ContentViewController
         
         vc.imageFile = self.pageImages[index] as! String
         vc.pageIndex = index

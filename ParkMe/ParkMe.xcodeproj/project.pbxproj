@@ -17,6 +17,7 @@
 		0090BCEF1CD3B37F007AF237 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 0090BCED1CD3B37F007AF237 /* Info.png */; };
 		0090BCF11CD3B91B007AF237 /* Info1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0090BCF01CD3B91B007AF237 /* Info1.png */; };
 		0090BCF31CD6BFF6007AF237 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090BCF21CD6BFF6007AF237 /* ContentViewController.swift */; };
+		00E2E4411CD70829002EB684 /* Info2.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E2E4401CD70829002EB684 /* Info2.png */; };
 		400FA8A11CA3296100605C5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400FA8A01CA3296100605C5C /* Images.xcassets */; };
 		401085AF1CBCAA5F002516A4 /* SCA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401085AE1CBCAA5F002516A4 /* SCA.plist */; };
 		401085B11CBCAD5D002516A4 /* Trax.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401085B01CBCAD5D002516A4 /* Trax.plist */; };
@@ -119,6 +120,7 @@
 		0090BCED1CD3B37F007AF237 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info.png; sourceTree = "<group>"; };
 		0090BCF01CD3B91B007AF237 /* Info1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info1.png; sourceTree = "<group>"; };
 		0090BCF21CD6BFF6007AF237 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		00E2E4401CD70829002EB684 /* Info2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info2.png; sourceTree = "<group>"; };
 		400FA8A01CA3296100605C5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		401085AE1CBCAA5F002516A4 /* SCA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SCA.plist; sourceTree = "<group>"; };
 		401085B01CBCAD5D002516A4 /* Trax.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Trax.plist; sourceTree = "<group>"; };
@@ -287,9 +289,9 @@
 				4011745B1C8555D000080D07 /* LaunchScreen.storyboard */,
 				4011745E1C8555D000080D07 /* Info.plist */,
 				403D86C41CB9DAD900B9F2B0 /* Lots.swift */,
+				00E2E4401CD70829002EB684 /* Info2.png */,
 				400FA8A01CA3296100605C5C /* Images.xcassets */,
 				409DB6AD1CD685CB008DD65B /* customButton.swift */,
-				2ACA766A1CD6C1C600ACAAD3 /* TableViewController.swift */,
 			);
 			name = "ParkMe main screen";
 			path = ParkMe;
@@ -580,6 +582,7 @@
 				0090BCEA1CD3A4F0007AF237 /* Orange.png in Resources */,
 				0025DF401CCC771C00DC2B22 /* Full.png in Resources */,
 				0090BCEE1CD3B37F007AF237 /* frontpage.png in Resources */,
+				00E2E4411CD70829002EB684 /* Info2.png in Resources */,
 				0090BCF11CD3B91B007AF237 /* Info1.png in Resources */,
 				40371AF81CD0F4A4000737CC /* McDonnell.png in Resources */,
 				0090BCEF1CD3B37F007AF237 /* Info.png in Resources */,
@@ -1068,6 +1071,7 @@
 				4056B1EB1CD6EEEC00C2F630 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
