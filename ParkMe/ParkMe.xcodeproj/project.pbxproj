@@ -13,6 +13,11 @@
 		007BFA0E1CD724C800CCF326 /* BWWalkthrough.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007BFA0B1CD724C800CCF326 /* BWWalkthrough.framework */; };
 		007BFA0F1CD724C800CCF326 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007BFA0C1CD724C800CCF326 /* Material.framework */; };
 		007BFA101CD724C800CCF326 /* SCLAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007BFA0D1CD724C800CCF326 /* SCLAlertView.framework */; };
+		007BFA121CD727D400CCF326 /* Green.png in Resources */ = {isa = PBXBuildFile; fileRef = 007BFA111CD727D400CCF326 /* Green.png */; };
+		007BFA171CD727E100CCF326 /* Info1.png in Resources */ = {isa = PBXBuildFile; fileRef = 007BFA131CD727E100CCF326 /* Info1.png */; };
+		007BFA181CD727E100CCF326 /* info2.png in Resources */ = {isa = PBXBuildFile; fileRef = 007BFA141CD727E100CCF326 /* info2.png */; };
+		007BFA191CD727E100CCF326 /* Orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 007BFA151CD727E100CCF326 /* Orange.png */; };
+		007BFA1A1CD727E100CCF326 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 007BFA161CD727E100CCF326 /* Red.png */; };
 		2ACA766B1CD6C1C600ACAAD3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA766A1CD6C1C600ACAAD3 /* TableViewController.swift */; };
 		400FA8A11CA3296100605C5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400FA8A01CA3296100605C5C /* Images.xcassets */; };
 		401085AF1CBCAA5F002516A4 /* SCA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401085AE1CBCAA5F002516A4 /* SCA.plist */; };
@@ -110,6 +115,11 @@
 		007BFA0B1CD724C800CCF326 /* BWWalkthrough.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWWalkthrough.framework; path = "Pods/../build/Debug-iphoneos/BWWalkthrough.framework"; sourceTree = "<group>"; };
 		007BFA0C1CD724C800CCF326 /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = "Pods/../build/Debug-iphoneos/Material.framework"; sourceTree = "<group>"; };
 		007BFA0D1CD724C800CCF326 /* SCLAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCLAlertView.framework; path = "Pods/../build/Debug-iphoneos/SCLAlertView.framework"; sourceTree = "<group>"; };
+		007BFA111CD727D400CCF326 /* Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Green.png; sourceTree = "<group>"; };
+		007BFA131CD727E100CCF326 /* Info1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info1.png; sourceTree = "<group>"; };
+		007BFA141CD727E100CCF326 /* info2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info2.png; sourceTree = "<group>"; };
+		007BFA151CD727E100CCF326 /* Orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orange.png; sourceTree = "<group>"; };
+		007BFA161CD727E100CCF326 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
 		2ACA766A1CD6C1C600ACAAD3 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		400FA8A01CA3296100605C5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		401085AE1CBCAA5F002516A4 /* SCA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SCA.plist; sourceTree = "<group>"; };
@@ -261,6 +271,11 @@
 		401174511C8555D000080D07 /* ParkMe main screen */ = {
 			isa = PBXGroup;
 			children = (
+				007BFA131CD727E100CCF326 /* Info1.png */,
+				007BFA141CD727E100CCF326 /* info2.png */,
+				007BFA151CD727E100CCF326 /* Orange.png */,
+				007BFA161CD727E100CCF326 /* Red.png */,
+				007BFA111CD727D400CCF326 /* Green.png */,
 				401174521C8555D000080D07 /* AppDelegate.swift */,
 				401174541C8555D000080D07 /* ViewController.swift */,
 				402BFA161CD5575600C0634E /* customPageViewController.swift */,
@@ -548,6 +563,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40371AFA1CD0F4A4000737CC /* South Campus Apartment.png in Resources */,
+				007BFA191CD727E100CCF326 /* Orange.png in Resources */,
 				40BE97211CD704B700F0DFA6 /* Gateway.plist in Resources */,
 				40B91D1B1CBB14A4009EF827 /* Smith.plist in Resources */,
 				40371AF91CD0F4A4000737CC /* Smith.png in Resources */,
@@ -563,7 +579,10 @@
 				404C1CE41CCE5429008FAA29 /* CornerHouse.plist in Resources */,
 				401085AF1CBCAA5F002516A4 /* SCA.plist in Resources */,
 				40371AF51CD0F4A4000737CC /* AcademicWest.png in Resources */,
+				007BFA1A1CD727E100CCF326 /* Red.png in Resources */,
 				0025DF401CCC771C00DC2B22 /* Full.png in Resources */,
+				007BFA181CD727E100CCF326 /* info2.png in Resources */,
+				007BFA171CD727E100CCF326 /* Info1.png in Resources */,
 				40371AF81CD0F4A4000737CC /* McDonnell.png in Resources */,
 				40371AFB1CD0F4A4000737CC /* Trax.png in Resources */,
 				401085B11CBCAD5D002516A4 /* Trax.plist in Resources */,
@@ -571,6 +590,7 @@
 				4011745D1C8555D000080D07 /* LaunchScreen.storyboard in Resources */,
 				401174581C8555D000080D07 /* Main.storyboard in Resources */,
 				4097E4F71CBB56E900201421 /* MCD.plist in Resources */,
+				007BFA121CD727D400CCF326 /* Green.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
