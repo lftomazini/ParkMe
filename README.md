@@ -12,14 +12,15 @@ The idea of our project was based on the presentation [Parking on campus](https:
 - [Student Parking Interview - by Drew Taylor](https://medium.com/@awt003/student-parking-interview-9dd119de017f#.kjy0z7mwv)
 - [Issues with the Bucknell Parking System - by Alice Shen](https://medium.com/@ms092/issues-with-the-bucknell-parking-system-d9cc90a4c112#.gmhgks4ft)
 
-### [Summarized Contextual Inquiry](https://medium.com/@lftomazini/summarized-contextual-inquiry-3cdb97074762#.wyfq5znn2)
+### Design process
+- [Summarized Contextual Inquiry](https://medium.com/@lftomazini/summarized-contextual-inquiry-3cdb97074762#.wyfq5znn2)
 
-### [Presentation](https://docs.google.com/presentation/d/1ZJ8ccp5NuXjkQ947w_EufowgroZeyF-QD98HlZa965A/edit?usp=sharing)
+- [Presentation](https://docs.google.com/presentation/d/1ZJ8ccp5NuXjkQ947w_EufowgroZeyF-QD98HlZa965A/edit?usp=sharing)
 
-### [Concept Video](https://www.youtube.com/watch?v=tlSBLZjG_BA)
+- [Concept Video](https://www.youtube.com/watch?v=tlSBLZjG_BA)
 
-### [Mood Board](https://niice.co/m/488b71981237f1c00e5b3afbe54ac297)
+- [Mood Board](https://niice.co/m/488b71981237f1c00e5b3afbe54ac297)
 
-### [Style Guide](https://app.frontify.com/d/z5FawCZgY1AW/park-me-style-guide)
+- [Style Guide](https://app.frontify.com/d/z5FawCZgY1AW/park-me-style-guide)
 
-### [MedFi Prototype](https://www.justinmind.com/usernote/tests/19570480/19570996/19600595/index.html#/screens/5b15f10f-d751-4b05-9ba0-38ba9c67abb2)
+- [MedFi Prototype](https://www.justinmind.com/usernote/tests/19570480/19570996/19600595/index.html#/screens/5b15f10f-d751-4b05-9ba0-38ba9c67abb2)
