@@ -196,9 +196,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				007BFA0E1CD724C800CCF326 /* BWWalkthrough.framework in Frameworks */,
-				007BFA0F1CD724C800CCF326 /* Material.framework in Frameworks */,
-				007BFA101CD724C800CCF326 /* SCLAlertView.framework in Frameworks */,
+				40BE97251CD70AD900F0DFA6 /* Gecco.framework in Frameworks */,
+				40CCC90C1CD6BB8900DB2591 /* BWWalkthrough.framework in Frameworks */,
+				40CCC90D1CD6BB8900DB2591 /* Material.framework in Frameworks */,
+				40CCC90E1CD6BB8900DB2591 /* SCLAlertView.framework in Frameworks */,
 				40E359681CBE99C90030D6B5 /* CoreMotion.framework in Frameworks */,
 				40C7FAEC1CBDB63B00C4D8E8 /* SystemConfiguration.framework in Frameworks */,
 				40C7FAEA1CBDB63200C4D8E8 /* Security.framework in Frameworks */,
@@ -248,6 +249,9 @@
 		401174461C8555D000080D07 = {
 			isa = PBXGroup;
 			children = (
+				40BE97241CD70AD900F0DFA6 /* Gecco.framework */,
+				40CCC90B1CD6BB8900DB2591 /* SCLAlertView.framework */,
+				40CCC90A1CD6BB8900DB2591 /* Material.framework */,
 				406039081CCD60B30046F1DA /* Pictures */,
 				40C7FAE11CBDB5F300C4D8E8 /* Firebase.framework */,
 				40AAE7A41CBC69DD00C649F1 /* CoreLocation.framework */,
