@@ -10,12 +10,17 @@ import UIKit
 import MapKit
 import CoreLocation
 import Firebase
+import BWWalkthrough
 
 class ViewController: UIViewController, CLLocationManagerDelegate, UIPageViewControllerDataSource{
     
     @IBOutlet weak var mapView: MKMapView!
     
     @IBOutlet weak var reportButton: UIButton!
+    
+    var needWalkthrough:Bool = true
+    
+    var walkthrough:BWWalkthroughViewController!
     
     let locationManager =  CLLocationManager()
     /* Central coordinate of Bucknell */
@@ -122,7 +127,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPageViewCon
     }
     
     override func prefersStatusBarHidden() -> Bool {
-        return false;
+        return false
     }
     
     func viewControllerAtIndex(index: Int) -> ContentViewController{
@@ -174,6 +179,30 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPageViewCon
         return 0
     }
 
+    
+    func presentWalkthrough() {
+        
+        UIApplication.sharedApplication().statusBarHidden = true
+        UIApplication.sharedApplication().statusBarStyle = .Default
+        
+        let stb = UIStoryboard(name: "Main", bundle: nil)
+
+        walkthrough = stb.instantiateViewControllerWithIdentifier("walkthrough") as! BWWalkthroughViewController
+        let page_one = stb.instantiateViewControllerWithIdentifier("page_1")
+        let page_two = stb.instantiateViewControllerWithIdentifier("page_2")
+        
+        // Attach the pages to the master
+        walkthrough.delegate = self
+        walkthrough.addViewController(page_one)
+        walkthrough.addViewController(page_two)
+        
+        self.presentViewController(walkthrough, animated: true) {
+            ()->() in
+            self.needWalkthrough = false
+            UIApplication.sharedApplication().statusBarHidden = false
+
+        }
+    }
     
 }
 
@@ -246,4 +275,22 @@ extension ViewController: MKMapViewDelegate {
         }
     }
     
+}
+
+extension ViewController {
+    
+    func walkthroughCloseButtonPressed() {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
+    func walkthroughPageDidChange(pageNumber: Int) {
+        if (self.walkthrough.numberOfPages - 1) == pageNumber{
+            self.walkthrough.closeButton?.hidden = false
+        }else{
+            self.walkthrough.closeButton?.hidden = true
+        }
+
+    }
 }
