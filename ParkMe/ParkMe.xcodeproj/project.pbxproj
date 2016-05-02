@@ -10,7 +10,12 @@
 		0025DF3E1CCC771100DC2B22 /* Empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 0025DF3D1CCC771100DC2B22 /* Empty.png */; };
 		0025DF401CCC771C00DC2B22 /* Full.png in Resources */ = {isa = PBXBuildFile; fileRef = 0025DF3F1CCC771C00DC2B22 /* Full.png */; };
 		0025DF421CCC772300DC2B22 /* Medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 0025DF411CCC772300DC2B22 /* Medium.png */; };
-		00863B4C1CD7126400E5174E /* BWWalkthrough.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00863B4B1CD7126400E5174E /* BWWalkthrough.framework */; };
+		007BFA021CD7241300CCF326 /* BWWalkthrough.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00863B4B1CD7126400E5174E /* BWWalkthrough.framework */; };
+		007BFA031CD7241300CCF326 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E2E4451CD70F62002EB684 /* Material.framework */; };
+		007BFA041CD7241300CCF326 /* SCLAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E2E4461CD70F62002EB684 /* SCLAlertView.framework */; };
+		007BFA081CD7241300CCF326 /* Pods_ParkMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007BFA051CD7241300CCF326 /* Pods_ParkMe.framework */; };
+		007BFA091CD7241300CCF326 /* Pods_ParkMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007BFA061CD7241300CCF326 /* Pods_ParkMeTests.framework */; };
+		007BFA0A1CD7241300CCF326 /* Pods_ParkMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007BFA071CD7241300CCF326 /* Pods_ParkMeUITests.framework */; };
 		00863B4E1CD7183900E5174E /* report.png in Resources */ = {isa = PBXBuildFile; fileRef = 00863B4D1CD7183900E5174E /* report.png */; };
 		00863B541CD722C700E5174E /* customPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00863B531CD722C700E5174E /* customPageViewController.swift */; };
 		0090BCE91CD3A4F0007AF237 /* Green.png in Resources */ = {isa = PBXBuildFile; fileRef = 0090BCE61CD3A4F0007AF237 /* Green.png */; };
@@ -22,10 +27,7 @@
 		0090BCF31CD6BFF6007AF237 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090BCF21CD6BFF6007AF237 /* ContentViewController.swift */; };
 		00E2E4411CD70829002EB684 /* Info2.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E2E4401CD70829002EB684 /* Info2.png */; };
 		00E2E4431CD70F34002EB684 /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 00E2E4421CD70F34002EB684 /* Pods */; };
-		00E2E4481CD70F63002EB684 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E2E4451CD70F62002EB684 /* Material.framework */; };
-		00E2E4491CD70F63002EB684 /* SCLAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E2E4461CD70F62002EB684 /* SCLAlertView.framework */; };
 		00E2E44D1CD710EF002EB684 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2E44C1CD710EF002EB684 /* TableViewController.swift */; };
-		400FA8A11CA3296100605C5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400FA8A01CA3296100605C5C /* Images.xcassets */; };
 		401085AF1CBCAA5F002516A4 /* SCA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401085AE1CBCAA5F002516A4 /* SCA.plist */; };
 		401085B11CBCAD5D002516A4 /* Trax.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401085B01CBCAD5D002516A4 /* Trax.plist */; };
 		401174531C8555D000080D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401174521C8555D000080D07 /* AppDelegate.swift */; };
@@ -117,6 +119,9 @@
 		0025DF3D1CCC771100DC2B22 /* Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Empty.png; path = ParkMe/Empty.png; sourceTree = "<group>"; };
 		0025DF3F1CCC771C00DC2B22 /* Full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Full.png; path = ParkMe/Full.png; sourceTree = "<group>"; };
 		0025DF411CCC772300DC2B22 /* Medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Medium.png; path = ParkMe/Medium.png; sourceTree = "<group>"; };
+		007BFA051CD7241300CCF326 /* Pods_ParkMe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ParkMe.framework; path = "Pods/../build/Debug-iphoneos/Pods_ParkMe.framework"; sourceTree = "<group>"; };
+		007BFA061CD7241300CCF326 /* Pods_ParkMeTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ParkMeTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_ParkMeTests.framework"; sourceTree = "<group>"; };
+		007BFA071CD7241300CCF326 /* Pods_ParkMeUITests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ParkMeUITests.framework; path = "Pods/../build/Debug-iphoneos/Pods_ParkMeUITests.framework"; sourceTree = "<group>"; };
 		00863B4B1CD7126400E5174E /* BWWalkthrough.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWWalkthrough.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/ParkMe-fjmpsvuvcldrogfnnuqfztzcfuqe/Build/Products/Debug-iphonesimulator/BWWalkthrough/BWWalkthrough.framework"; sourceTree = "<group>"; };
 		00863B4D1CD7183900E5174E /* report.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = report.png; sourceTree = SOURCE_ROOT; };
 		00863B531CD722C700E5174E /* customPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customPageViewController.swift; sourceTree = "<group>"; };
@@ -133,7 +138,6 @@
 		00E2E4461CD70F62002EB684 /* SCLAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCLAlertView.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/ParkMe-fjmpsvuvcldrogfnnuqfztzcfuqe/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework"; sourceTree = "<group>"; };
 		00E2E44C1CD710EF002EB684 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		00F34E53F3C92FA2DD039F7E /* Pods-ParkMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkMeUITests/Pods-ParkMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		400FA8A01CA3296100605C5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		401085AE1CBCAA5F002516A4 /* SCA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SCA.plist; sourceTree = "<group>"; };
 		401085B01CBCAD5D002516A4 /* Trax.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Trax.plist; sourceTree = "<group>"; };
 		4011744F1C8555D000080D07 /* ParkMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,9 +204,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00863B4C1CD7126400E5174E /* BWWalkthrough.framework in Frameworks */,
-				00E2E4481CD70F63002EB684 /* Material.framework in Frameworks */,
-				00E2E4491CD70F63002EB684 /* SCLAlertView.framework in Frameworks */,
+				007BFA081CD7241300CCF326 /* Pods_ParkMe.framework in Frameworks */,
+				007BFA091CD7241300CCF326 /* Pods_ParkMeTests.framework in Frameworks */,
+				007BFA0A1CD7241300CCF326 /* Pods_ParkMeUITests.framework in Frameworks */,
+				007BFA021CD7241300CCF326 /* BWWalkthrough.framework in Frameworks */,
+				007BFA031CD7241300CCF326 /* Material.framework in Frameworks */,
+				007BFA041CD7241300CCF326 /* SCLAlertView.framework in Frameworks */,
 				40E359681CBE99C90030D6B5 /* CoreMotion.framework in Frameworks */,
 				40C7FAEC1CBDB63B00C4D8E8 /* SystemConfiguration.framework in Frameworks */,
 				40C7FAEA1CBDB63200C4D8E8 /* Security.framework in Frameworks */,
@@ -305,7 +312,6 @@
 				4011745E1C8555D000080D07 /* Info.plist */,
 				403D86C41CB9DAD900B9F2B0 /* Lots.swift */,
 				00E2E4401CD70829002EB684 /* Info2.png */,
-				400FA8A01CA3296100605C5C /* Images.xcassets */,
 				409DB6AD1CD685CB008DD65B /* customButton.swift */,
 			);
 			name = "ParkMe main screen";
@@ -405,6 +411,9 @@
 		C23A8DE602FD1A7B09C95FA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				007BFA051CD7241300CCF326 /* Pods_ParkMe.framework */,
+				007BFA061CD7241300CCF326 /* Pods_ParkMeTests.framework */,
+				007BFA071CD7241300CCF326 /* Pods_ParkMeUITests.framework */,
 				40E359671CBE99C90030D6B5 /* CoreMotion.framework */,
 				40C7FAEB1CBDB63B00C4D8E8 /* SystemConfiguration.framework */,
 				40C7FAE91CBDB63200C4D8E8 /* Security.framework */,
@@ -594,7 +603,6 @@
 				40B91D1B1CBB14A4009EF827 /* Smith.plist in Resources */,
 				40371AF91CD0F4A4000737CC /* Smith.png in Resources */,
 				403D86C91CB9E99400B9F2B0 /* BRKI.plist in Resources */,
-				400FA8A11CA3296100605C5C /* Images.xcassets in Resources */,
 				40371AF71CD0F4A4000737CC /* cornerhouse.png in Resources */,
 				40371AF61CD0F4A4000737CC /* Breakiron.png in Resources */,
 				0025DF3E1CCC771100DC2B22 /* Empty.png in Resources */,
@@ -970,6 +978,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = ParkMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -989,6 +1001,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = ParkMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
