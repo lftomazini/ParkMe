@@ -307,4 +307,5 @@ At the moment it's only used to perform custom animations on didScroll.
     override public func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         print("SIZE")
     }
+    
 }

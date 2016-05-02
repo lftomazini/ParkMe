@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6BDF42B97FA88C01FCD2E40871978654"
+               BlueprintIdentifier = "F36A55B8B5484F5A5D874A6F2B2B5376"
                BuildableName = "Pods_ParkMe.framework"
                BlueprintName = "Pods-ParkMe"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6BDF42B97FA88C01FCD2E40871978654"
+            BlueprintIdentifier = "F36A55B8B5484F5A5D874A6F2B2B5376"
             BuildableName = "Pods_ParkMe.framework"
             BlueprintName = "Pods-ParkMe"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6BDF42B97FA88C01FCD2E40871978654"
-            BuildableName = "Pods_ParkMe.framework"
-            BlueprintName = "Pods-ParkMe"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
