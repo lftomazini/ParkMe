@@ -166,7 +166,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need Help Find A Parking Spot?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Od-Ex-ZVe">
                                 <rect key="frame" x="22" y="170" width="275.5" height="25"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_icon" translatesAutoresizingMaskIntoConstraints="NO" id="nbQ-cy-ZzB">
@@ -313,25 +313,8 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3f3-VN-OFX" id="Enc-zD-16F">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textView clipsSubviews="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiU-ud-IGv">
-                                                    <rect key="frame" x="8" y="8" width="398" height="27.5"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <attributedString key="attributedText"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="KiU-ud-IGv" secondAttribute="trailing" id="7eC-v2-hPg"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="KiU-ud-IGv" secondAttribute="bottom" id="Jqs-Xz-aFr"/>
-                                                <constraint firstItem="KiU-ud-IGv" firstAttribute="leading" secondItem="Enc-zD-16F" secondAttribute="leadingMargin" id="Muu-Aq-sNf"/>
-                                                <constraint firstItem="KiU-ud-IGv" firstAttribute="top" secondItem="Enc-zD-16F" secondAttribute="topMargin" id="dPT-Ve-tAB"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <outlet property="textView" destination="KiU-ud-IGv" id="IUF-jL-czS"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

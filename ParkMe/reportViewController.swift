@@ -103,33 +103,33 @@ extension reportViewController: UITableViewDataSource
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 7
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCellWithIdentifier("Option Cell", forIndexPath: indexPath) as! CustomTableViewCell
         
-        if (indexPath.row == 1) {
-            
-            cell.textView.allowsEditingTextAttributes = true
-            
-            switch annotation.title! {
-            case "Smith":
-                let attributedStr = NSMutableAttributedString(string: "Decals: 🔵\n")
-                let attrs = [
-                    NSForegroundColorAttributeName : UIColor.blackColor(),
-                    NSFontAttributeName : UIFont(name: "ChalkboardSE-Bold", size: 22)!
-                ]
-                attributedStr.addAttributes(attrs, range: NSRange())
-                cell.textView.attributedText = attributedStr
-            default:
-                cell.textView.text = ""
-            }
-            
-            cell.textView.font = UIFont(name: "ArialMT", size: 17)!
-            cell.textView.textAlignment = .Center
-        }
+//        if (indexPath.row == 1) {
+//            
+//            cell.textView.allowsEditingTextAttributes = true
+//            
+//            switch annotation.title! {
+//            case "Smith":
+//                let attributedStr = NSMutableAttributedString(string: "Decals: 🔵\n")
+//                let attrs = [
+//                    NSForegroundColorAttributeName : UIColor.blackColor(),
+//                    NSFontAttributeName : UIFont(name: "ChalkboardSE-Bold", size: 22)!
+//                ]
+//                attributedStr.addAttributes(attrs, range: NSRange())
+//                cell.textView.attributedText = attributedStr
+//            default:
+//                cell.textView.text = ""
+//            }
+//            
+//            cell.textView.font = UIFont(name: "ArialMT", size: 17)!
+//            cell.textView.textAlignment = .Center
+//        }
         
         if (indexPath.row == 3) {
             let reportFullBtn = FlatButton(frame: CGRectMake(40, 60, 300, 40))
@@ -155,6 +155,17 @@ extension reportViewController: UITableViewDataSource
             reportIssueBtn.titleLabel?.font = UIFont(name: "ArialMT", size: 18)!
             
             cell.addSubview(reportIssueBtn)
+        }
+        
+        if (indexPath.row == 1) {
+            let favBtn = DOFavoriteButton(frame: CGRectMake(0, 0, 20, 20), image: UIImage(named: "favorite"))
+            favBtn.imageColorOn = UIColor(red: 254/255, green: 110/255, blue: 111/255, alpha: 1.0)
+            favBtn.circleColor = UIColor(red: 254/255, green: 110/255, blue: 111/255, alpha: 1.0)
+            favBtn.lineColor = UIColor(red: 226/255, green: 96/255, blue: 96/255, alpha: 1.0)
+            let cellHeight: CGFloat = 44.0
+            favBtn.center = CGPoint(x: view.bounds.width / 2.0, y: cellHeight / 2.0)
+            favBtn.addTarget(self, action: #selector(reportViewController.tapped(_:)), forControlEvents: .TouchUpInside)
+            cell.addSubview(favBtn)
         }
         return cell
     }
@@ -189,6 +200,16 @@ extension reportViewController: UITableViewDataSource
         alertView.showCloseButton = false
         alertView.showEdit("Report an issue", subTitle: "Please tell us what your issue is")
         
+    }
+    
+    @IBAction func tapped(sender: DOFavoriteButton) {
+        if sender.selected {
+            // deselect
+            sender.deselect()
+        } else {
+            // select with animation
+            sender.select(animate: true)
+        }
     }
     
     func UIColorFromRGB(rgbValue: UInt) -> UIColor {

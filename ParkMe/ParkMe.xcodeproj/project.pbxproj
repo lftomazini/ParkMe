@@ -53,8 +53,10 @@
 		40CCC90E1CD6BB8900DB2591 /* SCLAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CCC90B1CD6BB8900DB2591 /* SCLAlertView.framework */; };
 		40E359681CBE99C90030D6B5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E359671CBE99C90030D6B5 /* CoreMotion.framework */; };
 		40E3596B1CBE9A420030D6B5 /* UserMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3596A1CBE9A420030D6B5 /* UserMotion.swift */; };
+		40FB63231CD6DA0700112B55 /* DOFavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB631E1CD6DA0700112B55 /* DOFavoriteButton.swift */; };
 		40FDE7481CBAC3B400D9060A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FDE7471CBAC3B400D9060A /* MapKit.framework */; };
 		40FDE74C1CBAD04800D9060A /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDE74B1CBAD04800D9060A /* Annotation.swift */; };
+		8A36406DF01F27627A6C9963 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B272AF95CBD78B6A3BC47C4 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,8 +130,10 @@
 		40CCC90B1CD6BB8900DB2591 /* SCLAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCLAlertView.framework; path = "../../../Library/Developer/Xcode/DerivedData/ParkMe-cgqddpkcshbfdfauqrpsmnhwhxua/Build/Products/Debug-iphoneos/SCLAlertView.framework"; sourceTree = "<group>"; };
 		40E359671CBE99C90030D6B5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		40E3596A1CBE9A420030D6B5 /* UserMotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMotion.swift; sourceTree = "<group>"; };
+		40FB631E1CD6DA0700112B55 /* DOFavoriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOFavoriteButton.swift; sourceTree = "<group>"; };
 		40FDE7471CBAC3B400D9060A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		40FDE74B1CBAD04800D9060A /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		7B272AF95CBD78B6A3BC47C4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B819ACD2327953B754FFFC2A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FD5AF3499EE014047533145E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +155,7 @@
 				40AAE7A51CBC69DD00C649F1 /* CoreLocation.framework in Frameworks */,
 				40FDE7481CBAC3B400D9060A /* MapKit.framework in Frameworks */,
 				40C7FAE21CBDB5F300C4D8E8 /* Firebase.framework in Frameworks */,
+				8A36406DF01F27627A6C9963 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				401C69E31CD038730038E7ED /* reportViewController.swift */,
+				40FB631E1CD6DA0700112B55 /* DOFavoriteButton.swift */,
 				401C69E51CD04AED0038E7ED /* reportHeaderView.swift */,
 			);
 			name = "report screen";
@@ -327,6 +333,7 @@
 				40C7FAE51CBDB61A00C4D8E8 /* libc++.tbd */,
 				40C7FAE31CBDB60D00C4D8E8 /* libicucore.tbd */,
 				40371B011CD0F89F000737CC /* NotificationCenter.framework */,
+				7B272AF95CBD78B6A3BC47C4 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -565,6 +572,7 @@
 			files = (
 				402BFA171CD5575600C0634E /* customPageViewController.swift in Sources */,
 				401174551C8555D000080D07 /* ViewController.swift in Sources */,
+				40FB63231CD6DA0700112B55 /* DOFavoriteButton.swift in Sources */,
 				401C69E61CD04AED0038E7ED /* reportHeaderView.swift in Sources */,
 				40FDE74C1CBAD04800D9060A /* Annotation.swift in Sources */,
 				409DB6AE1CD685CB008DD65B /* customButton.swift in Sources */,
@@ -727,6 +735,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = ParkMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -749,6 +758,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = ParkMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
