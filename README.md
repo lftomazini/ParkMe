@@ -22,4 +22,4 @@ The idea of our project was based on the presentation [Parking on campus](https:
 
 ### [Style Guide](https://app.frontify.com/d/z5FawCZgY1AW/park-me-style-guide)
 
-### MedFi Prototype(https://www.justinmind.com/usernote/tests/19570480/19570996/19600595/index.html#/screens/5b15f10f-d751-4b05-9ba0-38ba9c67abb2)
+### [MedFi Prototype](https://www.justinmind.com/usernote/tests/19570480/19570996/19600595/index.html#/screens/5b15f10f-d751-4b05-9ba0-38ba9c67abb2)
