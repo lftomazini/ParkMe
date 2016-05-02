@@ -36,6 +36,10 @@
 		403D86C51CB9DAD900B9F2B0 /* Lots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D86C41CB9DAD900B9F2B0 /* Lots.swift */; };
 		403D86C91CB9E99400B9F2B0 /* BRKI.plist in Resources */ = {isa = PBXBuildFile; fileRef = 403D86C81CB9E99400B9F2B0 /* BRKI.plist */; };
 		404C1CE41CCE5429008FAA29 /* CornerHouse.plist in Resources */ = {isa = PBXBuildFile; fileRef = 404C1CE31CCE5429008FAA29 /* CornerHouse.plist */; };
+		4056B1DE1CD6EEEC00C2F630 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40371B011CD0F89F000737CC /* NotificationCenter.framework */; };
+		4056B1E11CD6EEEC00C2F630 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4056B1E01CD6EEEC00C2F630 /* TodayViewController.swift */; };
+		4056B1E41CD6EEEC00C2F630 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4056B1E21CD6EEEC00C2F630 /* MainInterface.storyboard */; };
+		4056B1E81CD6EEEC00C2F630 /* todayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4056B1DD1CD6EEEC00C2F630 /* todayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4060390E1CCD69670046F1DA /* Error-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4060390D1CCD69670046F1DA /* Error-100.png */; };
 		4090DF981CC0680200C5685A /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4090DF971CC0680200C5685A /* launch.png */; };
 		4097E4F71CBB56E900201421 /* MCD.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4097E4F61CBB56E900201421 /* MCD.plist */; };
@@ -75,7 +79,28 @@
 			remoteGlobalIDString = 4011744E1C8555D000080D07;
 			remoteInfo = ParkMe;
 		};
+		4056B1E61CD6EEEC00C2F630 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 401174471C8555D000080D07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4056B1DC1CD6EEEC00C2F630;
+			remoteInfo = todayWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4056B1EC1CD6EEEC00C2F630 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4056B1E81CD6EEEC00C2F630 /* todayWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0025DF3D1CCC771100DC2B22 /* Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Empty.png; path = ParkMe/Empty.png; sourceTree = "<group>"; };
@@ -114,6 +139,10 @@
 		403D86C41CB9DAD900B9F2B0 /* Lots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lots.swift; sourceTree = "<group>"; };
 		403D86C81CB9E99400B9F2B0 /* BRKI.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BRKI.plist; path = ParkMe/BRKI.plist; sourceTree = "<group>"; };
 		404C1CE31CCE5429008FAA29 /* CornerHouse.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CornerHouse.plist; sourceTree = "<group>"; };
+		4056B1DD1CD6EEEC00C2F630 /* todayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = todayWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4056B1E01CD6EEEC00C2F630 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		4056B1E31CD6EEEC00C2F630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4056B1E51CD6EEEC00C2F630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4060390D1CCD69670046F1DA /* Error-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Error-100.png"; sourceTree = "<group>"; };
 		4090DF971CC0680200C5685A /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch.png; path = ParkMe/launch.png; sourceTree = "<group>"; };
 		4097E4F61CBB56E900201421 /* MCD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MCD.plist; sourceTree = "<group>"; };
@@ -183,6 +212,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4056B1DA1CD6EEEC00C2F630 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4056B1DE1CD6EEEC00C2F630 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -203,6 +240,7 @@
 				40C7FAED1CBDBE1300C4D8E8 /* BackEnd */,
 				401174661C8555D000080D07 /* ParkMeTests */,
 				401174711C8555D000080D07 /* ParkMeUITests */,
+				4056B1DF1CD6EEEC00C2F630 /* todayWidget */,
 				401174501C8555D000080D07 /* Products */,
 				C23A8DE602FD1A7B09C95FA6 /* Frameworks */,
 				9E7EB2BD7D547F52EAEB93CF /* Pods */,
@@ -216,6 +254,7 @@
 				401174631C8555D000080D07 /* ParkMeTests.xctest */,
 				4011746E1C8555D000080D07 /* ParkMeUITests.xctest */,
 				40371B001CD0F89F000737CC /* parkWidget.appex */,
+				4056B1DD1CD6EEEC00C2F630 /* todayWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -288,6 +327,16 @@
 			name = Geofencing;
 			sourceTree = "<group>";
 		};
+		4056B1DF1CD6EEEC00C2F630 /* todayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4056B1E01CD6EEEC00C2F630 /* TodayViewController.swift */,
+				4056B1E21CD6EEEC00C2F630 /* MainInterface.storyboard */,
+				4056B1E51CD6EEEC00C2F630 /* Info.plist */,
+			);
+			path = todayWidget;
+			sourceTree = "<group>";
+		};
 		406039081CCD60B30046F1DA /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,10 +403,12 @@
 				4011744D1C8555D000080D07 /* Resources */,
 				25594880DB47091D06CC9838 /* Embed Pods Frameworks */,
 				2E00E06CCB11EAD6CF56175E /* Copy Pods Resources */,
+				4056B1EC1CD6EEEC00C2F630 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4056B1E71CD6EEEC00C2F630 /* PBXTargetDependency */,
 			);
 			name = ParkMe;
 			productName = ParkMe;
@@ -417,6 +468,23 @@
 			productReference = 40371B001CD0F89F000737CC /* parkWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		4056B1DC1CD6EEEC00C2F630 /* todayWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4056B1E91CD6EEEC00C2F630 /* Build configuration list for PBXNativeTarget "todayWidget" */;
+			buildPhases = (
+				4056B1D91CD6EEEC00C2F630 /* Sources */,
+				4056B1DA1CD6EEEC00C2F630 /* Frameworks */,
+				4056B1DB1CD6EEEC00C2F630 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = todayWidget;
+			productName = todayWidget;
+			productReference = 4056B1DD1CD6EEEC00C2F630 /* todayWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -429,7 +497,7 @@
 				TargetAttributes = {
 					4011744E1C8555D000080D07 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = FE3HYUJ5E7;
+						DevelopmentTeam = J43SGLE8R7;
 					};
 					401174621C8555D000080D07 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -440,6 +508,10 @@
 						TestTargetID = 4011744E1C8555D000080D07;
 					};
 					40371AFF1CD0F89F000737CC = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = J43SGLE8R7;
+					};
+					4056B1DC1CD6EEEC00C2F630 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = J43SGLE8R7;
 					};
@@ -462,6 +534,7 @@
 				401174621C8555D000080D07 /* ParkMeTests */,
 				4011746D1C8555D000080D07 /* ParkMeUITests */,
 				40371AFF1CD0F89F000737CC /* parkWidget */,
+				4056B1DC1CD6EEEC00C2F630 /* todayWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -515,6 +588,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4056B1DB1CD6EEEC00C2F630 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4056B1E41CD6EEEC00C2F630 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +692,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4056B1D91CD6EEEC00C2F630 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4056B1E11CD6EEEC00C2F630 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -623,6 +712,11 @@
 			isa = PBXTargetDependency;
 			target = 4011744E1C8555D000080D07 /* ParkMe */;
 			targetProxy = 4011746F1C8555D000080D07 /* PBXContainerItemProxy */;
+		};
+		4056B1E71CD6EEEC00C2F630 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4056B1DC1CD6EEEC00C2F630 /* todayWidget */;
+			targetProxy = 4056B1E61CD6EEEC00C2F630 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -641,6 +735,14 @@
 				4011745C1C8555D000080D07 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4056B1E21CD6EEEC00C2F630 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4056B1E31CD6EEEC00C2F630 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -736,6 +838,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -759,6 +862,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -857,6 +961,34 @@
 			};
 			name = Release;
 		};
+		4056B1EA1CD6EEEC00C2F630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = todayWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lftomazini.todayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4056B1EB1CD6EEEC00C2F630 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = todayWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lftomazini.todayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -904,6 +1036,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4056B1E91CD6EEEC00C2F630 /* Build configuration list for PBXNativeTarget "todayWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4056B1EA1CD6EEEC00C2F630 /* Debug */,
+				4056B1EB1CD6EEEC00C2F630 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
