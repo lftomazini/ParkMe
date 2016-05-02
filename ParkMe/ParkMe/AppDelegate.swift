@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ]
         navigationBarAppearace.titleTextAttributes = attrs
         
-        var pageController = UIPageControl.appearance()
+        let pageController = UIPageControl.appearance()
         pageController.pageIndicatorTintColor = UIColor.lightGrayColor()
         pageController.currentPageIndicatorTintColor = UIColor.blackColor()
         pageController.backgroundColor = UIColor.whiteColor()

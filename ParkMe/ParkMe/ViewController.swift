@@ -12,7 +12,7 @@ import CoreLocation
 import Firebase
 import BWWalkthrough
 
-class ViewController: UIViewController, CLLocationManagerDelegate, UIPageViewControllerDataSource{
+class ViewController: UIViewController, CLLocationManagerDelegate, BWWalkthroughViewControllerDelegate{
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -26,8 +26,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPageViewCon
     /* Central coordinate of Bucknell */
     let BU_Latitude = 40.954582
     let BU_Longitude = -76.883322
-    var pageViewController: UIPageViewController
-    var pageImages: NSArray!
+    //var pageViewController: UIPageViewController!
+    //var pageImages: NSArray!
     
     
     /* Initializing Parking Lots instances */
@@ -72,16 +72,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPageViewCon
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
-        self.pageImages = NSArray(objects: "info1","info2")
-        self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
-        self.pageViewController.dataSource = self
-        let startVC = self.viewControllerAtIndex(0) as ContentViewController
-        let viewControllers = NSArray(object: startVC)
-        self.pageViewController.setViewControllers(viewControllers as? [UIViewController], direction: .Forward, animated: true, completion:nil)
-        self.pageViewController.view.frame = CGRectMake(0, 30, self.view.frame.width, self.view.frame.size.height)
-        self.addChildViewController(self.pageViewController)
-        self.view.addSubview(self.pageViewController.view)
-        self.pageViewController.didMoveToParentViewController(self)
+//        self.pageImages = NSArray(objects: "info1","info2")
+//        self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
+//        self.pageViewController.dataSource = self
+//        let startVC = self.viewControllerAtIndex(0) as ContentViewController
+//        let viewControllers = NSArray(object: startVC)
+//        self.pageViewController.setViewControllers(viewControllers as? [UIViewController], direction: .Forward, animated: true, completion:nil)
+//        self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.size.height)
+//        self.addChildViewController(self.pageViewController)
+//        self.view.addSubview(self.pageViewController.view)
+//        self.pageViewController.didMoveToParentViewController(self)
         
         
     }
@@ -143,55 +143,55 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPageViewCon
         return false
     }
     
-    func viewControllerAtIndex(index: Int) -> ContentViewController{
-        
-        if ((self.pageImages.count == 0) || (index > self.pageImages.count)){
-            return ContentViewController()
-        }
-        
-        let vc: ContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ContentViewController") as! ContentViewController
-        
-        vc.imageFile = self.pageImages[index] as! String
-        vc.pageIndex = index
-        return vc
-    }
-    
-    // MARK: - PageViewController Data Source 
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        let vc = viewController as! ContentViewController
-        var index = vc.pageIndex as Int
-        
-        if(index == 0 || index == NSNotFound){
-            return nil
-        }
-        index -= 1
-        let toReturn = self.viewControllerAtIndex(index)
-        return toReturn
-    }
-    
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        let vc = viewController as! ContentViewController
-        var index = vc.pageIndex as Int
-        
-        if(index == NSNotFound){
-            return nil
-        }
-        index += 1
-        if (index == self.pageImages.count) {
-            return nil
-        }
-        return self.viewControllerAtIndex(index)
-        
-    }
-    
-    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return self.pageImages.count
-    }
-    
-    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return 0
-    }
-
+//    func viewControllerAtIndex(index: Int) -> ContentViewController{
+//        
+//        if ((self.pageImages.count == 0) || (index > self.pageImages.count)){
+//            return ContentViewController()
+//        }
+//        
+//        let vc: ContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ContentViewController") as! ContentViewController
+//        
+//        vc.imageFile = self.pageImages[index] as! String
+//        vc.pageIndex = index
+//        return vc
+//    }
+//    
+//    // MARK: - PageViewController Data Source 
+//    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+//        let vc = viewController as! ContentViewController
+//        var index = vc.pageIndex as Int
+//        
+//        if(index == 0 || index == NSNotFound){
+//            return nil
+//        }
+//        index -= 1
+//        let toReturn = self.viewControllerAtIndex(index)
+//        return toReturn
+//    }
+//    
+//    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+//        let vc = viewController as! ContentViewController
+//        var index = vc.pageIndex as Int
+//        
+//        if(index == NSNotFound){
+//            return nil
+//        }
+//        index += 1
+//        if (index == self.pageImages.count) {
+//            return nil
+//        }
+//        return self.viewControllerAtIndex(index)
+//        
+//    }
+//    
+//    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+//        return self.pageImages.count
+//    }
+//    
+//    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+//        return 0
+//    }
+//
     
     func presentWalkthrough() {
         

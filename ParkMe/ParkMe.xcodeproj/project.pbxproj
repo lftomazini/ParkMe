@@ -10,6 +10,9 @@
 		0025DF3E1CCC771100DC2B22 /* Empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 0025DF3D1CCC771100DC2B22 /* Empty.png */; };
 		0025DF401CCC771C00DC2B22 /* Full.png in Resources */ = {isa = PBXBuildFile; fileRef = 0025DF3F1CCC771C00DC2B22 /* Full.png */; };
 		0025DF421CCC772300DC2B22 /* Medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 0025DF411CCC772300DC2B22 /* Medium.png */; };
+		00863B4C1CD7126400E5174E /* BWWalkthrough.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00863B4B1CD7126400E5174E /* BWWalkthrough.framework */; };
+		00863B4E1CD7183900E5174E /* report.png in Resources */ = {isa = PBXBuildFile; fileRef = 00863B4D1CD7183900E5174E /* report.png */; };
+		00863B541CD722C700E5174E /* customPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00863B531CD722C700E5174E /* customPageViewController.swift */; };
 		0090BCE91CD3A4F0007AF237 /* Green.png in Resources */ = {isa = PBXBuildFile; fileRef = 0090BCE61CD3A4F0007AF237 /* Green.png */; };
 		0090BCEA1CD3A4F0007AF237 /* Orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 0090BCE71CD3A4F0007AF237 /* Orange.png */; };
 		0090BCEB1CD3A4F0007AF237 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 0090BCE81CD3A4F0007AF237 /* Red.png */; };
@@ -19,9 +22,9 @@
 		0090BCF31CD6BFF6007AF237 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090BCF21CD6BFF6007AF237 /* ContentViewController.swift */; };
 		00E2E4411CD70829002EB684 /* Info2.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E2E4401CD70829002EB684 /* Info2.png */; };
 		00E2E4431CD70F34002EB684 /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 00E2E4421CD70F34002EB684 /* Pods */; };
-		00E2E4471CD70F63002EB684 /* BWWalkthrough.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E2E4441CD70F62002EB684 /* BWWalkthrough.framework */; };
 		00E2E4481CD70F63002EB684 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E2E4451CD70F62002EB684 /* Material.framework */; };
 		00E2E4491CD70F63002EB684 /* SCLAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E2E4461CD70F62002EB684 /* SCLAlertView.framework */; };
+		00E2E44D1CD710EF002EB684 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2E44C1CD710EF002EB684 /* TableViewController.swift */; };
 		400FA8A11CA3296100605C5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400FA8A01CA3296100605C5C /* Images.xcassets */; };
 		401085AF1CBCAA5F002516A4 /* SCA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401085AE1CBCAA5F002516A4 /* SCA.plist */; };
 		401085B11CBCAD5D002516A4 /* Trax.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401085B01CBCAD5D002516A4 /* Trax.plist */; };
@@ -114,18 +117,21 @@
 		0025DF3D1CCC771100DC2B22 /* Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Empty.png; path = ParkMe/Empty.png; sourceTree = "<group>"; };
 		0025DF3F1CCC771C00DC2B22 /* Full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Full.png; path = ParkMe/Full.png; sourceTree = "<group>"; };
 		0025DF411CCC772300DC2B22 /* Medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Medium.png; path = ParkMe/Medium.png; sourceTree = "<group>"; };
+		00863B4B1CD7126400E5174E /* BWWalkthrough.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWWalkthrough.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/ParkMe-fjmpsvuvcldrogfnnuqfztzcfuqe/Build/Products/Debug-iphonesimulator/BWWalkthrough/BWWalkthrough.framework"; sourceTree = "<group>"; };
+		00863B4D1CD7183900E5174E /* report.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = report.png; sourceTree = SOURCE_ROOT; };
+		00863B531CD722C700E5174E /* customPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customPageViewController.swift; sourceTree = "<group>"; };
 		0090BCE61CD3A4F0007AF237 /* Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Green.png; sourceTree = "<group>"; };
 		0090BCE71CD3A4F0007AF237 /* Orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orange.png; sourceTree = "<group>"; };
 		0090BCE81CD3A4F0007AF237 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
 		0090BCEC1CD3B37F007AF237 /* frontpage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frontpage.png; sourceTree = "<group>"; };
 		0090BCED1CD3B37F007AF237 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info.png; sourceTree = "<group>"; };
 		0090BCF01CD3B91B007AF237 /* Info1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info1.png; sourceTree = "<group>"; };
-		0090BCF21CD6BFF6007AF237 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		0090BCF21CD6BFF6007AF237 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentViewController.swift; path = ParkMe/ContentViewController.swift; sourceTree = "<group>"; };
 		00E2E4401CD70829002EB684 /* Info2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info2.png; sourceTree = "<group>"; };
 		00E2E4421CD70F34002EB684 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
-		00E2E4441CD70F62002EB684 /* BWWalkthrough.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWWalkthrough.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/ParkMe-fjmpsvuvcldrogfnnuqfztzcfuqe/Build/Products/Debug-iphonesimulator/BWWalkthrough/BWWalkthrough.framework"; sourceTree = "<group>"; };
 		00E2E4451CD70F62002EB684 /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/ParkMe-fjmpsvuvcldrogfnnuqfztzcfuqe/Build/Products/Debug-iphonesimulator/Material/Material.framework"; sourceTree = "<group>"; };
 		00E2E4461CD70F62002EB684 /* SCLAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCLAlertView.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/ParkMe-fjmpsvuvcldrogfnnuqfztzcfuqe/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework"; sourceTree = "<group>"; };
+		00E2E44C1CD710EF002EB684 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		00F34E53F3C92FA2DD039F7E /* Pods-ParkMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkMeUITests/Pods-ParkMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		400FA8A01CA3296100605C5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		401085AE1CBCAA5F002516A4 /* SCA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SCA.plist; sourceTree = "<group>"; };
@@ -194,7 +200,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E2E4471CD70F63002EB684 /* BWWalkthrough.framework in Frameworks */,
+				00863B4C1CD7126400E5174E /* BWWalkthrough.framework in Frameworks */,
 				00E2E4481CD70F63002EB684 /* Material.framework in Frameworks */,
 				00E2E4491CD70F63002EB684 /* SCLAlertView.framework in Frameworks */,
 				40E359681CBE99C90030D6B5 /* CoreMotion.framework in Frameworks */,
@@ -245,7 +251,8 @@
 		401174461C8555D000080D07 = {
 			isa = PBXGroup;
 			children = (
-				00E2E4441CD70F62002EB684 /* BWWalkthrough.framework */,
+				0090BCF21CD6BFF6007AF237 /* ContentViewController.swift */,
+				00863B4B1CD7126400E5174E /* BWWalkthrough.framework */,
 				00E2E4451CD70F62002EB684 /* Material.framework */,
 				00E2E4461CD70F62002EB684 /* SCLAlertView.framework */,
 				406039081CCD60B30046F1DA /* Pictures */,
@@ -282,10 +289,12 @@
 		401174511C8555D000080D07 /* ParkMe main screen */ = {
 			isa = PBXGroup;
 			children = (
+				00863B531CD722C700E5174E /* customPageViewController.swift */,
 				401174521C8555D000080D07 /* AppDelegate.swift */,
 				401174541C8555D000080D07 /* ViewController.swift */,
-				0090BCF21CD6BFF6007AF237 /* ContentViewController.swift */,
+				00E2E44C1CD710EF002EB684 /* TableViewController.swift */,
 				401174561C8555D000080D07 /* Main.storyboard */,
+				00863B4D1CD7183900E5174E /* report.png */,
 				0090BCF01CD3B91B007AF237 /* Info1.png */,
 				0090BCEC1CD3B37F007AF237 /* frontpage.png */,
 				0090BCED1CD3B37F007AF237 /* Info.png */,
@@ -581,6 +590,7 @@
 			files = (
 				40371AFA1CD0F4A4000737CC /* South Campus Apartment.png in Resources */,
 				40BE97211CD704B700F0DFA6 /* Gateway.plist in Resources */,
+				00863B4E1CD7183900E5174E /* report.png in Resources */,
 				40B91D1B1CBB14A4009EF827 /* Smith.plist in Resources */,
 				40371AF91CD0F4A4000737CC /* Smith.png in Resources */,
 				403D86C91CB9E99400B9F2B0 /* BRKI.plist in Resources */,
@@ -773,7 +783,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00863B541CD722C700E5174E /* customPageViewController.swift in Sources */,
 				402BFA171CD5575600C0634E /* customPageViewController.swift in Sources */,
+				00E2E44D1CD710EF002EB684 /* TableViewController.swift in Sources */,
 				401174551C8555D000080D07 /* ViewController.swift in Sources */,
 				40FB63231CD6DA0700112B55 /* DOFavoriteButton.swift in Sources */,
 				401C69E61CD04AED0038E7ED /* reportHeaderView.swift in Sources */,
